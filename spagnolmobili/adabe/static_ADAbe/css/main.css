@@ -1,0 +1,809 @@
+:root {
+  --sidebar-bg-color: #f6f6f6;
+  --stepperBar-bg-color: #f6f6f6;
+  --primary-color: #da9b31;
+  --main-fontFamily: "Nexa", "sans-serif";
+  --title-fontFamily: "Nexa", "sans-serif";
+}
+
+html {
+  font-size: 16px !important;
+}
+
+.classes-tooltip{
+  background: var(--primary-color) !important;
+  max-width: 200px !important;
+  font-size: 12px !important;
+}
+.classes-popper{  
+  opacity: 1 !important;
+}
+.classes-tooltip-preview{
+  background: #ffffffe8 !important;
+  max-width: 200px !important;
+  box-shadow: 0px 0px 20px 0px #a0a0a0 !important;
+  border-radius: 15px !important;
+}
+.classes-tab-labelContainer {
+  padding: 6px !important;
+}
+
+.adabe-externalLink {
+  font-weight: 300 !important;
+  text-decoration: none;
+  font-size: 0.7rem;
+  color: #5f5d5e !important;
+}
+a.adabe-externalLink:hover {
+  text-decoration: underline;
+}
+
+/* Togli i link stampati affianco agli anchor in stampa */
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+
+/* Animazione sull'hover con riempimento dello sfondo */
+button.adabe-nidi {
+  position: relative;
+  border-width: 4px;
+  border-color: var(--primary-color);
+  border-style: solid;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-family: var(--main-fontFamily);
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;  
+  margin: 0 10%;
+  height: 70px;
+  min-height: 70px;
+  max-width: 300px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  z-index: 1;
+}
+button.adabe-nidi:hover {    
+  color: white;
+}
+button.adabe-nidi:before {
+  /* content è fondamentale per gli pseudo-elementi */
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 110%;
+  background: var(--primary-color);
+  z-index: -1;
+  border-radius: 0 40px 0px 0;
+  transition: all .3s;
+  width: 100%;
+  opacity: 0;
+}
+button.adabe-nidi:hover:before {  
+  right: 0;    
+  opacity: 1;  
+  border-radius: 0;
+}
+button.adabe-nidiBlack {
+  color: black;
+  border-color: black;
+}
+button.adabe-nidiBlack:before {
+  background: black;
+}
+
+/* Sull'hover di un button aggiunge una linea animata sotto al testo contenuto nello span */
+.adabe-nidiLink {
+  border: 0px;
+  background: transparent;
+  font-family: var(--main-fontFamily);
+  text-transform: uppercase;
+  padding: 10px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.adabe-nidiLink span {
+  display: inline-block;
+}
+.adabe-nidiLink span:after {
+  top: 100%;
+  width: 0;
+  content: " ";
+  display: block;
+  min-height: 2px;
+  background: #000;
+  transition: all .3s;
+  left: 0;
+  opacity: 0;
+}
+.adabe-nidiLink:hover span:after {
+  width: 100%;
+  left: 0;
+  opacity: 1;
+}
+
+/* NOVAMOBILI */
+button.adabe-novam {
+  position: relative;
+  border-width: 0;
+  color: white;
+  background-color: var(--primary-color);
+  font-family: var(--main-fontFamily);
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 15px;
+  height: 45px;
+  min-height: 45px;
+  max-width: 300px;
+  cursor: pointer;
+}
+button.adabe-novamLink {
+  border: 0px;
+  background: transparent;
+  font-family: var(--main-fontFamily);
+  text-transform: uppercase;
+  padding: 10px 0px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+button.adabe-novamLink > svg {
+  display: none;
+}
+
+/* layout per mobile */
+.adabe-container {
+  display: grid;  
+  grid-template-rows: 60px 250px auto auto;
+  grid-template-columns: auto 0px;
+  background: var(--sidebar-bg-color);  
+}
+.adabe-stepperBar {  
+  grid-row: 1/2;
+  margin-bottom: 0px; z-index: 50;
+  position: fixed; width: 100%;
+  background: var(--stepperBar-bg-color);
+  box-shadow: 0px 2px 10px #dbdbdb;
+}
+.adabe-canvas {  
+  grid-row: 2/3; 
+  background-color: white; 
+  position: relative;
+}
+.adabe-canvasLoading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: var(--main-fontFamily);
+  font-size: 1em;
+  /* text-transform: uppercase; */
+  border: 1px solid gray;
+  border-radius: 1px;
+  background: white;
+  padding: 10px;
+  overflow: hidden;
+}
+.adabe-canvasLoading span {
+  padding: 8px;
+}
+.adabe-canvasLoading div {
+  position: relative;
+  height: 2px;
+  background: var(--primary-color);
+  width: 60%;
+  animation-name: slideLeftToRight;
+  animation-duration: 2s;
+}
+@keyframes slideLeftToRight {
+  from {left: -60%;}
+  to {left: +100%;}
+}
+
+.adabe-backButton {  
+  display: none;
+}
+.adabe-prodDescr {  
+  display: none;
+}
+.adabe-sidebar {  
+  grid-row: 3/4;
+  /* overflow: hidden; */
+  display: flex !important;
+  flex-direction: column !important;  
+}
+/* smooth-scrollbar: */
+.scroll-content {
+  display: flex !important;
+  flex-direction: column !important;  
+  height: 100% !important;
+}
+
+.adabe-configurator {  
+  /* Prende lo spazio rimanente in sidebar */
+  flex-grow: 1; 
+  flex-shrink: 0; 
+  margin-top: 25px;
+  margin-left: 5%;
+  margin-right: 5%;  
+}
+.adabe-nextStepButton {
+  align-self: center;
+  margin: 30px 0px;
+}    
+.adabe-footer {  
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+}
+.adabe-summary {  
+  grid-row: 4/5;
+
+  display: flex;
+  flex-direction: column;   
+  align-items: center; 
+}
+
+.adabe-startingPage-startButton {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+/* https://material.io/design/layout/responsive-layout-grid.html#breakpoints */
+/* 600px corrisponde al breakpoint xSmall (smartphone) */
+@media (min-width: 600px) {
+  .adabe-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 60px 1fr 100px auto;
+    width: 100%; height: 100%; min-height: 500px;
+    background: var(--sidebar-bg-color);
+    /* hidden nasconde le scrollbar */
+    overflow: hidden;
+  }
+  .adabe-stepperBar {    
+    grid-column: 1/3;
+    grid-row-start: 1;
+    margin-bottom: 0px; z-index: 50;
+    box-shadow: 0px 1px 10px #dbdbdb;
+  }  
+  .adabe-canvas {
+    grid-column: 1/2;
+    grid-row: 2/4;  
+  }  
+  .adabe-prodDescr {
+    display: initial;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin-left: 50px; margin-bottom: 20px;
+    z-index: 10
+  }  
+  .adabe-sidebar {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }   
+  .adabe-configurator {
+    margin-top: 50px;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .adabe-footer {  
+    margin-left: 10%;
+  }
+  .adabe-summary {
+    grid-column: 1/3;
+    grid-row: 4/5;  
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .adabe-startingPage-startButton {
+    grid-column: 2/3;    
+    grid-row: 3/4;    
+  }
+}
+
+.adabe-round-value {
+  border: 1px solid rgb(224, 224, 224);  
+  
+  margin: 10px 3px;
+  border-radius: 50%; 
+  width: 55px; 
+  height: 55px; 
+  cursor: pointer;
+}
+.adabe-round-value-selected {  
+  border: 4px solid rgb(255, 179, 0);  
+  
+  margin: 7px 0px;
+  border-radius: 50%; 
+  width: 55px; 
+  height: 55px; 
+  cursor: pointer;
+}
+
+:root {
+  --square-size: 55px;
+  --tooltip-square-size: calc(var(--square-size) * 2);
+  --square-hor-margin: 3px;
+  --square-ver-margin: 10px;
+}
+
+/* SB!10/11/20 Impostato box-sizing: initial perché bootstrap passa un box-sizing: border-box; che altera i bordi del valore selezionato  */
+.adabe-square-value {
+  border: 1px solid rgb(224, 224, 224);
+  margin: var(--square-ver-margin) var(--square-hor-margin);
+  width: var(--square-size); 
+  height: var(--square-size); 
+  cursor: pointer;
+  box-sizing: initial;
+}
+.adabe-square-value-selected {
+  border: 4px solid var(--primary-color);
+  margin: 7px 0px;
+  width: var(--square-size);
+  height: var(--square-size);
+  cursor: pointer;
+  box-sizing: initial;
+}
+.adabe-square-value-in-tooltip {
+  border: 1px solid rgb(224, 224, 224);
+  margin: var(--square-hor-margin);
+  width: var(--tooltip-square-size);
+  height: var(--tooltip-square-size);
+  cursor: pointer;
+  box-sizing: initial;
+}
+
+.divWithTooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.divWithTooltip .adabe-value-tooltip {
+  visibility: hidden;
+  width: calc(var(--tooltip-square-size) + var(--square-hor-margin) * 4);
+  height: calc(var(--tooltip-square-size) + var(--square-ver-margin) * 4);
+  background-color: white;
+  text-align: center;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+  top: calc(0px - var(--square-ver-margin) - var(--square-size) * 0.5);
+  left: calc(0px - var(--square-hor-margin) - var(--square-size) * 0.5);
+}
+.divWithTooltip:hover .adabe-value-tooltip {
+  visibility: visible;
+}
+
+.expansionPanel-root {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.expansionPanel-expanded:before {
+  opacity: 1 !important;
+}
+.expansionSummary-root {
+  padding: 0 10% !important;
+}
+.expansionSummary-content {
+  margin: 30px 0 !important;
+}
+
+.expansionDetails-root {
+  padding: 0 10% !important;
+  background-color: #fbfbfb !important;
+}
+.classes-button {
+  background-color: transparent !important;
+}
+
+.classes-button:hover{
+  background-color: white !important;
+}
+
+.classes-root {
+  padding: 0px !important;
+  margin-top: 5px !important;
+}
+
+.classes-primaryText {
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+}
+.rc-slider {
+  position: relative;
+  height: 14px;
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 6px;
+  -ms-touch-action: none;
+      touch-action: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-rail {
+  position: absolute;
+  width: 100%;
+  background-color: #e9e9e9;
+  height: 4px;
+  border-radius: 6px;
+}
+.rc-slider-track {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  border-radius: 6px;
+  background-color: #abe2fb;
+}
+.rc-slider-handle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  cursor: -webkit-grab;
+  margin-top: -5px;
+  cursor: grab;
+  border-radius: 50%;
+  border: solid 2px #96dbfa;
+  background-color: #fff;
+  -ms-touch-action: pan-x;
+      touch-action: pan-x;
+}
+.rc-slider-handle:focus {
+  border-color: #57c5f7;
+  box-shadow: 0 0 0 5px #96dbfa;
+  outline: none;
+}
+.rc-slider-handle-click-focused:focus {
+  border-color: #96dbfa;
+  box-shadow: unset;
+}
+.rc-slider-handle:hover {
+  border-color: #57c5f7;
+}
+.rc-slider-handle:active {
+  border-color: #57c5f7;
+  box-shadow: 0 0 5px #57c5f7;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.rc-slider-mark {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+}
+.rc-slider-mark-text {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  color: #999;
+}
+.rc-slider-mark-text-active {
+  color: #666;
+}
+.rc-slider-step {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+}
+.rc-slider-dot {
+  position: absolute;
+  bottom: -2px;
+  margin-left: -4px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e9e9e9;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.rc-slider-dot-active {
+  border-color: #96dbfa;
+}
+.rc-slider-dot-reverse {
+  margin-left: 0;
+  margin-right: -4px;
+}
+.rc-slider-disabled {
+  background-color: #e9e9e9;
+}
+.rc-slider-disabled .rc-slider-track {
+  background-color: #ccc;
+}
+.rc-slider-disabled .rc-slider-handle,
+.rc-slider-disabled .rc-slider-dot {
+  border-color: #ccc;
+  box-shadow: none;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.rc-slider-disabled .rc-slider-mark-text,
+.rc-slider-disabled .rc-slider-dot {
+  cursor: not-allowed !important;
+}
+.rc-slider-vertical {
+  width: 14px;
+  height: 100%;
+  padding: 0 5px;
+}
+.rc-slider-vertical .rc-slider-rail {
+  height: 100%;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-track {
+  left: 5px;
+  bottom: 0;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-handle {
+  margin-left: -5px;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+.rc-slider-vertical .rc-slider-mark {
+  top: 0;
+  left: 18px;
+  height: 100%;
+}
+.rc-slider-vertical .rc-slider-step {
+  height: 100%;
+  width: 4px;
+}
+.rc-slider-vertical .rc-slider-dot {
+  left: 2px;
+  margin-bottom: -4px;
+}
+.rc-slider-vertical .rc-slider-dot:first-child {
+  margin-bottom: -4px;
+}
+.rc-slider-vertical .rc-slider-dot:last-child {
+  margin-bottom: -4px;
+}
+.rc-slider-tooltip-zoom-down-enter,
+.rc-slider-tooltip-zoom-down-appear {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  display: block !important;
+  animation-play-state: paused;
+}
+.rc-slider-tooltip-zoom-down-leave {
+  animation-duration: .3s;
+  animation-fill-mode: both;
+  display: block !important;
+  animation-play-state: paused;
+}
+.rc-slider-tooltip-zoom-down-enter.rc-slider-tooltip-zoom-down-enter-active,
+.rc-slider-tooltip-zoom-down-appear.rc-slider-tooltip-zoom-down-appear-active {
+  animation-name: rcSliderTooltipZoomDownIn;
+  animation-play-state: running;
+}
+.rc-slider-tooltip-zoom-down-leave.rc-slider-tooltip-zoom-down-leave-active {
+  animation-name: rcSliderTooltipZoomDownOut;
+  animation-play-state: running;
+}
+.rc-slider-tooltip-zoom-down-enter,
+.rc-slider-tooltip-zoom-down-appear {
+  transform: scale(0, 0);
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+.rc-slider-tooltip-zoom-down-leave {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+@keyframes rcSliderTooltipZoomDownIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0, 0);
+  }
+  100% {
+    transform-origin: 50% 100%;
+    transform: scale(1, 1);
+  }
+}
+@keyframes rcSliderTooltipZoomDownOut {
+  0% {
+    transform-origin: 50% 100%;
+    transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale(0, 0);
+  }
+}
+.rc-slider-tooltip {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  visibility: visible;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-tooltip * {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.rc-slider-tooltip-hidden {
+  display: none;
+}
+.rc-slider-tooltip-placement-top {
+  padding: 4px 0 8px 0;
+}
+.rc-slider-tooltip-inner {
+  padding: 6px 2px;
+  min-width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #6c6c6c;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #d9d9d9;
+}
+.rc-slider-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+.rc-slider-tooltip-placement-top .rc-slider-tooltip-arrow {
+  bottom: 4px;
+  left: 50%;
+  margin-left: -4px;
+  border-width: 4px 4px 0;
+  border-top-color: #6c6c6c;
+}
+
+.adabe-onlyOnScreen {
+  display: initial !important;
+}
+.adabe-onlyOnPrint {
+  display: none !important;
+}
+
+.adabe-propsColumnBG {
+  background: var(--sidebar-bg-color);
+}
+.adabe-propCaptionMargin {
+  padding: 2.5px 0px;
+}
+
+.adabe-sizeProp {
+  margin-top: 5px;
+  width: 160px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.adabe-printFooter {
+  width: 810px;
+}
+
+.adabe-shrinkOnPrint {
+  transform-origin: top;
+  transform: scale(1);
+}
+
+.adabe-shrinkOnPrintGap {
+  height: inherit;
+}
+
+.adabe-scrollHintContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  right: 0px; 
+  cursor: pointer;
+  
+  /* Animazione di opacity che va a 0 alla fine dei 2.5 secondi in cui le freccette si muovono */
+  opacity: 1;
+  animation-name: adabe-scrollHintContainerAnimation;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes adabe-scrollHintContainerAnimation {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.adabe-scrollHint {
+  margin: 20px 0;
+  width: 30px;
+  animation-name: adabe-scrollHintAnimation;
+  animation-duration: 0.5s;
+  animation-iteration-count: 15;
+  animation-direction: alternate;
+}
+@keyframes adabe-scrollHintAnimation {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+}
+
+@page {
+  margin: 0px;
+  size: 210mm 297mm;
+  overflow: hidden;
+}
+@media print {
+
+  .adabe-shrinkOnPrint {
+    transform-origin: top;
+    transform: scale(0.9);
+  }
+  .adabe-shrinkOnPrintGap {
+    /* Lo scale effettuato sopra non incide sul contributo in dimensione dell'elemento, quindi occupa sempre lo stesso spazio, anche se visivamente è più piccolo */
+    /* Quindi azzero quasi del tutto l'altezza per non fargli occupare spazio, il footer comunque è posizionato a fondo pagina */
+    height: 1%;
+  }
+
+  .adabe-onlyOnScreen {
+    display: none !important;
+  }
+  .adabe-onlyOnPrint {
+    display: block !important;
+  } 
+
+  .adabe-propsColumnBG {
+    background: transparent;
+  }
+
+  .adabe-propCaptionMargin {
+    padding: 20.5px 0px;
+  }
+
+  .adabe-printFooter {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map*/
