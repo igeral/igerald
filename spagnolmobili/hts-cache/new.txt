@@ -1,3 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-17:43:04	40897/40897	---M-Z	200	added ('OK')	text/html	date:Sun,%2016%20Jan%202022%2014:43:00%20GMT	https://www.zalf.com/it/prodotti/camerette-per-bambini/camerette-schema-libero	C:/Users/user/webprojects/zalfcamerette/camerette-schema-libero.html	(from )
-17:43:06	173/173	---M--	200	added ('OK')	text/plain	date:Wed,%2015%20Dec%202021%2009:37:57%20GMT	https://www.zalf.com/robots.txt		(from )
