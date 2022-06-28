@@ -198,16 +198,22 @@
     position: fixed;
     top: 0;
 }
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
 }
 .uk-scrollspy{
   margin-top: 2rem!important;
 }
-#amadi-head0{
-    margin-top: 4rem !important;
+@media screen and (max-width: 500px) {
+    #amadi-head0{
+        margin-top: 3rem !important;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width:1400px) {
+  .header-items2, .edgtf-position-right-inner2{
+    margin-top: 0.5rem !important;
+  }
 }
 @media screen and (max-width:1900px) {
   #menu-div{
@@ -215,7 +221,7 @@
   }
 }
 @media screen and (min-width: 2300px) {
-    .header{
+    .header.col-12{
         position: fixed !important;
         top: 50px !important;
     }
@@ -229,10 +235,10 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .heading-7{
     margin-top: -10rem;
   }
@@ -269,7 +275,7 @@
       width: 0;
     }
     #amadi-head{
-        margin-top: 10rem !important;
+        margin-top: 7rem !important;
     }
 
     /* Create a custom checkbox */
@@ -2896,6 +2902,7 @@ N° REA: TV 185064                    </p>
         @media screen and (min-width: 1500px) {
             footer{
                 height: 25rem;
+                margin-top: 1px;
             }
             
         }

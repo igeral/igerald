@@ -117,9 +117,10 @@
     position: fixed;
     top: 0;
 }
-.header{
-  top: 50px !important;
-}
+.header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+      }
 .header.col-12{
   font-weight: bold;
 }
@@ -172,7 +173,17 @@ footer{
     position: relative !important;
      top: 20rem !important;
    }
-  
+   @media screen and (min-width: 1900px) {
+      #menu-div{
+        margin-left: 10rem;
+      }
+  }
+  @media screen and (min-width: 1280px) and (max-width: 1400px) {
+    .intro.maxWidth{
+      top: -27rem;
+      left: -1rem;
+    }
+  }
   @media screen and (min-width: 1920px) {
     .wrapperImg{
       margin-left:-70px;
@@ -193,7 +204,11 @@ footer{
       z-index: 7;
     }
   }
-
+  @media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
   @media screen and (max-width: 1550px) {
     .wrapperImg{
       margin-left: 15%;
@@ -277,19 +292,19 @@ footer{
     position: relative !important;
     top: 8rem !important;
   }
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 830px){
     .header-items2{
         margin-top: 1.5rem !important;
     }    
 
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -23161,7 +23176,7 @@ input[type=submit]:hover {
     /* display: none; */
     transform: translateX(100%);
     position: relative;
-    top: -38rem;
+    top: -70rem;
     margin-left: 2rem;
   }
   .items li {
@@ -23584,7 +23599,8 @@ input[type=submit]:hover {
 </div>
 
 
-<div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+    <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
     <div id="page_content" data-scroll-container>
             
             
@@ -23809,7 +23825,7 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
             footer{
-              height: 40rem;
+              height: 34rem;
           }
           
       }

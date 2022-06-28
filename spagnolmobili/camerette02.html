@@ -123,9 +123,10 @@
 .edgtf-position-right-inner2{
   top:20px;
 }
-.header{
-  top: 50px !important;
-}
+.header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+      }
 
 .uk-scrollspy{
   margin-top: 2rem!important;
@@ -138,8 +139,18 @@
     .header.col-12{
   font-weight: bold;
 }
+@media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 8rem;
+      }
+  }
 @media screen and (min-width: 2300px) {
-    .header{
+    .header.col-12{
         position: fixed !important;
         top: 50px !important;
     }
@@ -153,10 +164,10 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .t-medium.t-regular{
     margin-top: 5rem;
   }
@@ -172,9 +183,9 @@
       margin-top: 8rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -23708,7 +23719,7 @@ input[type=submit]:hover {
     /* display: none; */
     transform: translateX(100%);
     position: relative;
-    top: -38rem;
+    top: -70rem;
     margin-left: 2rem;
   }
   .items li {
@@ -23789,7 +23800,8 @@ input[type=submit]:hover {
   });
 </script>
 
-    <div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+        <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
         <div id="page_content" data-scroll-container>
             
             
@@ -24058,7 +24070,7 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
             footer{
-              height: 33rem;
+              height: 29rem;
           }
           
       }

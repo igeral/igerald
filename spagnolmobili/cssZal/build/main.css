@@ -12057,7 +12057,7 @@ body:not(.negativo) #page_content {
 }
 @media (min-width: 1200px) {
   body:not(.negativo) #page_content {
-    padding-top: 160px;
+    padding-top: 172px;
   }
 }
 footer {
@@ -12380,13 +12380,28 @@ a:hover .wrapperImg img {
     position: fixed;
     top: calc(50vh - 75px);
     left: 0;
-    z-index: 100;
+    z-index: 2;
   }
+}
+#amadi-head > div > div {
+  margin-top: -3rem;
+}
+#body > div.header.isScroll.isScrollUp > ul > li > ul,
+#body > div.header.isScrollUp > ul > li {
+  z-index: 7;
 }
 .tools ul {
   padding: 0;
   width: 100%;
   overflow: hidden;
+}
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+  #menu-div {
+    margin-left: 5rem;
+  }
+  footer {
+    height: 28rem;
+  }
 }
 @media (min-width: 1200px) {
   .tools ul {

@@ -146,10 +146,10 @@
     top: 0;
 }
 
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
+    padding-bottom: 4px;
 }
 
 @media (max-width: 1220px) {
@@ -166,6 +166,11 @@
       .uk-scrollspy{
   margin-top: 0!important;
 }
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 11rem;
+      }
+  }
 @media screen and (min-width:768px) and (max-width:830px) {
         .mobilemenu{
             margin-top: 8rem !important;
@@ -1288,18 +1293,6 @@ window.dataLayer = [{
                                                                                                                    <a href="#" data-wa="download-modello-3ds" data-file="Nuk" download="">Download 3DS</a>
                                                                         </div>
                 </div>
-
-                <!--<div class="nd-product-buttons-mobiles visible-xs">
-                                        <a data-wa="cta2" href="#" class="btn btn-lined btn-lg">Find a dealer</a>
-                    <a data-wa="cta1" href="#" class="btn btn-lined btn-lg">Make an enquiry</a>
-                                             <a data-wa="cta3" href="javascript: void(0);" class="btn btn-lined btn-lined-yellow btn-lg configProduct">Configure!</a>
-                                    </div>
-
-                <div class="nd-product-buttons-mobiles hidden-xs">
-                                        <a data-wa="cta1" href="#" class="btn btn-lined btn-lg">Make an enquiry</a>
-                    <a data-wa="cta2" href="#" class="btn btn-lined btn-lg">Find a dealer</a>
-                                            <a data-wa="cta3" href="javascript: void(0);" class="btn btn-lined btn-lined-yellow btn-lg configProduct">Configure!</a>
-                                    </div>-->
             </div>
 
 
@@ -1398,34 +1391,6 @@ window.dataLayer = [{
 
         <section class="content_wrapper product_detail" data-scroll-section>
 
-      <!--<div style="margin-left: 15%;margin-bottom: 9%;margin-top: 2%;">
-        <h5 class="t-medium t-regular">Camerette</h5>
-        <h1 style="font-style: bold;">
-        Appeso
-        </h1>
-      </div>-->
-
-
-      <!--<div class="widget_preview_item type_4 widget_preview_item_413" id="w_413">
-        <div class="wrapperImg"><figure data-scroll data-scroll-speed="-.8">
-                    <img src="./uploads/products/images/9/Boiserie arredo principale.jpg" srcset="./uploads/products/images/9/Boiserie arredo principale.jpg 2x">
-                </figure></div>
-    <div class="text_container">
-      
-
-
-    </div>
-
-    </div>-->
-
-
-   
-
-
-
-
-
-        
         </div>
     </div>
     </div>              
@@ -1635,12 +1600,7 @@ window.dataLayer = [{
 
     }
         }
-        @media screen and (min-width: 1500px) {
-            footer{
-                height: 25rem;
-            }
-            
-        }
+      
         @media screen and (min-width: 2160px){
             footer{
                 margin-top: 1px;

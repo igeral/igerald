@@ -117,9 +117,10 @@
 .edgtf-position-right-inner2{
   top:20px;
 }
-.header{
-  top: 50px !important;
-}
+.header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+      }
 .uk-scrollspy{
   margin-top: 2rem!important;
 }
@@ -135,8 +136,18 @@
     .header.col-12{
   font-weight: bold;
 }
+@media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 8rem;
+      }
+  }
 @media screen and (min-width: 2300px) {
-    .header{
+    .header.col-12{
         position: fixed !important;
         top: 50px !important;
     }
@@ -150,10 +161,10 @@
     }
 }
 @media screen and (min-width: 320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .t-medium.t-regular{
     margin-top: 5rem;
   }
@@ -169,9 +180,9 @@
       margin-top: 8rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -23257,33 +23268,6 @@ input[type=submit]:hover {
                                                  </ul>
                                                     </li>
                                                 </ul>
-
-                    
-                                            <!--<ul class="col-2 offset-1">
-                                                                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="360">
-                                    <a href="en/bedroom.html">COMPLEMENTI</a>
-                                    
-                                </li>
-
-
-                            
-                                                                                                        ass="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="390">
-                                    <a href="en/living-room.html">Boiserie</a>
-                                    
-                                </li>
-                                                                                             
-                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="420">
-                                    <a href="javascript: void(0);">Homes</a>
-                                    <ul class="menu-submenu-item-single-list">
-                                                                                    <li>
-                                                <a href="en/stories/penthouse-in-the-city.html">Penthouse in the city</a>
-                                            </li>
-                                                                                    <li>
-                                                <a href="en/stories/loft-in-the-hills.html">Loft in the hills</a>
-                                            </li>
-                                    </ul>
-                                </li>
-                                                    </ul>-->
                                     </li>
             </ul>
         </li>
@@ -23423,7 +23407,7 @@ input[type=submit]:hover {
       /* display: none; */
       transform: translateX(100%);
       position: relative;
-      top: -38rem;
+      top: -70rem;
       margin-left: 2rem;
     }
     .items li {
@@ -23503,7 +23487,8 @@ input[type=submit]:hover {
       document.querySelector(".lacastello").classList.toggle("submenumenu");
     });
   </script>
-    <div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+        <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
         <div id="page_content" data-scroll-container>
             
             
@@ -23762,7 +23747,7 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
             footer{
-              height: 33rem;
+              height: 29rem;
           }
           
       }

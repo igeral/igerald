@@ -20947,12 +20947,15 @@ div.header {
 
 .footer {
   width: 100%;
-  
   position: relative;
-  z-index: 1;
   background-color: #1F1F1F; }
   .footer .container-fluid-menu {
     padding-left: calc(80px + 15px); }
+    @media screen and (min-width: 1280px) and (max-width: 1400px) {
+      #menu-div {
+        margin-left: 6rem !important;
+      }
+    } 
     @media (max-width: 1220px) {
       .footer .container-fluid-menu {
         padding-top: 40px; } }
@@ -22941,12 +22944,6 @@ input[type=submit]:hover {
   transform-origin: bottom left;
 }
 
-
-.subMenuProducts.isScrollUp{
-  
-}
-
-
 #submenu-100{
   display: none;
 }
@@ -22957,5 +22954,8 @@ input[type=submit]:hover {
 
 #submenu-300{
   display: none;
+}
+#amadi-head > div > div{
+  margin-top: -3rem;
 }
 

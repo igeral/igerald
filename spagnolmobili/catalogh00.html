@@ -210,22 +210,26 @@
     position: fixed;
     top: 0;
 }
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    /* z-index: 7 !important; */
 }
 body{
     margin: 0;
     padding: 0;
 
 } 
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #scarica{
+        margin-left: 39.5rem !important;
+      }
+  }
 @media screen and (max-width: 1900px) {
     #menu-div{
         margin-left: 7rem;
     }
 }
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 2000px) {
     #scarica{
         margin-left: 55rem !important;
     }
@@ -1691,13 +1695,23 @@ Aris3
     }
         }
         @media screen and (min-width: 1500px) {
-            footer{
-                height: 25rem;
-            }
             .putInline{
                 margin-left: 5px;
             }
             
+        }
+        @media screen and (min-width:1280px) and (max-width:1400px){
+            body > div:nth-child(6) > div:nth-child(1) > section > div:nth-child(2){
+                margin-top: -29rem !important;
+            }
+            .maxWidth{
+                height: 50rem;
+            }
+        @media screen and (min-width:2300px) {
+            body > div:nth-child(6) > div:nth-child(1) > section > div:nth-child(2){
+                margin-top: -29rem !important;
+            }
+        }
         }
 </style>
 

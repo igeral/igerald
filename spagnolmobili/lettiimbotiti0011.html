@@ -18,13 +18,6 @@
 
 <title>Camerreti</title>
 <meta name="description" content="">
- 
-
-
-
-
-
-
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-4012939-6"></script>
@@ -124,9 +117,7 @@
 .edgtf-position-right-inner2{
   top:20px;
 }
-.header{
-  top: 50px !important;
-}
+
 .uk-padding-large-top{
   height: 23rem !important;
 }
@@ -134,7 +125,19 @@
   margin-top: 0!important;
 }
 .header.col-12{
+  position: fixed;
+  top: 50px;
     font-weight: bold !important;
+  }
+  @media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
+  @media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 8rem;
+      }
   }
 @media screen and (min-width: 320px) and (max-width: 500px){
     .header{
@@ -156,9 +159,9 @@
       margin-top: 12rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -23721,7 +23724,7 @@ input[type=submit]:hover {
       /* display: none; */
       transform: translateX(100%);
       position: relative;
-      top: -38rem;
+      top: -70rem;
       margin-left: 2rem;
     }
     .items li {
@@ -23802,7 +23805,8 @@ input[type=submit]:hover {
     });
   </script>
           
-    <div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+        <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
         <div id="page_content" data-scroll-container>
             
             
@@ -23857,48 +23861,6 @@ input[type=submit]:hover {
 </div>        			
 
     </div>
-
-
-<!--<div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/30/SESTANCE A1.jpg');margin-top: -80px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
-            <a href="./uploads/products/images/30/SESTANCE A1.jpg" data-fancybox="gallery">
-                <img height="500" src="./uploads/products/images/30/SESTANCE A1.jpg">
-            </a>
-        </div> 
-      </div>
-
-
-      <div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/30/SESTANCE C1.jpg');margin-top: 50px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
-            <a href="./uploads/products/images/30/SESTANCE C1.jpg" data-fancybox="gallery">
-                <img height="500" src="./uploads/products/images/30/SESTANCE C1.jpg">
-            </a>
-        </div> 
-      </div>
-
-
-
-      <div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/30/SESTANCE B1.jpg');margin-top: -80px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
-            <a href="./uploads/products/images/30/SESTANCE B1.jpg" data-fancybox="gallery">
-                <img height="500" src="./uploads/products/images/30/SESTANCE B1.jpg">
-            </a>
-        </div> 
-      </div>
-
-
-      <div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/30/SESTANCE B2.jpg');margin-top: 50px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
-            <a href="./uploads/products/images/30/SESTANCE B2.jpg" data-fancybox="gallery">
-                <img height="500" src="./uploads/products/images/30/SESTANCE B2.jpg">
-            </a>
-        </div> 
-      </div>-->
-
 
     	</section>
 
@@ -24103,7 +24065,7 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
             footer{
-              height: 32rem;
+              height: 28rem;
           }
           
       }

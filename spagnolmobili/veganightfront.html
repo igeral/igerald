@@ -161,10 +161,9 @@
 .footer{
     padding: 1rem;
 }
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
 }    
 /* .uk-scrollspy{
   margin-top: 0 !important;
@@ -186,9 +185,9 @@
       margin-top: 8rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -357,7 +356,7 @@
     #img-box{
       max-width: 100%;
       width: 100%; 
-      margin-left: 6%;
+      margin-left: 9% !important;
     }
 
 
@@ -1528,8 +1527,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         @media screen and (min-width: 1500px) {
             footer{
                 height: 25rem;
+                margin-top: 1px;
             }
             
+        }
+        @media screen and (min-height: 1100px) and (max-height:1200px) {
+            footer{
+                margin-top: 4px;
+            }
         }
         @media screen and (min-width: 2160px){
             footer{

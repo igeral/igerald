@@ -110,7 +110,8 @@
       #submenu-300{
         display: none;
       }
-      .header{
+      .header.col-12{
+        position: fixed !important;
         top: 50px !important;
       }
                       .header2{
@@ -133,11 +134,21 @@ body > div.container-fluid.container-fluid-main > header > div.row.isDesktop.ali
 .uk-scrollspy{
   margin-top: 0 !important;
 }
-@media screen and (min-width: 320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
+@media screen and (min-width: 1900px) {
+      #menu-div{
+        margin-left: 22rem;
+      }
   }
+  @media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px){
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .t-medium.t-regular{
     margin-top: 5rem;
   }
@@ -150,6 +161,10 @@ body > div.container-fluid.container-fluid-main > header > div.row.isDesktop.ali
 
   }
 }
+@media screen and (min-width: 1280px) and (max-width: 1400px){
+#menu-div {
+    margin-left: -7rem;
+}
 @media screen and (min-width: 768px) and (max-width: 830px){
     .header-items2{
         margin-top: 1.5rem !important;
@@ -158,9 +173,9 @@ body > div.container-fluid.container-fluid-main > header > div.row.isDesktop.ali
       margin-top: 8rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -18819,15 +18834,7 @@ form .has-error .help-block {
     .form2 .input-group-select-2 {
       margin-right: 0;
       clear: both; } }
-/*.form .checkbox.checkbox--toogle input[type="checkbox"],
-.form .checkbox.checkbox--toogle input[type="radio"],
-.form .radiobox.checkbox--toogle input[type="checkbox"],
-.form .radiobox.checkbox--toogle input[type="radio"],
-.form2 .checkbox.checkbox--toogle input[type="checkbox"],
-.form2 .checkbox.checkbox--toogle input[type="radio"],
-.form2 .radiobox.checkbox--toogle input[type="checkbox"],
-.form2 .radiobox.checkbox--toogle input[type="radio"] {
-  display: none; }*/
+
 .form .checkbox.checkbox--toogle.checkbox--toogle--right,
 .form .radiobox.checkbox--toogle.checkbox--toogle--right,
 .form2 .checkbox.checkbox--toogle.checkbox--toogle--right,
@@ -18866,140 +18873,13 @@ form .has-error .help-block {
     position: absolute;
     top: -4px;
     width: 24px; }
-/*.form .checkbox.checkbox--toogle input[type="checkbox"]:checked + label::before,
-.form .checkbox.checkbox--toogle input[type="radio"]:checked + label::before,
-.form .radiobox.checkbox--toogle input[type="checkbox"]:checked + label::before,
-.form .radiobox.checkbox--toogle input[type="radio"]:checked + label::before,
-.form2 .checkbox.checkbox--toogle input[type="checkbox"]:checked + label::before,
-.form2 .checkbox.checkbox--toogle input[type="radio"]:checked + label::before,
-.form2 .radiobox.checkbox--toogle input[type="checkbox"]:checked + label::before,
-.form2 .radiobox.checkbox--toogle input[type="radio"]:checked + label::before {
-  background: #4CD964; }*/
-/*.form .checkbox.checkbox--toogle input[type="checkbox"]:checked + label::after,
-.form .checkbox.checkbox--toogle input[type="radio"]:checked + label::after,
-.form .radiobox.checkbox--toogle input[type="checkbox"]:checked + label::after,
-.form .radiobox.checkbox--toogle input[type="radio"]:checked + label::after,
-.form2 .checkbox.checkbox--toogle input[type="checkbox"]:checked + label::after,
-.form2 .checkbox.checkbox--toogle input[type="radio"]:checked + label::after,
-.form2 .radiobox.checkbox--toogle input[type="checkbox"]:checked + label::after,
-.form2 .radiobox.checkbox--toogle input[type="radio"]:checked + label::after {
-  left: 24px; }*/
 .form .checkbox.checkbox--check label,
 .form .radiobox.checkbox--check label,
 .form2 .checkbox.checkbox--check label,
 .form2 .radiobox.checkbox--check label {
   position: relative;
   cursor: pointer; }
-/*.form .checkbox.checkbox--check input[type="checkbox"],
-.form .checkbox.checkbox--check input[type="radio"],
-.form .radiobox.checkbox--check input[type="checkbox"],
-.form .radiobox.checkbox--check input[type="radio"],
-.form2 .checkbox.checkbox--check input[type="checkbox"],
-.form2 .checkbox.checkbox--check input[type="radio"],
-.form2 .radiobox.checkbox--check input[type="checkbox"],
-.form2 .radiobox.checkbox--check input[type="radio"] {
-  position: absolute;
-  right: 9000px;
-  display: none; }
-.form .checkbox.checkbox--check input[type="checkbox"] + label::before,
-.form .checkbox.checkbox--check input[type="radio"] + label::before,
-.form .radiobox.checkbox--check input[type="checkbox"] + label::before,
-.form .radiobox.checkbox--check input[type="radio"] + label::before,
-.form2 .checkbox.checkbox--check input[type="checkbox"] + label::before,
-.form2 .checkbox.checkbox--check input[type="radio"] + label::before,
-.form2 .radiobox.checkbox--check input[type="checkbox"] + label::before,
-.form2 .radiobox.checkbox--check input[type="radio"] + label::before {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  width: 1em;
-  display: inline-block;
-  margin-right: 10px; }
-.form .checkbox.checkbox--check input[type="checkbox"]:checked + label::before,
-.form .checkbox.checkbox--check input[type="radio"]:checked + label::before,
-.form .radiobox.checkbox--check input[type="checkbox"]:checked + label::before,
-.form .radiobox.checkbox--check input[type="radio"]:checked + label::before,
-.form2 .checkbox.checkbox--check input[type="checkbox"]:checked + label::before,
-.form2 .checkbox.checkbox--check input[type="radio"]:checked + label::before,
-.form2 .radiobox.checkbox--check input[type="checkbox"]:checked + label::before,
-.form2 .radiobox.checkbox--check input[type="radio"]:checked + label::before {
-  content: "\f058"; }
-.form .checkbox.checkbox--check input[type="checkbox"]:disabled + label::before,
-.form .checkbox.checkbox--check input[type="radio"]:disabled + label::before,
-.form .radiobox.checkbox--check input[type="checkbox"]:disabled + label::before,
-.form .radiobox.checkbox--check input[type="radio"]:disabled + label::before,
-.form2 .checkbox.checkbox--check input[type="checkbox"]:disabled + label::before,
-.form2 .checkbox.checkbox--check input[type="radio"]:disabled + label::before,
-.form2 .radiobox.checkbox--check input[type="checkbox"]:disabled + label::before,
-.form2 .radiobox.checkbox--check input[type="radio"]:disabled + label::before {
-  content: "\f0c8"; }
-.form .checkbox.checkbox--check.checkbox--check-square label,
-.form .radiobox.checkbox--check.checkbox--check-square label,
-.form2 .checkbox.checkbox--check.checkbox--check-square label,
-.form2 .radiobox.checkbox--check.checkbox--check-square label {
-  position: relative; }
-  .form .checkbox.checkbox--check.checkbox--check-square label:before,
-  .form .radiobox.checkbox--check.checkbox--check-square label:before,
-  .form2 .checkbox.checkbox--check.checkbox--check-square label:before,
-  .form2 .radiobox.checkbox--check.checkbox--check-square label:before {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    margin: 0 !important; }
-.form .checkbox.checkbox--check.checkbox--check-square input[type="checkbox"] + label::before,
-.form .radiobox.checkbox--check.checkbox--check-square input[type="checkbox"] + label::before,
-.form2 .checkbox.checkbox--check.checkbox--check-square input[type="checkbox"] + label::before,
-.form2 .radiobox.checkbox--check.checkbox--check-square input[type="checkbox"] + label::before {
-  content: "\f0c8"; }
-.form .checkbox.checkbox--check.checkbox--check-square input[type="checkbox"]:checked + label::before,
-.form .radiobox.checkbox--check.checkbox--check-square input[type="checkbox"]:checked + label::before,
-.form2 .checkbox.checkbox--check.checkbox--check-square input[type="checkbox"]:checked + label::before,
-.form2 .radiobox.checkbox--check.checkbox--check-square input[type="checkbox"]:checked + label::before {
-  font-weight: bold; }
-.form .checkbox.checkbox--check.checkbox--check-square.checkbox--check-square-right label:before,
-.form .radiobox.checkbox--check.checkbox--check-square.checkbox--check-square-right label:before,
-.form2 .checkbox.checkbox--check.checkbox--check-square.checkbox--check-square-right label:before,
-.form2 .radiobox.checkbox--check.checkbox--check-square.checkbox--check-square-right label:before {
-  left: auto;
-  right: 0; }
-.form .checkbox.radio--check label,
-.form .radiobox.radio--check label,
-.form2 .checkbox.radio--check label,
-.form2 .radiobox.radio--check label {
-  position: relative;
-  cursor: pointer;
-  width: 100%;
-  padding: 10px 30px 10px 0; }
-.form .checkbox.radio--check input[type="checkbox"],
-.form .checkbox.radio--check input[type="radio"],
-.form .radiobox.radio--check input[type="checkbox"],
-.form .radiobox.radio--check input[type="radio"],
-.form2 .checkbox.radio--check input[type="checkbox"],
-.form2 .checkbox.radio--check input[type="radio"],
-.form2 .radiobox.radio--check input[type="checkbox"],
-.form2 .radiobox.radio--check input[type="radio"] {
-  position: absolute;
-  right: 9000px;
-  display: none; }
-.form .checkbox.radio--check input[type="radio"] + label::before,
-.form .radiobox.radio--check input[type="radio"] + label::before,
-.form2 .checkbox.radio--check input[type="radio"] + label::before,
-.form2 .radiobox.radio--check input[type="radio"] + label::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f111";
-  position: absolute;
-  top: 13px;
-  right: 10px;
-  width: 13px;
-  height: 13px;
-  line-height: 12px;
-  border-radius: 50%; }*/
+
 .form.form--contacts .input-group, .form.form--newsletter .input-group, .form.form--stores .input-group, .form.form--dashboard .input-group,
 .form2.form--contacts .input-group,
 .form2.form--newsletter .input-group,
@@ -19216,315 +19096,7 @@ form .has-error .help-block {
   position: relative;
   padding: 0 0 0 25px;
   text-transform: none; }
-/*.form.form--contacts .checkbox input[type="checkbox"] + label::before,
-.form.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form.form--contacts .checkbox input[type="radio"] + label::before,
-.form.form--contacts .checkbox input[type="radio"] + label::after,
-.form.form--contacts .radiobox input[type="checkbox"] + label::before,
-.form.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form.form--contacts .radiobox input[type="radio"] + label::before,
-.form.form--contacts .radiobox input[type="radio"] + label::after, .form.form--newsletter .checkbox input[type="checkbox"] + label::before,
-.form.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form.form--newsletter .checkbox input[type="radio"] + label::before,
-.form.form--newsletter .checkbox input[type="radio"] + label::after,
-.form.form--newsletter .radiobox input[type="checkbox"] + label::before,
-.form.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form.form--newsletter .radiobox input[type="radio"] + label::before,
-.form.form--newsletter .radiobox input[type="radio"] + label::after, .form.form--stores .checkbox input[type="checkbox"] + label::before,
-.form.form--stores .checkbox input[type="checkbox"] + label::after,
-.form.form--stores .checkbox input[type="radio"] + label::before,
-.form.form--stores .checkbox input[type="radio"] + label::after,
-.form.form--stores .radiobox input[type="checkbox"] + label::before,
-.form.form--stores .radiobox input[type="checkbox"] + label::after,
-.form.form--stores .radiobox input[type="radio"] + label::before,
-.form.form--stores .radiobox input[type="radio"] + label::after, .form.form--dashboard .checkbox input[type="checkbox"] + label::before,
-.form.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form.form--dashboard .checkbox input[type="radio"] + label::before,
-.form.form--dashboard .checkbox input[type="radio"] + label::after,
-.form.form--dashboard .radiobox input[type="checkbox"] + label::before,
-.form.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form.form--dashboard .radiobox input[type="radio"] + label::before,
-.form.form--dashboard .radiobox input[type="radio"] + label::after,
-.form2.form--contacts .checkbox input[type="checkbox"] + label::before,
-.form2.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form2.form--contacts .checkbox input[type="radio"] + label::before,
-.form2.form--contacts .checkbox input[type="radio"] + label::after,
-.form2.form--contacts .radiobox input[type="checkbox"] + label::before,
-.form2.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form2.form--contacts .radiobox input[type="radio"] + label::before,
-.form2.form--contacts .radiobox input[type="radio"] + label::after,
-.form2.form--newsletter .checkbox input[type="checkbox"] + label::before,
-.form2.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form2.form--newsletter .checkbox input[type="radio"] + label::before,
-.form2.form--newsletter .checkbox input[type="radio"] + label::after,
-.form2.form--newsletter .radiobox input[type="checkbox"] + label::before,
-.form2.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form2.form--newsletter .radiobox input[type="radio"] + label::before,
-.form2.form--newsletter .radiobox input[type="radio"] + label::after,
-.form2.form--stores .checkbox input[type="checkbox"] + label::before,
-.form2.form--stores .checkbox input[type="checkbox"] + label::after,
-.form2.form--stores .checkbox input[type="radio"] + label::before,
-.form2.form--stores .checkbox input[type="radio"] + label::after,
-.form2.form--stores .radiobox input[type="checkbox"] + label::before,
-.form2.form--stores .radiobox input[type="checkbox"] + label::after,
-.form2.form--stores .radiobox input[type="radio"] + label::before,
-.form2.form--stores .radiobox input[type="radio"] + label::after,
-.form2.form--dashboard .checkbox input[type="checkbox"] + label::before,
-.form2.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form2.form--dashboard .checkbox input[type="radio"] + label::before,
-.form2.form--dashboard .checkbox input[type="radio"] + label::after,
-.form2.form--dashboard .radiobox input[type="checkbox"] + label::before,
-.form2.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form2.form--dashboard .radiobox input[type="radio"] + label::before,
-.form2.form--dashboard .radiobox input[type="radio"] + label::after {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 0;
-  width: 15px;
-  height: 15px; }
-.form.form--contacts .checkbox input[type="radio"] + label::before,
-.form.form--contacts .checkbox input[type="radio"] + label::after,
-.form.form--contacts .radiobox input[type="radio"] + label::before,
-.form.form--contacts .radiobox input[type="radio"] + label::after, .form.form--newsletter .checkbox input[type="radio"] + label::before,
-.form.form--newsletter .checkbox input[type="radio"] + label::after,
-.form.form--newsletter .radiobox input[type="radio"] + label::before,
-.form.form--newsletter .radiobox input[type="radio"] + label::after, .form.form--stores .checkbox input[type="radio"] + label::before,
-.form.form--stores .checkbox input[type="radio"] + label::after,
-.form.form--stores .radiobox input[type="radio"] + label::before,
-.form.form--stores .radiobox input[type="radio"] + label::after, .form.form--dashboard .checkbox input[type="radio"] + label::before,
-.form.form--dashboard .checkbox input[type="radio"] + label::after,
-.form.form--dashboard .radiobox input[type="radio"] + label::before,
-.form.form--dashboard .radiobox input[type="radio"] + label::after,
-.form2.form--contacts .checkbox input[type="radio"] + label::before,
-.form2.form--contacts .checkbox input[type="radio"] + label::after,
-.form2.form--contacts .radiobox input[type="radio"] + label::before,
-.form2.form--contacts .radiobox input[type="radio"] + label::after,
-.form2.form--newsletter .checkbox input[type="radio"] + label::before,
-.form2.form--newsletter .checkbox input[type="radio"] + label::after,
-.form2.form--newsletter .radiobox input[type="radio"] + label::before,
-.form2.form--newsletter .radiobox input[type="radio"] + label::after,
-.form2.form--stores .checkbox input[type="radio"] + label::before,
-.form2.form--stores .checkbox input[type="radio"] + label::after,
-.form2.form--stores .radiobox input[type="radio"] + label::before,
-.form2.form--stores .radiobox input[type="radio"] + label::after,
-.form2.form--dashboard .checkbox input[type="radio"] + label::before,
-.form2.form--dashboard .checkbox input[type="radio"] + label::after,
-.form2.form--dashboard .radiobox input[type="radio"] + label::before,
-.form2.form--dashboard .radiobox input[type="radio"] + label::after {
-  border-radius: 50%; }
-.form.form--contacts .checkbox input[type="checkbox"] + label::before,
-.form.form--contacts .checkbox input[type="radio"] + label::before,
-.form.form--contacts .radiobox input[type="checkbox"] + label::before,
-.form.form--contacts .radiobox input[type="radio"] + label::before, .form.form--newsletter .checkbox input[type="checkbox"] + label::before,
-.form.form--newsletter .checkbox input[type="radio"] + label::before,
-.form.form--newsletter .radiobox input[type="checkbox"] + label::before,
-.form.form--newsletter .radiobox input[type="radio"] + label::before, .form.form--stores .checkbox input[type="checkbox"] + label::before,
-.form.form--stores .checkbox input[type="radio"] + label::before,
-.form.form--stores .radiobox input[type="checkbox"] + label::before,
-.form.form--stores .radiobox input[type="radio"] + label::before, .form.form--dashboard .checkbox input[type="checkbox"] + label::before,
-.form.form--dashboard .checkbox input[type="radio"] + label::before,
-.form.form--dashboard .radiobox input[type="checkbox"] + label::before,
-.form.form--dashboard .radiobox input[type="radio"] + label::before,
-.form2.form--contacts .checkbox input[type="checkbox"] + label::before,
-.form2.form--contacts .checkbox input[type="radio"] + label::before,
-.form2.form--contacts .radiobox input[type="checkbox"] + label::before,
-.form2.form--contacts .radiobox input[type="radio"] + label::before,
-.form2.form--newsletter .checkbox input[type="checkbox"] + label::before,
-.form2.form--newsletter .checkbox input[type="radio"] + label::before,
-.form2.form--newsletter .radiobox input[type="checkbox"] + label::before,
-.form2.form--newsletter .radiobox input[type="radio"] + label::before,
-.form2.form--stores .checkbox input[type="checkbox"] + label::before,
-.form2.form--stores .checkbox input[type="radio"] + label::before,
-.form2.form--stores .radiobox input[type="checkbox"] + label::before,
-.form2.form--stores .radiobox input[type="radio"] + label::before,
-.form2.form--dashboard .checkbox input[type="checkbox"] + label::before,
-.form2.form--dashboard .checkbox input[type="radio"] + label::before,
-.form2.form--dashboard .radiobox input[type="checkbox"] + label::before,
-.form2.form--dashboard .radiobox input[type="radio"] + label::before {
-  border: 1px solid #000; }
-.form.form--contacts .checkbox input[type="checkbox"]:checked + label::before,
-.form.form--contacts .checkbox input[type="radio"]:checked + label::before,
-.form.form--contacts .radiobox input[type="checkbox"]:checked + label::before,
-.form.form--contacts .radiobox input[type="radio"]:checked + label::before, .form.form--newsletter .checkbox input[type="checkbox"]:checked + label::before,
-.form.form--newsletter .checkbox input[type="radio"]:checked + label::before,
-.form.form--newsletter .radiobox input[type="checkbox"]:checked + label::before,
-.form.form--newsletter .radiobox input[type="radio"]:checked + label::before, .form.form--stores .checkbox input[type="checkbox"]:checked + label::before,
-.form.form--stores .checkbox input[type="radio"]:checked + label::before,
-.form.form--stores .radiobox input[type="checkbox"]:checked + label::before,
-.form.form--stores .radiobox input[type="radio"]:checked + label::before, .form.form--dashboard .checkbox input[type="checkbox"]:checked + label::before,
-.form.form--dashboard .checkbox input[type="radio"]:checked + label::before,
-.form.form--dashboard .radiobox input[type="checkbox"]:checked + label::before,
-.form.form--dashboard .radiobox input[type="radio"]:checked + label::before,
-.form2.form--contacts .checkbox input[type="checkbox"]:checked + label::before,
-.form2.form--contacts .checkbox input[type="radio"]:checked + label::before,
-.form2.form--contacts .radiobox input[type="checkbox"]:checked + label::before,
-.form2.form--contacts .radiobox input[type="radio"]:checked + label::before,
-.form2.form--newsletter .checkbox input[type="checkbox"]:checked + label::before,
-.form2.form--newsletter .checkbox input[type="radio"]:checked + label::before,
-.form2.form--newsletter .radiobox input[type="checkbox"]:checked + label::before,
-.form2.form--newsletter .radiobox input[type="radio"]:checked + label::before,
-.form2.form--stores .checkbox input[type="checkbox"]:checked + label::before,
-.form2.form--stores .checkbox input[type="radio"]:checked + label::before,
-.form2.form--stores .radiobox input[type="checkbox"]:checked + label::before,
-.form2.form--stores .radiobox input[type="radio"]:checked + label::before,
-.form2.form--dashboard .checkbox input[type="checkbox"]:checked + label::before,
-.form2.form--dashboard .checkbox input[type="radio"]:checked + label::before,
-.form2.form--dashboard .radiobox input[type="checkbox"]:checked + label::before,
-.form2.form--dashboard .radiobox input[type="radio"]:checked + label::before {
-  transform: scale(0.9); }
-.form.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form.form--contacts .checkbox input[type="radio"] + label::after,
-.form.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form.form--contacts .radiobox input[type="radio"] + label::after, .form.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form.form--newsletter .checkbox input[type="radio"] + label::after,
-.form.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form.form--newsletter .radiobox input[type="radio"] + label::after, .form.form--stores .checkbox input[type="checkbox"] + label::after,
-.form.form--stores .checkbox input[type="radio"] + label::after,
-.form.form--stores .radiobox input[type="checkbox"] + label::after,
-.form.form--stores .radiobox input[type="radio"] + label::after, .form.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form.form--dashboard .checkbox input[type="radio"] + label::after,
-.form.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form.form--dashboard .radiobox input[type="radio"] + label::after,
-.form2.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form2.form--contacts .checkbox input[type="radio"] + label::after,
-.form2.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form2.form--contacts .radiobox input[type="radio"] + label::after,
-.form2.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form2.form--newsletter .checkbox input[type="radio"] + label::after,
-.form2.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form2.form--newsletter .radiobox input[type="radio"] + label::after,
-.form2.form--stores .checkbox input[type="checkbox"] + label::after,
-.form2.form--stores .checkbox input[type="radio"] + label::after,
-.form2.form--stores .radiobox input[type="checkbox"] + label::after,
-.form2.form--stores .radiobox input[type="radio"] + label::after,
-.form2.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form2.form--dashboard .checkbox input[type="radio"] + label::after,
-.form2.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form2.form--dashboard .radiobox input[type="radio"] + label::after {
-  background-color: #fff;
-  border: 5px solid #212529;
-  transform: scale(0); }
-.form.form--contacts .checkbox input[type="checkbox"]:checked + label::after,
-.form.form--contacts .checkbox input[type="radio"]:checked + label::after,
-.form.form--contacts .radiobox input[type="checkbox"]:checked + label::after,
-.form.form--contacts .radiobox input[type="radio"]:checked + label::after, .form.form--newsletter .checkbox input[type="checkbox"]:checked + label::after,
-.form.form--newsletter .checkbox input[type="radio"]:checked + label::after,
-.form.form--newsletter .radiobox input[type="checkbox"]:checked + label::after,
-.form.form--newsletter .radiobox input[type="radio"]:checked + label::after, .form.form--stores .checkbox input[type="checkbox"]:checked + label::after,
-.form.form--stores .checkbox input[type="radio"]:checked + label::after,
-.form.form--stores .radiobox input[type="checkbox"]:checked + label::after,
-.form.form--stores .radiobox input[type="radio"]:checked + label::after, .form.form--dashboard .checkbox input[type="checkbox"]:checked + label::after,
-.form.form--dashboard .checkbox input[type="radio"]:checked + label::after,
-.form.form--dashboard .radiobox input[type="checkbox"]:checked + label::after,
-.form.form--dashboard .radiobox input[type="radio"]:checked + label::after,
-.form2.form--contacts .checkbox input[type="checkbox"]:checked + label::after,
-.form2.form--contacts .checkbox input[type="radio"]:checked + label::after,
-.form2.form--contacts .radiobox input[type="checkbox"]:checked + label::after,
-.form2.form--contacts .radiobox input[type="radio"]:checked + label::after,
-.form2.form--newsletter .checkbox input[type="checkbox"]:checked + label::after,
-.form2.form--newsletter .checkbox input[type="radio"]:checked + label::after,
-.form2.form--newsletter .radiobox input[type="checkbox"]:checked + label::after,
-.form2.form--newsletter .radiobox input[type="radio"]:checked + label::after,
-.form2.form--stores .checkbox input[type="checkbox"]:checked + label::after,
-.form2.form--stores .checkbox input[type="radio"]:checked + label::after,
-.form2.form--stores .radiobox input[type="checkbox"]:checked + label::after,
-.form2.form--stores .radiobox input[type="radio"]:checked + label::after,
-.form2.form--dashboard .checkbox input[type="checkbox"]:checked + label::after,
-.form2.form--dashboard .checkbox input[type="radio"]:checked + label::after,
-.form2.form--dashboard .radiobox input[type="checkbox"]:checked + label::after,
-.form2.form--dashboard .radiobox input[type="radio"]:checked + label::after {
-  transform: scale(1); }
-.form.form--contacts .checkbox.small label,
-.form.form--contacts .radiobox.small label, .form.form--newsletter .checkbox.small label,
-.form.form--newsletter .radiobox.small label, .form.form--stores .checkbox.small label,
-.form.form--stores .radiobox.small label, .form.form--dashboard .checkbox.small label,
-.form.form--dashboard .radiobox.small label,
-.form2.form--contacts .checkbox.small label,
-.form2.form--contacts .radiobox.small label,
-.form2.form--newsletter .checkbox.small label,
-.form2.form--newsletter .radiobox.small label,
-.form2.form--stores .checkbox.small label,
-.form2.form--stores .radiobox.small label,
-.form2.form--dashboard .checkbox.small label,
-.form2.form--dashboard .radiobox.small label {
-  text-transform: none; }
-  .form.form--contacts .checkbox.small label p,
-  .form.form--contacts .radiobox.small label p, .form.form--newsletter .checkbox.small label p,
-  .form.form--newsletter .radiobox.small label p, .form.form--stores .checkbox.small label p,
-  .form.form--stores .radiobox.small label p, .form.form--dashboard .checkbox.small label p,
-  .form.form--dashboard .radiobox.small label p,
-  .form2.form--contacts .checkbox.small label p,
-  .form2.form--contacts .radiobox.small label p,
-  .form2.form--newsletter .checkbox.small label p,
-  .form2.form--newsletter .radiobox.small label p,
-  .form2.form--stores .checkbox.small label p,
-  .form2.form--stores .radiobox.small label p,
-  .form2.form--dashboard .checkbox.small label p,
-  .form2.form--dashboard .radiobox.small label p {
-    line-height: inherit; }
-.form.form--contacts .checkbox.small input[type="checkbox"] + label::before,
-.form.form--contacts .checkbox.small input[type="checkbox"] + label::after,
-.form.form--contacts .checkbox.small input[type="radio"] + label::before,
-.form.form--contacts .checkbox.small input[type="radio"] + label::after,
-.form.form--contacts .radiobox.small input[type="checkbox"] + label::before,
-.form.form--contacts .radiobox.small input[type="checkbox"] + label::after,
-.form.form--contacts .radiobox.small input[type="radio"] + label::before,
-.form.form--contacts .radiobox.small input[type="radio"] + label::after, .form.form--newsletter .checkbox.small input[type="checkbox"] + label::before,
-.form.form--newsletter .checkbox.small input[type="checkbox"] + label::after,
-.form.form--newsletter .checkbox.small input[type="radio"] + label::before,
-.form.form--newsletter .checkbox.small input[type="radio"] + label::after,
-.form.form--newsletter .radiobox.small input[type="checkbox"] + label::before,
-.form.form--newsletter .radiobox.small input[type="checkbox"] + label::after,
-.form.form--newsletter .radiobox.small input[type="radio"] + label::before,
-.form.form--newsletter .radiobox.small input[type="radio"] + label::after, .form.form--stores .checkbox.small input[type="checkbox"] + label::before,
-.form.form--stores .checkbox.small input[type="checkbox"] + label::after,
-.form.form--stores .checkbox.small input[type="radio"] + label::before,
-.form.form--stores .checkbox.small input[type="radio"] + label::after,
-.form.form--stores .radiobox.small input[type="checkbox"] + label::before,
-.form.form--stores .radiobox.small input[type="checkbox"] + label::after,
-.form.form--stores .radiobox.small input[type="radio"] + label::before,
-.form.form--stores .radiobox.small input[type="radio"] + label::after, .form.form--dashboard .checkbox.small input[type="checkbox"] + label::before,
-.form.form--dashboard .checkbox.small input[type="checkbox"] + label::after,
-.form.form--dashboard .checkbox.small input[type="radio"] + label::before,
-.form.form--dashboard .checkbox.small input[type="radio"] + label::after,
-.form.form--dashboard .radiobox.small input[type="checkbox"] + label::before,
-.form.form--dashboard .radiobox.small input[type="checkbox"] + label::after,
-.form.form--dashboard .radiobox.small input[type="radio"] + label::before,
-.form.form--dashboard .radiobox.small input[type="radio"] + label::after,
-.form2.form--contacts .checkbox.small input[type="checkbox"] + label::before,
-.form2.form--contacts .checkbox.small input[type="checkbox"] + label::after,
-.form2.form--contacts .checkbox.small input[type="radio"] + label::before,
-.form2.form--contacts .checkbox.small input[type="radio"] + label::after,
-.form2.form--contacts .radiobox.small input[type="checkbox"] + label::before,
-.form2.form--contacts .radiobox.small input[type="checkbox"] + label::after,
-.form2.form--contacts .radiobox.small input[type="radio"] + label::before,
-.form2.form--contacts .radiobox.small input[type="radio"] + label::after,
-.form2.form--newsletter .checkbox.small input[type="checkbox"] + label::before,
-.form2.form--newsletter .checkbox.small input[type="checkbox"] + label::after,
-.form2.form--newsletter .checkbox.small input[type="radio"] + label::before,
-.form2.form--newsletter .checkbox.small input[type="radio"] + label::after,
-.form2.form--newsletter .radiobox.small input[type="checkbox"] + label::before,
-.form2.form--newsletter .radiobox.small input[type="checkbox"] + label::after,
-.form2.form--newsletter .radiobox.small input[type="radio"] + label::before,
-.form2.form--newsletter .radiobox.small input[type="radio"] + label::after,
-.form2.form--stores .checkbox.small input[type="checkbox"] + label::before,
-.form2.form--stores .checkbox.small input[type="checkbox"] + label::after,
-.form2.form--stores .checkbox.small input[type="radio"] + label::before,
-.form2.form--stores .checkbox.small input[type="radio"] + label::after,
-.form2.form--stores .radiobox.small input[type="checkbox"] + label::before,
-.form2.form--stores .radiobox.small input[type="checkbox"] + label::after,
-.form2.form--stores .radiobox.small input[type="radio"] + label::before,
-.form2.form--stores .radiobox.small input[type="radio"] + label::after,
-.form2.form--dashboard .checkbox.small input[type="checkbox"] + label::before,
-.form2.form--dashboard .checkbox.small input[type="checkbox"] + label::after,
-.form2.form--dashboard .checkbox.small input[type="radio"] + label::before,
-.form2.form--dashboard .checkbox.small input[type="radio"] + label::after,
-.form2.form--dashboard .radiobox.small input[type="checkbox"] + label::before,
-.form2.form--dashboard .radiobox.small input[type="checkbox"] + label::after,
-.form2.form--dashboard .radiobox.small input[type="radio"] + label::before,
-.form2.form--dashboard .radiobox.small input[type="radio"] + label::after {
-  top: 1px; }*/
+
 .form .select-wrapper,
 .form2 .select-wrapper {
   z-index: 3;
@@ -19740,35 +19312,6 @@ fieldset.-input-field .select-wrapper {
 .animation-transition-07, .menuMobile, .menuMobile .menuMobileSubMenu {
   transition: all 0.7s cubic-bezier(0, 0.94, 0.13, 1.01); }
 
-/*.animation-transition-1, .form.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form.form--contacts .checkbox input[type="radio"] + label::after,
-.form.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form.form--contacts .radiobox input[type="radio"] + label::after, .form.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form.form--newsletter .checkbox input[type="radio"] + label::after,
-.form.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form.form--newsletter .radiobox input[type="radio"] + label::after, .form.form--stores .checkbox input[type="checkbox"] + label::after,
-.form.form--stores .checkbox input[type="radio"] + label::after,
-.form.form--stores .radiobox input[type="checkbox"] + label::after,
-.form.form--stores .radiobox input[type="radio"] + label::after, .form.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form.form--dashboard .checkbox input[type="radio"] + label::after,
-.form.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form.form--dashboard .radiobox input[type="radio"] + label::after,
-.form2.form--contacts .checkbox input[type="checkbox"] + label::after,
-.form2.form--contacts .checkbox input[type="radio"] + label::after,
-.form2.form--contacts .radiobox input[type="checkbox"] + label::after,
-.form2.form--contacts .radiobox input[type="radio"] + label::after,
-.form2.form--newsletter .checkbox input[type="checkbox"] + label::after,
-.form2.form--newsletter .checkbox input[type="radio"] + label::after,
-.form2.form--newsletter .radiobox input[type="checkbox"] + label::after,
-.form2.form--newsletter .radiobox input[type="radio"] + label::after,
-.form2.form--stores .checkbox input[type="checkbox"] + label::after,
-.form2.form--stores .checkbox input[type="radio"] + label::after,
-.form2.form--stores .radiobox input[type="checkbox"] + label::after,
-.form2.form--stores .radiobox input[type="radio"] + label::after,
-.form2.form--dashboard .checkbox input[type="checkbox"] + label::after,
-.form2.form--dashboard .checkbox input[type="radio"] + label::after,
-.form2.form--dashboard .radiobox input[type="checkbox"] + label::after,
-.form2.form--dashboard .radiobox input[type="radio"] + label::after, .container.conteiner_filters .list li a:before, .nav .nav_title, .nav .nav_search, .menuFull .closeMenuFull,*/
 .menuFull .closeContacts,
 .menuFull .closeNewsletter,
 .menuFull .closeLegal,
@@ -23129,12 +22672,7 @@ input[type=submit]:hover {
     
         <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
             <span class="edgtf-social-icon-widget fa fa-pinterest    "></span>        </a>
-      <!--<div class="widget edgtf-separator-widget">
-        <div class="edgtf-separator-holder clearfix  edgtf-separator-center edgtf-separator-normal">
-        <div class="edgtf-separator" style="border-color: #ffffff;border-style: solid;width: 1px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px"></div>
-      </div>
-    </div>-->
-    
+
         <a class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="https://www.tomasella.it/area-riservata" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
           <span class="edgtf-icon-text" style="font-size: 11px">AREA RISERVATA</span>&nbsp&nbsp
           <span class="edgtf-icon-widget fa fa-lock    "></span>&nbsp
@@ -23178,19 +22716,6 @@ input[type=submit]:hover {
             </ul>
         </div>
 
-        <!--<div class="col-3 align-right colDX">
-            <ul class="row menu">
-                
-                
-                <li class="menu-item">
-                    <div class="header__hamburger openMenuFull">
-                        <span class="header__hamburger__1"></span>
-                        <span class="header__hamburger__2"></span>
-                        <span class="header__hamburger__3"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>-->
     </div>
 
 
@@ -23551,32 +23076,6 @@ input[type=submit]:hover {
                                                     </li>
                                                 </ul>
 
-                    
-                                            <!--<ul class="col-2 offset-1">
-                                                                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="360">
-                                    <a href="en/bedroom.html">COMPLEMENTI</a>
-                                    
-                                </li>
-
-
-                            
-                                                                                                        ass="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="390">
-                                    <a href="en/living-room.html">Boiserie</a>
-                                    
-                                </li>
-                                                                                             
-                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="420">
-                                    <a href="javascript: void(0);">Homes</a>
-                                    <ul class="menu-submenu-item-single-list">
-                                                                                    <li>
-                                                <a href="en/stories/penthouse-in-the-city.html">Penthouse in the city</a>
-                                            </li>
-                                                                                    <li>
-                                                <a href="en/stories/loft-in-the-hills.html">Loft in the hills</a>
-                                            </li>
-                                    </ul>
-                                </li>
-                                                    </ul>-->
                                     </li>
             </ul>
         </li>
@@ -23716,7 +23215,7 @@ input[type=submit]:hover {
     /* display: none; */
     transform: translateX(100%);
     position: relative;
-    top: -38rem;
+    top: -70rem;
     margin-left: 2rem;
   }
   .items li {
@@ -23798,7 +23297,8 @@ input[type=submit]:hover {
 </script>
         
 
-    <div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+        <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
         <div id="page_content" data-scroll-container>
             
             
@@ -24098,7 +23598,8 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
           footer{
-              height: 35rem;
+              height: 28rem;
+              margin-top: 1px;
           }
           
       }

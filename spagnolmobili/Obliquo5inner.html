@@ -146,11 +146,16 @@
     top: 0;
 }
 
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
+    padding-bottom: 0px;
 }
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 11rem;
+      }
+  }
 #body > div:nth-child(11){
     gap: 10px;
     margin-left: 19%;
@@ -1615,7 +1620,7 @@ window.dataLayer = [{
 
     }
         }
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-height: 960px) and (max-height: 1100px) {
             footer{
                 height: 25rem;
             }

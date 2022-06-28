@@ -145,10 +145,10 @@
     top: 0;
 }
 
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
+    padding-bottom: 2px;
 }
 #body > div:nth-child(11){
     gap: 10px;
@@ -157,6 +157,11 @@
 #body > div.hidden-xs.column1{
     margin-left: 20%;
 }
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 11rem;
+      }
+  }
 @media (max-width: 1220px) {
     .header {
       padding-top: 15px;
@@ -1389,15 +1394,6 @@ window.dataLayer = [{
 
 <!-- Content -->
 <div class="nd-actual-body"  id="page-catalog" >
-        <!--<header class="nd-heading-page nd-heading-category nd-section-sm-fullscreen" style="background-image: url(./uploads/products/images/44/frontpage.jpg);margin-top: -80px;">
-        <hgroup class="heading-content">
-    
-        </hgroup>
-        <div class="heading-image hidden-xs">
-        </div>
-    </header>-->
-
-
 
 
         <section class="content_wrapper product_detail" data-scroll-section>
@@ -1610,7 +1606,7 @@ window.dataLayer = [{
 
     }
         }
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-height: 960px) and (max-height: 1100px) {
             footer{
                 height: 25rem;
             }

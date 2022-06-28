@@ -12,6 +12,7 @@
 
 
 <link type="text/css" href="./cssZal/build/boot.css"  rel="stylesheet" media="all"  />
+<link rel="stylesheet" href="./cssZal/build/main.css">
 
 <link type="text/css" href="./cssZal/build/main2.css"  rel="stylesheet" media="all"  />
 
@@ -155,11 +156,10 @@
 .header2{
     z-index: 50 !important;
 }
-    
-.header{
-    top: 50px !important;
-}
+
 .header.col-12{
+    position: fixed !important;
+    top: 50px;
     font-weight: bold;
 }
 .uk-scrollspy{
@@ -175,9 +175,17 @@ body > div.container-fluid.container-fluid-main > header.header2 > div.edgtf-pos
 #menu-div{
     margin-left: 7rem;
 }
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      .edgtf-position-right-inner2{
+        margin-left: 13rem;
+      }
+      #menu-div{
+        margin-left: 9rem;
+      }
+  }
 
 @media screen and (min-width: 2300px) {
-    .header{
+    .header.col-12{
         position: fixed !important;
         top: 50px !important;
     }
@@ -200,11 +208,15 @@ body > div.container-fluid.container-fluid-main > header.header2 > div.edgtf-pos
         display: none;
     }
 }
+@media screen and (min-width: 1280px) and (max-width: 1400px){
+.edgtf-position-right-inner2 {
+    margin-left: -12rem;
+}
 @media screen and (min-width: 320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .t-medium.t-regular{
     margin-top: 5rem;
   }
@@ -251,9 +263,9 @@ body > div.container-fluid.container-fluid-main > header.header2 > div.edgtf-pos
     .wrapperImg img{
         width: auto;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
@@ -961,7 +973,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       </script>
 
-<div style="margin-top: -100px;" class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+    <div class="uk-scrollspy" style="opacity: 1;" id="top">
+
     <div id="page_content" data-scroll-container>
             
             

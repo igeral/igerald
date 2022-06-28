@@ -146,10 +146,10 @@
     top: 0;
 }
 
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
+    padding-bottom: 3px;
 }
 #body > div:nth-child(11){
     gap: 10px;
@@ -158,6 +158,11 @@
 #body > div.hidden-xs.column1{
     margin-left: 20%;
 }
+@media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 11rem;
+      }
+  }
 @media screen and (max-width: 1600px) {
     #menu-div{
         margin-left: 7rem;
@@ -1627,12 +1632,7 @@ window.dataLayer = [{
 
     }
         }
-        @media screen and (min-width: 1500px) {
-            footer{
-                height: 25rem;
-            }
-            
-        }
+      
         @media screen and (min-width: 2160px){
             footer{
                 margin-top: 1px;

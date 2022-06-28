@@ -120,13 +120,20 @@
     top: 0.5rem !important; 
 
   }
-  .header{
+  .header.col-12{
+    position: fixed;
     top: 50px !important;
   }
 
   .uk-scrollspy{
     z-index: 0 !important;
   }
+  @media screen and (min-width: 1900px) and (max-width:2000px){
+      #menu-div{
+        margin-left: 8rem;
+      }
+  }
+
   @media screen and (min-width: 2300px) {
     
     #amadi-head0{
@@ -134,10 +141,10 @@
     }
     }
       @media screen and (min-width:320px) and (max-width: 500px){
-  .header{
-    position: fixed !important;
-    top: 50px !important;
-  }
+  .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
+    }
   .header2{
     position: fixed !important;
     top: 0 !important;
@@ -210,9 +217,9 @@
       padding-bottom: 2rem;
 
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       position: relative !important;
@@ -23803,6 +23810,12 @@ input[type=submit]:hover {
   .items, .columns{
       width: 100vw;
   }
+  @media screen and (min-width: 1280px) and (max-width:1400px){
+  .header-items2{
+    margin-top: 2rem !important;
+  }
+}
+}
 </style>
 <script type="text/javascript">
   document.querySelector(".hasDropDown").addEventListener("click", (e) => {
@@ -23844,7 +23857,7 @@ input[type=submit]:hover {
 
 
 
-    <div class="uk-scrollspy" uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500" id="top">
+    <div class="uk-scrollspy" style="opacity: 1;" id="top">
         <div id="page_content" data-scroll-container>
             
 
@@ -24337,41 +24350,7 @@ input[type=submit]:hover {
 
     </div>
 
-          <!--<div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/25/AXEL N1.jpg');margin-top: -80px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
-            <a href="./uploads/products/images/25/AXEL N1.jpg" data-fancybox="gallery">
-                <img height="500" src="./uploads/products/images/25/AXEL N1.jpg">
-            </a>
-        </div> 
-      </div>
 
-    
-
-
-        <div class="widgets_front_list" id="widgets_front_list">
-              <div class="widget_preview_item type_1 widget_preview_item_228" id="w_228">
-    <div class="column">
-    <div class="wrapperImg"><figure data-scroll data-scroll-speed="-.8">
-                <img src="./uploads/products/images/25/AXEL N2.jpg" srcset="./uploads/products/images/25/SYSTEM C2.jpg 2x">
-            </figure></div>
-</div>
-<div class="column" data-scroll data-scroll-speed="2">
-    <div class="wrapperImg"><figure data-scroll data-scroll-speed="-.8">
-                <img src="./uploads/products/images/25/AXEL N2.jpg" srcset="./uploads/products/images/25/SYSTEM C3.jpg 2x">
-            </figure></div>
-    <div class="text_container" >
-    
-     <h2 class="subtitle t-medium bebas">Armadio battente Alterna con modulo TV, cabina Windy, letto Icon Big e complementi Lucky</h2> 
-    <div class="text t-medium t-regular"><p>Il modulo porta TV &egrave; disponibile in varie soluzioni: con vano a giorno, con ante, con cassetti o con cassettoni. Nell&#39;immagine, il modulo porta TV con cassettoni, cassetto e vano a giorno.</p>
-
-<p>Il pannello centrale &egrave; dotato di semplice apertura che consente di accedere ad un capiente vano con funzionali ripiani e fori passacavi che permettono ai cavi di correre nel retro del pannello.</p></div>
-    
-    </div>
-</div>
-</div>              
-
-    </div>-->
 
           <div class="row row--1  row--responsive" style="
       background-image: url('./uploads/products/images/25/AXEL O1.jpg');margin-top: -80px;">
@@ -24650,9 +24629,8 @@ input[type=submit]:hover {
       }
       @media screen and (min-width: 1500px) {
           footer{
-              height: 25rem;
+              height: 28rem;
           }
-          
       }
       @media screen and (min-width: 2160px){
           footer{
@@ -24660,6 +24638,7 @@ input[type=submit]:hover {
           }
           
       }
+  
 </style>
 
 <footer class="footer" id="footer" data-scroll-section>

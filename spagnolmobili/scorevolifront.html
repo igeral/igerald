@@ -201,16 +201,20 @@
     top: 0;
 }
 
-.header{
+.header.col-12{
     position: fixed;
     top: 50px !important;
-    z-index: 7;
 }    
 #amadi-head0{
     margin-top: 5rem !important;
 }
 .uk-scrollspy{
   margin-top: 0 !important;
+}
+@media screen and (min-width: 1280px) and (max-width:1400px) {
+  .header-items2{
+    margin-top: 0.5rem !important;
+  }
 }
 @media screen and (max-width: 1600px) {
     #menu-div{
@@ -225,9 +229,9 @@
       margin-top: 12rem !important;
       padding-bottom: 2rem;
     }
-    .header{
-      position: fixed !important;
-      top: 50px;
+     .header.col-12{
+        position: fixed !important;
+        top: 50px !important;
     }
     .items{
       margin-top: 2rem;
