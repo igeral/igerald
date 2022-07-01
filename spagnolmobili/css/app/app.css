@@ -41,10 +41,7 @@
   src: url("fonts/Granville-Light.woff") format("woff"), url("fonts/Granville-Light.html") format("woff2"), url("fonts/Granville-Light.ttf") format("truetype"), url("fonts/Granville-Light.svg#OpenSans-Regular") format("svg"), url("fonts/Granville-Lightd41d.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal; }
-/*!
- * Font Awesome Free 5.1.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
+
 .fa, .form .checkbox.checkbox--check.checkbox--check-square label:before,
 .form .radiobox.checkbox--check.checkbox--check-square label:before,
 .form2 .checkbox.checkbox--check.checkbox--check-square label:before,

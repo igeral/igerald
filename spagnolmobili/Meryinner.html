@@ -54,8 +54,8 @@
 <link rel="stylesheet" href="css/app.css">
 
 
-<link rel="stylesheet" href="cssZal/build/boot.css">
-<link rel="stylesheet" href="cssZal/build/main.css">
+<link rel="stylesheet" href="cssSpa/build/boot.css">
+<link rel="stylesheet" href="cssSpa/build/main.css">
 
 
 
@@ -150,6 +150,7 @@
     position: fixed;
     top: 50px !important;
     padding-bottom: 4px;
+    z-index: 7;
 }
 #body > div:nth-child(11){
     gap: 10px;
@@ -668,7 +669,7 @@ window.dataLayer = [{
 
                                                             <ul id="submenu-1" class="menu-submenu-item-single-list">
                                                             <li>
-                                                                <a href="adecofront.html">Ardeco
+                                                                <a href="adecofront.html">Ardecó
                                                                 </a>
                                                             </li>
                                                             
@@ -719,13 +720,13 @@ window.dataLayer = [{
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="lettileginofront.html">letti legino
+                                                                <a href="lettileginofront.html">Letti legno
                                                                 </a>
                                                             </li>
 
                                                             <li>
                                                                 <a href="murofront.html">
-                                                                   Testiere a Muro 
+                                                                   Testiere a muro 
                                                                 </a>
                                                             </li>
 
@@ -736,34 +737,34 @@ window.dataLayer = [{
 
                                                 <li>
                                                     <a id="submenu-main" href="comodinefront.html">
-                                                        Comò e Comodini
+                                                        Comò e comodini
                                                     </a>
                                                 </li>
 
 
                                                 <li>
                                                     <a id="submenu-main" href="cabineamadio.html">
-                                                        Cabine e Armadio 
+                                                        Cabine e armadio  
                                                     </a>
                                                 </li>
 
 
                                                 <li>
                                                     <a id="submenu-main" href="chiesurescorrevoli01.html">
-                                                        Chiusure Scorrevoli
+                                                        Chiusure scorrevoli
                                                     </a>
                                                 </li>
 
                                                 <li>
                                                     <a id="submenu-main" href="scompansa.html">
-                                                        Armadi con Letti a Scompansa
+                                                        Armadi con letti a scomparsa
                                                     </a>
                                                 </li>
 
 
                                                 <!--<li>
                                                     <a id="submenu-main" href="murofront.html">
-                                                    Testiere a Muro
+                                                    Testiere a muro
                                                     </a>
                                                 </li>
 
@@ -853,7 +854,7 @@ window.dataLayer = [{
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="lettiimbotitikidsfront.html">letti legino
+                                                                <a href="lettiimbotitikidsfront.html">Letti legno
                                                                 </a>
                                                             </li>
 
@@ -864,29 +865,29 @@ window.dataLayer = [{
                                                 </li>
                                                                                             <li>
                                                     <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
-                                                        Letti a castello
+                                                        Letti sovrapposti e a castello
 
                                                         <ul id="submenu-100" class="menu-submenu-item-single-list">
                                                             <li>
-                                                                <a href="acastero001.html">letti castelo fly
+                                                                <a href="acastero001.html">Fly
                                                                 </a>
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="acastero002.html">letti castelo mix
+                                                                <a href="acastero002.html">Mix
                                                                 </a>
                                                             </li>
 
                                                         
 
                                                             <li>
-                                                                <a href="acastero004.html">letti castelo obliquo
+                                                                <a href="acastero004.html">14.5
                                                                 </a>
                                                             </li>
 
 
                                                             <li>
-                                                                <a href="acastero003.html">letti castelo slim
+                                                                <a href="acastero003.html">Slim
                                                                 </a>
                                                             </li>
 
@@ -903,7 +904,7 @@ window.dataLayer = [{
                                                 
                                                                                             <li>
                                                     <a id="submenu-main" href="balidancino.html">
-                                                        Letto Baldacchino
+                                                        Letto baldacchino
                                                     </a>
                                                 </li>
 
@@ -915,7 +916,7 @@ window.dataLayer = [{
                                                 </li>
                                                                                             <li>
                                                     <a id="submenu-main" href="comodinekidsfrontpage.html">
-                                                        Comò e Comodini
+                                                        Comò e comodini
                                                     </a>
                                                 </li>
                                                  </ul>
@@ -951,7 +952,7 @@ window.dataLayer = [{
                                                 </li>-->
                                                                                             <li>
                                                     <a id="submenu-main" href="elementimetallo.html">
-                                                        Elementi e metallo
+                                                        Elementi in metallo
                                                     </a>
                                                 </li>
                                                                                             <li>
@@ -961,12 +962,12 @@ window.dataLayer = [{
                                                 </li>
                                                                                             <li>
                                                     <a id="submenu-main" href="tavolikids.html">
-                                                        Tavoli e Tavolini
+                                                        Tavoli e tavolini
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="elementagornol.html">
-                                                        Element A Giornol
+                                                    <a href="elementagornol.html" id="submenu-main">
+                                                        pensili
                                                     </a>
                                                 </li>
                                                  </ul>
@@ -1042,7 +1043,7 @@ window.dataLayer = [{
             <li>
               <a href="#" class="submenu bold subdropdown">Armadi Battenti</a>
               <ul class="submenumenu battenti">
-                <li><a href="adecofront.html">Ardeco</a></li>
+                <li><a href="adecofront.html">Ardecó</a></li>
                 <li><a href="veganightfront.html">Vega night</a></li>
                 <li><a href="Globo.html">Globo</a></li>
               </ul>
@@ -1052,14 +1053,14 @@ window.dataLayer = [{
               <a href="#" class="submenu bold subdropdown2">Letti</a>
               <ul class="submenumenu letti">
                 <li><a href="lettiimbotitifront.html">Letti imbotiti</a></li>
-                <li><a href="lettileginofront.html">Letti legino</a></li>
-                <li><a href="murofront.html">Testiere a Muro</a></li>
+                <li><a href="lettileginofront.html">Letti legno</a></li>
+                <li><a href="murofront.html">Testiere a muro</a></li>
               </ul>
             </li>
-            <li><a href="comodinefront.html">Como e Comodini</a></li>
-            <li><a href="cabineamadio.html">Cabine e Armadio</a></li>
-            <li><a href="chiesurescorrevoli01.html">Chiusure Scorrevoli</a></li>
-            <li><a href="scompansa.html">Armadi con Letti a Scompansa</a></li>
+            <li><a href="comodinefront.html">Comò e comodini</a></li>
+            <li><a href="cabineamadio.html">Cabine e armadio </a></li>
+            <li><a href="chiesurescorrevoli01.html">Chiusure scorrevoli</a></li>
+            <li><a href="scompansa.html">Armadi con letti a scomparsa</a></li>
             <li><a href="servizio.html">Armadi di servizo</a></li>
           </ul>
         </div>
@@ -1079,32 +1080,32 @@ window.dataLayer = [{
               <a href="#" class="submenu bold subdropdown3">Letti</a>
               <ul class="submenumenu lkids">
                 <li><a href="lettiimbotitikidsfront.html">Letti imbotiti</a></li>
-                <li><a href="Lettilegnokids.html">Letti legino</a></li>
+                <li><a href="Lettilegnokids.html">Letti legno</a></li>
               </ul>
             </li>
             <li>
-              <a href="#" class="submenu bold subdropdown4">Letti a castello</a>
+              <a href="#" class="submenu bold subdropdown4">Letti sovrapposti e a castello</a>
               <ul class="submenumenu lacastello">
-                <li><a href="acastero001.html">Letti castello fly</a></li>
-                <li><a href="acastero002.html">Letti castello mix</a></li>
-                <li><a href="acastero004.html">Letti castello obliquo</a></li>
-                <li><a href="acastero003.html">Letti castello slim</a></li>
+                <li><a href="acastero001.html">Fly</a></li>
+                <li><a href="acastero002.html">Mix</a></li>
+                <li><a href="acastero004.html">14.5</a></li>
+                <li><a href="acastero003.html">Slim</a></li>
               </ul>
             </li>
             <li><a href="scritoi.html">Scrittoi</a></li>
-            <li><a href="balidancino.html">Letti Baldacchino</a></li>
+            <li><a href="balidancino.html">Letto baldacchino</a></li>
             <li><a href="lettovega.html">Letto Vega</a></li>
-            <li><a href="comodinekidsfrontpage.html">Como e Comodini</a></li>
+            <li><a href="comodinekidsfrontpage.html">Comò e comodini</a></li>
           </ul>
         </div>
         <div class="columns">
           <a href="#" class="heading">COMPLEMENTI</a>
           <ul class="menu-items">
             <li><a href="boiserie.html">Boiserie</a></li>
-            <li><a href="elementimetallo.html">Elementi e metallo</a></li>
+            <li><a href="elementimetallo.html">Elementi in metallo</a></li>
             <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-            <li><a href="tavolikids.html">Tavoli e Tavolini</a></li>
-            <li><a href="elementagornol.html">Element A Giornol</a></li>
+            <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
+            <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
           </ul>
         </div>
       </div>
@@ -1733,11 +1734,11 @@ window.dataLayer = [{
 <script type="text/javascript" src="js/app/tracka4f0.js?v=0"></script>
 
 
-<script src="jsZal/build/vendor.js"></script>
+<script src="jsSpa/build/vendor.js"></script>
 
 
 
-<script src="jsZal/build/app.js"></script>
+<script src="jsSpa/build/app.js"></script>
 
 
 

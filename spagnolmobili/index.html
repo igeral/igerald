@@ -65,11 +65,11 @@
 
 <!-- CSS -->
 
-<link type="text/css" href="./cssZal/build/boot.css"  rel="stylesheet" media="all"  />
+<link type="text/css" href="./cssSpa/build/boot.css"  rel="stylesheet" media="all"  />
 
-<link type="text/css" href="./cssZal/build/main2.css"  rel="stylesheet" media="all"  />
+<link type="text/css" href="./cssSpa/build/main2.css"  rel="stylesheet" media="all"  />
 
-<link type="text/css" href="./cssZal/build/young2.css"  rel="stylesheet" media="all"  />
+<link type="text/css" href="./cssSpa/build/young2.css"  rel="stylesheet" media="all"  />
  
 
 
@@ -186,18 +186,51 @@
             #slideImg14{
                 margin-top: 7rem !important;
       }
-      body > div:nth-child(13) > div{
+      body > div:nth-child(13) > div, body > div:nth-child(8) > div{
                 flex-direction: column;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 830px){
-            body > div:nth-child(16) > div{
+            body > div:nth-child(16) > div, body > div:nth-child(8) > div{
                 flex-direction: column;
             }
             #slideImg20{
                 margin-top: 4rem !important;
             }
         }
+        #close{
+    position:  relative;
+    border: solid 3px black !important;
+    background: transparent;
+    cursor: pointer;
+    width: 9rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+#close::before, #close::after{
+    content: '';
+    position: absolute;
+    border: inherit;
+    transition: 0.5s ease;
+    height: 44px;
+    width: 84px;
+}
+#close::before{
+    left: -15px;
+    top: -15px;
+    border-width: 3px 0 0 3px;
+}
+#close::after{
+    right: -15px;
+    bottom: -15px;
+    border-width: 0 3px 3px 0;
+}
+#close:hover::before, #close:hover:after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
       </style>
     
     </head>
@@ -330,7 +363,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                                             <ul id="submenu-1" class="menu-submenu-item-single-list">
                                                             <li>
-                                                                <a href="adecofront.html">Ardeco
+                                                                <a href="adecofront.html">Ardecó
                                                                 </a>
                                                             </li>
                                                             
@@ -370,13 +403,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="lettileginofront.html">letti legino
+                                                                <a href="lettileginofront.html">Letti legno
                                                                 </a>
                                                             </li>
 
                                                             <li>
                                                                 <a href="murofront.html">
-                                                                   Testiere a Muro 
+                                                                   Testiere a muro 
                                                                 </a>
                                                             </li>
 
@@ -387,34 +420,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                                 <li>
                                                     <a id="submenu-main" href="comodinefront.html">
-                                                        Comò e Comodini
+                                                        Comò e comodini
                                                     </a>
                                                 </li>
 
 
                                                 <li>
                                                     <a id="submenu-main" href="cabineamadio.html">
-                                                        Cabine e Armadio 
+                                                        Cabine e armadio  
                                                     </a>
                                                 </li>
 
 
                                                 <li>
                                                     <a id="submenu-main" href="chiesurescorrevoli01.html">
-                                                        Chiusure Scorrevoli
+                                                        Chiusure scorrevoli
                                                     </a>
                                                 </li>
 
                                                 <li>
                                                     <a id="submenu-main" href="scompansa.html">
-                                                        Armadi con Letti a Scompansa
+                                                        Armadi con letti a scomparsa
                                                     </a>
                                                 </li>
 
 
                                                 <!--<li>
                                                     <a id="submenu-main" href="murofront.html">
-                                                    Testiere a Muro
+                                                    Testiere a muro
                                                     </a>
                                                 </li>
 
@@ -502,7 +535,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="Lettilegnokids.html">letti legino
+                                                                <a href="Lettilegnokids.html">Letti legno
                                                                 </a>
                                                             </li>
 
@@ -513,29 +546,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 </li>
                                                                                             <li>
                                                     <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
-                                                        Letti a castello
+                                                        Letti sovrapposti e a castello
 
                                                         <ul id="submenu-100" class="menu-submenu-item-single-list">
                                                             <li>
-                                                                <a href="acastero001.html">letti castelo fly
+                                                                <a href="acastero001.html">Fly
                                                                 </a>
                                                             </li>
                                                             
                                                             <li>
-                                                                <a href="acastero002.html">letti castelo mix
+                                                                <a href="acastero002.html">Mix
                                                                 </a>
                                                             </li>
 
                                                         
 
                                                             <li>
-                                                                <a href="acastero004.html">letti castelo obliquo
+                                                                <a href="acastero004.html">14.5
                                                                 </a>
                                                             </li>
 
 
                                                             <li>
-                                                                <a href="acastero003.html">letti castelo slim
+                                                                <a href="acastero003.html">Slim
                                                                 </a>
                                                             </li>
 
@@ -552,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 
                                                                                             <li>
                                                     <a id="submenu-main" href="balidancino.html">
-                                                        Letto Baldacchino
+                                                        Letto baldacchino
                                                     </a>
                                                 </li>
 
@@ -564,7 +597,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 </li>
                                                                                             <li>
                                                     <a id="submenu-main" href="comodinekidsfrontpage.html">
-                                                        Comò e Comodini
+                                                        Comò e comodini
                                                     </a>
                                                 </li>
                                                  </ul>
@@ -600,7 +633,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 </li>-->
                                                                                             <li>
                                                     <a id="submenu-main" href="elementimetallo.html">
-                                                        Elementi e metallo
+                                                        Elementi in metallo
                                                     </a>
                                                 </li>
                                                                                             <li>
@@ -610,12 +643,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                 </li>
                                                                                             <li>
                                                     <a id="submenu-main" href="tavolikids.html">
-                                                        Tavoli e Tavolini
+                                                        Tavoli e tavolini
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="elementagornol.html">
-                                                        Element A Giornol
+                                                    <a href="elementagornol.html" id="submenu-main">
+                                                        pensili
                                                     </a>
                                                 </li>
                                                  </ul>
@@ -660,7 +693,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li>
               <a href="#" class="submenu bold subdropdown">Armadi Battenti</a>
               <ul class="submenumenu battenti">
-                <li><a href="adecofront.html">Ardeco</a></li>
+                <li><a href="adecofront.html">Ardecó</a></li>
                 <li><a href="veganightfront.html">Vega night</a></li>
                 <li><a href="Globo.html">Globo</a></li>
               </ul>
@@ -670,14 +703,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="#" class="submenu bold subdropdown2">Letti</a>
               <ul class="submenumenu letti">
                 <li><a href="lettiimbotitifront.html">Letti imbotiti</a></li>
-                <li><a href="lettileginofront.html">Letti legino</a></li>
-                <li><a href="murofront.html">Testiere a Muro</a></li>
+                <li><a href="lettileginofront.html">Letti legno</a></li>
+                <li><a href="murofront.html">Testiere a muro</a></li>
               </ul>
             </li>
-            <li><a href="comodinefront.html">Como e Comodini</a></li>
-            <li><a href="cabineamadio.html">Cabine e Armadio</a></li>
-            <li><a href="chiesurescorrevoli01.html">Chiusure Scorrevoli</a></li>
-            <li><a href="scompansa.html">Armadi con Letti a Scompansa</a></li>
+            <li><a href="comodinefront.html">Comò e comodini</a></li>
+            <li><a href="cabineamadio.html">Cabine e armadio </a></li>
+            <li><a href="chiesurescorrevoli01.html">Chiusure scorrevoli</a></li>
+            <li><a href="scompansa.html">Armadi con letti a scomparsa</a></li>
             <li><a href="servizio.html">Armadi di servizo</a></li>
           </ul>
         </div>
@@ -697,32 +730,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <a href="#" class="submenu bold subdropdown3">Letti</a>
               <ul class="submenumenu lkids">
                 <li><a href="lettiimbotitikidsfront.html">Letti imbotiti</a></li>
-                <li><a href="Lettilegnokids.html">Letti legino</a></li>
+                <li><a href="Lettilegnokids.html">Letti legno</a></li>
               </ul>
             </li>
             <li>
-              <a href="#" class="submenu bold subdropdown4">Letti a castello</a>
+              <a href="#" class="submenu bold subdropdown4">Letti sovrapposti e a castello</a>
               <ul class="submenumenu lacastello">
-                <li><a href="acastero001.html">Letti castello fly</a></li>
-                <li><a href="acastero002.html">Letti castello mix</a></li>
-                <li><a href="acastero004.html">Letti castello obliquo</a></li>
-                <li><a href="acastero003.html">Letti castello slim</a></li>
+                <li><a href="acastero001.html">Fly</a></li>
+                <li><a href="acastero002.html">Mix</a></li>
+                <li><a href="acastero004.html">14.5</a></li>
+                <li><a href="acastero003.html">Slim</a></li>
               </ul>
             </li>
             <li><a href="scritoi.html">Scrittoi</a></li>
-            <li><a href="balidancino.html">Letti Baldacchino</a></li>
+            <li><a href="balidancino.html">Letto baldacchino</a></li>
             <li><a href="lettovega.html">Letto Vega</a></li>
-            <li><a href="comodinekidsfrontpage.html">Como e Comodini</a></li>
+            <li><a href="comodinekidsfrontpage.html">Comò e comodini</a></li>
           </ul>
         </div>
         <div class="columns">
           <a href="#" class="heading">COMPLEMENTI</a>
           <ul class="menu-items">
             <li><a href="boiserie.html">Boiserie</a></li>
-            <li><a href="elementimetallo.html">Elementi e metallo</a></li>
+            <li><a href="elementimetallo.html">Elementi in metallo</a></li>
             <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-            <li><a href="tavolikids.html">Tavoli e Tavolini</a></li>
-            <li><a href="elementagornol.html">Element A Giornol</a></li>
+            <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
+            <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
           </ul>
         </div>
       </div>
@@ -882,18 +915,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="row row--2">
         <div class="col-lg-8 offset-lg-2 col-12 offset-0 animated slideInUpSmallPre" data-animation="slideInUpSmall" data-delay="500">
-                            <!--<h4 class="paragraph-4"><strong>featured</strong></h4>
-                                        <h3 class="heading-1">Extending tables</h3>-->
+
                                         <p class="paragraph-2">SpagnolMobili presenta il nuovo catalogo Ardecò collection.</p>
-                                        <!--<a href="en/extending-tables-2.html" class="btn btn--second waves-effect waves-light">
-                                        SCOPRI</a>-->
-                                        <a  href="catalogh00.html" id="contact-btn" class="btn btn-lined1">SCOPRI<span class="span1"></span></a>
+
+                                        <a  href="catalogh00.html" id="contact-btn" class=""><button id="close">SCOPRI</button></a>
                     </div>
 
 
         <div id="flipbook" class="col-lg-8 offset-lg-2 col-12 offset-0 animated slideInUpSmallPre" data-animation="slideInUpSmall align-center" data-delay="700">
             <a id="mybook" href="javascript: void(0);"  class="noGallery" >
-            <!--<img id="mybookImg" src="uploads/sections/images/3/ardeco.jpg" />-->        
+            <!--<img id="mybookImg" src="uploads/sections/images/3/Ardecó.jpg" />-->        
             </a>
             </a>
         </div>
@@ -1241,11 +1272,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<script src="jsZal/build/vendor.js"></script>
+<script src="jsSpa/build/vendor.js"></script>
 
 
 
-<script src="jsZal/build/app.js"></script>
+<script src="jsSpa/build/app.js"></script>
 
 
 

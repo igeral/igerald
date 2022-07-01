@@ -12386,9 +12386,10 @@ a:hover .wrapperImg img {
 #amadi-head > div > div {
   margin-top: -3rem;
 }
+
 #body > div.header.isScroll.isScrollUp > ul > li > ul,
 #body > div.header.isScrollUp > ul > li {
-  z-index: 7;
+  z-index: 4;
 }
 .tools ul {
   padding: 0;
@@ -12486,28 +12487,28 @@ a:hover .wrapperImg img {
   color: #fff;
 }
 .tools ul li.stores a:before {
-  background-image: url("../../imgZal/icons/location.svg");
+  background-image: url("../../imgSpa/icons/location.svg");
 }
 .tools ul li.stores a:hover:before {
-  background-image: url("../../imgZal/icons/location-white.svg");
+  background-image: url("../../imgSpa/icons/location-white.svg");
 }
 .tools ul li.catalogue a:before {
-  background-image: url("../../imgZal/icons/download.svg");
+  background-image: url("../../imgSpa/icons/download.svg");
 }
 .tools ul li.catalogue a:hover:before {
-  background-image: url("../../imgZal/icons/download-white.svg");
+  background-image: url("../../imgSpa/icons/download-white.svg");
 }
 .tools ul li.contacts a:before {
-  background-image: url("../../imgZal/icons/contact.svg");
+  background-image: url("../../imgSpa/icons/contact.svg");
 }
 .tools ul li.contacts a:hover:before {
-  background-image: url("../../imgZal/icons/contact-white.svg");
+  background-image: url("../../imgSpa/icons/contact-white.svg");
 }
 .tools ul li.datasheet a:before {
-  background-image: url("../../imgZal/icons/technical.svg");
+  background-image: url("../../imgSpa/icons/technical.svg");
 }
 .tools ul li.datasheet a:hover:before {
-  background-image: url("../../imgZal/icons/technical-white.svg");
+  background-image: url("../../imgSpa/icons/technical-white.svg");
 }
 .c-scrollbar {
   z-index: 1000;
