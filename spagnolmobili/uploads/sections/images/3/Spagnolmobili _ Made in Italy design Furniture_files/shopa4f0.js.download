@@ -46,7 +46,7 @@ Shop = {
                     sidebarToggleHiddenleLabel.removeClass('display-none');
 
                     productsContainer.removeClass().addClass('col-sm-12');
-                    productContainers.removeClass('col-sm-4').addClass('col-sm-3');
+                    productContainers.removeClass('sec-4-sm').addClass('col-sm-3');
                     sidebar.css({left: '-15px', opacity: 100}).animate({left: '-100%', opacity: 0});
                     document.cookie = "showSidebar=false";
                 } else {
@@ -54,7 +54,7 @@ Shop = {
                     sidebarToggleHiddenleLabel.addClass('display-none');
 
                     productsContainer.addClass('col-sm-offset-3').addClass('col-sm-9').removeClass('col-sm-12');
-                    productContainers.addClass('col-sm-4').removeClass('col-sm-3');
+                    productContainers.addClass('sec-4-sm').removeClass('col-sm-3');
                     sidebar.removeClass('hidden').css({left: '-100%', opacity: 0}).animate({left: 0, opacity: 100});
                     document.cookie = "showSidebar=true";
                 }

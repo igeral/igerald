@@ -375,7 +375,7 @@ App = {
         //     return;
         // }
         // var elem = "[data-animation]:not(.justAnimate)";
-        var elem = ".animated:not(.justAnimate)";
+        var elem = ".hasEffect:not(.justAnimate)";
         $(elem).each( function(i){
             var item = $(this);
             // console.log(item);
@@ -441,8 +441,8 @@ App = {
     openFinishes: function(){
         doc.on( "click", ".openFinishes", function(){
             var qst = $(this);
-            // $(this).closest(".container").find(".isDesktopTablet .row").slideToggle();
-            qst.closest(".container").find(".isMobileTablet").slideToggle();
+            // $(this).closest(".container").find(".DesktopViewTablet .row").slideToggle();
+            qst.closest(".container").find(".mobileViewTablet").slideToggle();
             if( qst.hasClass('closest') ){
                 $(this).html($(this).attr('data-open'));
                 qst.removeClass('closest');
@@ -456,7 +456,7 @@ App = {
 
         doc.on( "click", ".row--16 .filters a", function(){
             var filter = $(this).attr('data-filter');
-            $(this).closest(".container").find(".isMobileTablet").slideDown();
+            $(this).closest(".container").find(".mobileViewTablet").slideDown();
             $('.row--16 .filters a').removeClass('active');
             $(this).addClass('active');
             $('.openFinishes').slideUp();
@@ -481,9 +481,9 @@ App = {
 
     openNav: function(){
         doc.on( "click", ".openNav", function(){
-            $(".nav").find(".animatedIsOpen").removeClass("animated justAnimate");
+            $(".nav").find(".hasEffectInView").removeClass("hasEffect justAnimate");
             setTimeout( function(){
-                $(".nav").find(".animatedIsOpen").addClass("animated");
+                $(".nav").find(".hasEffectInView").addClass("hasEffect");
 
                 $("body").addClass("navIsOpen");
 
@@ -496,7 +496,7 @@ App = {
 
     closeNav: function(){
         doc.on( "click", ".closeNav", function(){
-            $(".nav .animatedIsOpen").removeClass("slideLeftToRightSmall justAnimate").promise().done( function(){
+            $(".nav .hasEffectInView").removeClass("slideLeftToRightSmall justAnimate").promise().done( function(){
                 setTimeout( function () {
                     $("body").removeClass("navIsOpen")
                 }, 200);
@@ -515,7 +515,7 @@ App = {
 
             if( $(".isHomepage").length > 0 && $(".submenuIsOpen").length > 0 ){
                 header.removeClass("isWhite");
-            }else if( $(".isHomepage").length > 0 && header.hasClass("isScrollDown") ){
+            }else if( $(".isHomepage").length > 0 && header.hasClass("scrolledDown") ){
                 header.addClass("isWhite");
             }else{
                 if( $(".isHomepage").length > 0 ){
@@ -528,21 +528,21 @@ App = {
 
         if(
             scroll > position ||
-            ( header.hasClass("isScrollDown") && (recheck == 1 && scroll > 100) )
+            ( header.hasClass("scrolledDown") && (recheck == 1 && scroll > 100) )
         ){
             if( $(".header .menu-item.submenuIsOpen").length > 0 ){
                 $(".header .menu-item").removeClass("submenuIsOpen");
             }
-            subMenuProducts.addClass("isScrollDown").removeClass("isScrollUp");
-            // subMenuProducts.removeClass("isScrollUp");
-            header.addClass("isScrollDown").removeClass("isScrollUp");
-            // header.removeClass("isScrollUp");
+            subMenuProducts.addClass("scrolledDown").removeClass("scrolledUp");
+            // subMenuProducts.removeClass("scrolledUp");
+            header.addClass("scrolledDown").removeClass("scrolledUp");
+            // header.removeClass("scrolledUp");
 
         } else {
-            header.addClass("isScrollUp").removeClass("isScrollDown");
-            // header.removeClass("isScrollDown");
-            subMenuProducts.addClass("isScrollUp").removeClass("isScrollDown");
-            // subMenuProducts.removeClass("isScrollDown");
+            header.addClass("scrolledUp").removeClass("scrolledDown");
+            // header.removeClass("scrolledDown");
+            subMenuProducts.addClass("scrolledUp").removeClass("scrolledDown");
+            // subMenuProducts.removeClass("scrolledDown");
 
         }
 
@@ -593,7 +593,7 @@ App = {
                     qst.closest("li").toggleClass("submenuIsOpen");
                     menu.closest("li").toggleClass("submenuIsOpen");
                     $("header").removeClass("beforeFull");
-                    App.checkAnimationItem2Reverse("animatedIsOpen");
+                    App.checkAnimationItem2Reverse("hasEffectInView");
 
                 }else{
                     // console.log("3");
@@ -602,7 +602,7 @@ App = {
                     qst.closest("li").toggleClass("submenuIsOpen");
                     menu.closest("li").toggleClass("submenuIsOpen").promise().done(function () {
                         setTimeout(function () {
-                            App.checkAnimationItem2("animatedIsOpen");
+                            App.checkAnimationItem2("hasEffectInView");
                         }, 900);
                     });
                     $("header").removeClass("isWhite");
@@ -624,7 +624,7 @@ App = {
                 $(".menuFull").addClass("openBrown");
 
                 setTimeout( function(){
-                    App.checkAnimationItem2("animatedIsOpen", 1);
+                    App.checkAnimationItem2("hasEffectInView", 1);
                 }, 250);
 
                 $(".menuFull .header__hamburger").addClass("active");
@@ -649,7 +649,7 @@ App = {
                 $(".menuFull2").addClass("openBrown");
 
                 setTimeout( function(){
-                    App.checkAnimationItem2("animatedIsOpen", 1);
+                    App.checkAnimationItem2("hasEffectInView", 1);
                 }, 250);
 
                 $(".menuFull2 .header__hamburger").addClass("active");
@@ -673,7 +673,7 @@ App = {
                 $(".menuFull3").addClass("openBrown");
 
                 setTimeout( function(){
-                    App.checkAnimationItem2("animatedIsOpen", 1);
+                    App.checkAnimationItem2("hasEffectInView", 1);
                 }, 250);
 
                 $(".menuFull3 .header__hamburger").addClass("active");
@@ -689,7 +689,7 @@ App = {
     },
 
     toggleMenuMobile: function(){
-        doc.on( "click", ".openMenuMobile", function(){
+        doc.on( "click", ".openSideMenu", function(){
             if( $(".menuMobileSubMenu.menuMobileSubMenuIsOpen").length > 0 ){
                 $(".menuMobileSubMenu").removeClass("menuMobileSubMenuIsOpen");
             }
@@ -722,7 +722,7 @@ App = {
 
                         setTimeout( function(){
                             setTimeout( function(){
-                                App.checkAnimationItem2("animatedIsOpen", 1);
+                                App.checkAnimationItem2("hasEffectInView", 1);
                             }, 150);
 
                             $(".search .header__hamburger").addClass("active");
@@ -749,7 +749,7 @@ App = {
                 //     $(".search").removeClass("smenuearchIsOpen");
 
                     // setTimeout( function(){
-                        App.checkAnimationItem2Reverse("animatedIsOpen");
+                        App.checkAnimationItem2Reverse("hasEffectInView");
                     // }, 500);
 
                 // }, 300);

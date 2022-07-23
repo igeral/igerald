@@ -3,64 +3,40 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <script>
-        dataLayer = [{
-            'pageType': 'homepage',
-            'pageLang': 'en'
-        }];
+    
 
-    </script>
-
-            <!--f Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TCXV85L');
-        </script>
-        <!-- End Google Tag Manager -->
+            
+   
+       
     
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-<meta name="format-detection" content="telephone=no">
-<meta name="_token" content="RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4"/>
+
+
 
 <!-- Meta Tags -->
-<title>Spagnolmobili | Made in Italy design Furniture</title>
-<meta name="description" content="Spagnolmobili&#039;s mission is to increasingly become an absolute benchmark in the world of the Made in Italy Design Furniture, both for Living and Sleeping Areas."/>
+<title>Spagnolmobili Rivenitori</title>
+<meta name="description" content="Spagnolmobili"/>
 <meta name="keywords" content=""/>
-<meta name="author" content="Noonic"/>
-<meta name="copyright" content="Spagnolmobili"/>
 
-<meta name="application-name" content="Spagnolmobili"/>
-<link rel="canonical" href="en.html"/>
+    
 
-<!-- Meta Tags OG -->
-    <meta property="fb:app_id" content="487583761743674"/>
-<meta property="og:site_name" content="Spagnolmobili"/>
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="Spagnolmobili | Made in Italy design Furniture"/>
-<meta property="og:url" content="https://www.spagnolmobili.it/en"/>
 
-<meta property="og:description" content="Spagnolmobili&#039;s mission is to increasingly become an absolute benchmark in the world of the Made in Italy Design Furniture, both for Living and Sleeping Areas."/>
+
+
+<meta property="og:description" content="Spagnolmobili"/>
 
 <!-- for Twitter -->
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Spagnolmobili | Made in Italy design Furniture"/>
-<meta name="twitter:description" content="Spagnolmobili&#039;s mission is to increasingly become an absolute benchmark in the world of the Made in Italy Design Furniture, both for Living and Sleeping Areas."/>
+<meta name="twitter:description" content="Spagnolmobili"/>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
 
-<!-- Android / iOS -->
-<link rel="manifest" href="images/favicon/manifest.json" crossorigin="use-credentials">
-<meta name="theme-color" content="#212529">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="msapplication-TileColor" content="#212529">
 <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
 <!-- CSS -->
@@ -69,7 +45,7 @@
 <link rel="stylesheet" href="cssSpa/build/main2.css">
 
 
-    <!-- Structured Data -->
+    
 
 
     <script type="text/javascript">
@@ -162,7 +138,9 @@
 
 <script type="text/javascript">
     var myoption;
+    var option2
     var dealerData;
+    var dealerDatas;
     var dealerRestworld1;
     var dealerRestworld2;
     var dealerRestworld3;
@@ -172,6 +150,7 @@
     var dealerName;
     var dealerLocation;
     var mchoosenDealer;
+    var selectedUserMail;
 
     if(document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', afterLoaded);
@@ -181,7 +160,6 @@
     }
 
 function afterLoaded(){
-
     myoption = document.getElementById("province2");
     mchoosenDealer = document.getElementById("choosenDealer");
 
@@ -195,122 +173,15 @@ function afterLoaded(){
     dealerPhone = document.getElementById("dealerNumber");
     dealerLocation = document.getElementById("dealerlocation");
     //$("#dealerName").text("katonto"); choosenDealer
-
-    
-    dealerData = {
-
-        "CH":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "AQ":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "PE":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "TE":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "MT":{"name":"","no":""},
-        "PZ":{"name":"","no":""},
-        "CZ":{"name":"DeGaetanoPiero","email":"pierodegaetano@gmail.com","no":"3291684831"},
-        "CS":{"name":"DeGaetanoPiero","email":"pierodegaetano@gmail.com","no":"3291684831"},
-        "KR":{"name":"DeGaetanoPiero","email":"pierodegaetano@gmail.com","no":"3291684831"},
-        "RC":{"name":"DeGaetanoPiero","email":"pierodegaetano@gmail.com","no":"3291684831"},
-        "VV":{"name":"DeGaetanoPiero","email":"pierodegaetano@gmail.com","no":"3291684831"},
-        "AV":{"name":"SalernoAntonio","email":"kontinental@live.it","no":"3356798545"},
-        "BN":{"name":"SalernoAntonio","email":"kontinental@live.it","no":"3356798545"},
-        "CE":{"name":"SalernoAntonio","email":"kontinental@live.it","no":"3356798545"},
-        "NA":{"name":"SalernoAntonio","email":"kontinental@live.it","no":"3356798545"},
-        "SA":{"name":"SalernoAntonio","email":"kontinental@live.it","no":"3356798545"},
-        "BO":{"name":"PatuelliTeresa","email":"patuelli2sas@gmail.com","no":"3356076444"},
-        "FE":{"name":"PatuelliTeresa","email":"patuelli2sas@gmail.com","no":"3356076444"},
-        "FC":{"name":"PatuelliTeresa","email":"patuelli2sas@gmail.com","no":"3356076444"},
-        "MO":{"name":"Zanarido Gianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "PR":{"name":"Zanari doGianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "PC":{"name":"Zanari.doGianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "RA":{"name":"PatuelliTeresa","email":"patuelli2sas@gmail.com","no":"3356076444"},
-        "RE":{"name":"Zanari.doGianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "RN":{"name":"PatuelliTeresa","email":"patuelli2sas@gmail.com","no":"3356076444"},
-        "GO":{"name":"DaneluzClaudio","email":"agenziaciesse@gmail.com","no":"3473460905"},
-        "PN":{"name":"DaneluzClaudio","email":"agenziaciesse@gmail.com","no":"3473460905"},
-        "TS":{"name":"DaneluzClaudio","email":"agenziaciesse@gmail.com","no":"3473460905"},
-        "UD":{"name":"DaneluzClaudio","email":"agenziaciesse@gmail.com","no":"3473460905"},
-        "FR":{"name":"BiqnardiFrancescc","email":"bignardi.francesco.fb@gmail.com","no":"3338638029"},
-        "LT":{"name":"BiqnardiFrancescc","email":"bignardi.francesco.fb@gmail.com","no":"3338638029"},
-        "RI":{"name":"","no":""},
-        "RM":{"name":"BiqnardiFrancescc","email":"bignardi.francesco.fb@gmail.com","no":"3338638029"},
-        "VT":{"name":"","no":""},
-        "GE":{"name":"RoccaNicolo","email":"arredospazio@gmail.com","no":"3476306595"},
-        "IM":{"name":"Sacco matteo","email":"sacco.matteo75@gmail.com","no":"3493263974"},
-        "SP":{"name":"RoccaNicolo","email":"arredospazio@gmail.com","no":"3476306595"},
-        "SV":{"name":"Sacco matteo","email":"sacco.matteo75@gmail.com","no":"3493263974"},
-        "BG":{"name":"","no":""},
-        "BS":{"name":"Bernardini1","email":"bernardinigerardo@llbero.it ","no":"3487110819"},
-        "CO":{"name":"","no":""},
-        "CR":{"name":"Zanari doGianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "LC":{"name":"","no":""},
-        "LO":{"name":"","no":""},
-        "MN":{"name":"Zanari doGianni","email":"qianni62.zanardo@gmail.co","no":"3356363718"},
-        "MI":{"name":"","no":""},
-        "MB":{"name":"","no":""},
-        "PV":{"name":"","no":""},
-        "SO":{"name":"Bernardini1","email":"bernardinigerardo@llbero.it ","no":"3487110819"},
-        "VA":{"name":"","no":""},
-        "AN":{"name":"Fradelloni'Mirco","email":"mirkofradellonigmall.com","no":"3486055225"},
-        "AP":{"name":"Fradelloni'Mirco","email":"mirkofradellonigmall.com","no":"3486055225"},
-        "FM":{"name":"Fradelloni'Mirco","email":"mirkofradellonigmall.com","no":"3486055225"},
-        "MC":{"name":"Fradelloni'Mirco","email":"mirkofradellonigmall.com","no":"3486055225"},
-        "PU":{"name":"Fradelloni'Mirco","email":"mirkofradellonigmall.com","no":"3486055225"},
-        "CB":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "IS":{"name":"TestaFabio","email":"testafabio@alice.it","no":"3381084977"},
-        "AL":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "AT":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "BI":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "SN":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "NO":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "TO":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "VB":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "VC":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "BR":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "BA":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "BT":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "FG":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "LE":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "TA":{"name":"Dambra Vincenzo","email":"info@dambrarappresentanze.it ","no":"3480163470 "},
-        "CA":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "CI":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "NU":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "OT":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "OR":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "VS":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "SS":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "OG":{"name":"MeloniEmqnuele","email":"meloni.emanuele@gmail.com","no":"3356104216"},
-        "AG":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "CL":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "CT":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "EN":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "ME":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "PA":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "RG":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "SR":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "TP":{"name":"Indelicato","email":"antares.rappresentanze@gmail.com","no":"3272273141"},
-        "AR":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "FI":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "GR":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "LI":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "LU":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "MS":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "PI":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "PT":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "PO":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "SI":{"name":"RicciAntonello","email":" agenziariccl1@gmall.com","no":"3356173444"},
-        "BZ":{"name":"RizziFederico","email":"rizzifederico@me.com","no":"3332220308"},
-        "TN":{"name":"RizziFederico","email":"rizzifederico@me.com","no":"3332220308"},
-        "PG":{"name":"Aliperti","email":" fabioaliperti@gmoll.com","no":"3286810818"},
-        "TR":{"name":"Aliperti","email":" fabioaliperti@gmoll.com","no":"3286810818"},
-        "AO":{"name":"Guasco","email":"guasco.rappresentanze@virgilio.it","no":"3392801810"},
-        "BL":{"name":"DaneluzClaudio","email":"agenziaciesse@gmail.com","no":"3473460905"},
-        "PD":{"name":"FerrariAlberto","email":" ferrarialberto.83@llbero.it","no":"34701911106"},
-        "RO":{"name":"FerrariAlberto","email":" ferrarialberto.83@llbero.it","no":"34701911106"},
-        "TV":{"name":"Pitton","email":"stefano.pitton70@gmail.com","no":"3345949553"},
-        "VE":{"name":"FerrariAlberto","email":" ferrarialberto.83@llbero.it","no":"34701911106"},
-        "VR":{"name":"RizziFederico","email":"rizzifederico@me.com","no":"3332220308"},
-        "VI":{"name":"Pitton","email":"stefano.pitton70@gmail.com","no":"3345949553"}
-
-    };
+    var data = "RequestAgents"
+    $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://spagnolmailserver.herokuapp.com/agents/"+data
+    }).done(function(res) {
+      //console.log(res);
+      dealerData = res;
+    });
 
 
 }
@@ -335,10 +206,14 @@ function afterLoaded(){
         $("#dealerName").text(mydata.name);
         $("#dealerNumber").text(mydata.no);
         $("#dealerEmail").text(mydata.email);
+        selectedUserMail = mydata.email
+        var emailLink = document.getElementById('dealerEmail');
+ 
 
         mchoosenDealer.style.display = 'block'
         //choosenDealer.style.visibility = 'visible'
         //document.body.scrollTop = document.documentElement.scrollTop = 0;
+        //href="mailto:user@example.com?subject=Subject&body=message%20goes%20here"
 
         if(mydata.name == ""){
             $("#dealerName").text("No Dealer for this province");
@@ -371,9 +246,131 @@ function afterLoaded(){
     }
 
 
+    function sendUserToMail() {
+        window.location.href = "mailto:"+selectedUserMail+"?subject=Subject&body=message%20goes%20here";
+    }
+
+
 </script>
 
+<script type="text/javascript">
+    var myoptions;
+    var dealerData;
+    var dealerRestworld1;
+    var dealerRestworld2;
+    var dealerRestworld3;
+    var dealerRestworld4;
+    var dealerEmail;
+    var dealerPhone;
+    var dealerName;
+    var dealerLocation;
+    var mchoosenDealer;
+    var selectedUserMail;
 
+    if(document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', afterLoaded);
+    } else {
+        //The DOMContentLoaded event has already fired. Just run the code.
+        afterLoaded();
+    }
+
+function afterLoaded(){
+
+    myoptions = document.getElementById("state2");
+    mchoosenDealer = document.getElementById("choosenDealer");
+
+    dealerRestworld1 = document.getElementById("dealerRest1");
+    dealerRestworld2 = document.getElementById("dealerRest2");
+    dealerRestworld3 = document.getElementById("dealerRest3");
+    dealerRestworld4 = document.getElementById("dealerRest4");
+
+    dealerName = document.getElementById("dealerName");
+    dealerEmail = document.getElementById("dealerEmail");
+    dealerPhone = document.getElementById("dealerNumber");
+    dealerLocation = document.getElementById("dealerlocation");
+    //$("#dealerName").text("katonto"); choosenDealer
+    /*var data = "RequestAgents"
+    $.ajax({
+        type:'POST',
+        crossDomain: true,
+        url: "https://spagnolmailserver.herokuapp.com/agents/"+data
+    }).done(function(res) {
+      //console.log(res);
+      dealerData = res;
+    });*/
+
+    dealerDatas = {"email": 'Export-office@spagnol.it', "name": 'Alissa Binotto', "no": '0438 891 240'}
+
+                
+}
+
+
+
+    function onItemSelected02() {
+        var mydata = dealerDatas;//[myoption.value];
+        console.log(myoptions.value);
+        console.log(mydata)
+
+        dealerRestworld1.style.display = 'none';
+        dealerRestworld2.style.display = 'none';
+        dealerRestworld3.style.display = 'none';
+        dealerRestworld4.style.display = 'none';
+
+        dealerName.style.display = 'block';
+        dealerEmail.style.display = 'block';
+        dealerPhone.style.display = 'block';
+        //dealerLocation.style.display = 'block';
+
+
+        $("#dealerName").text(mydata.name);
+        $("#dealerNumber").text(mydata.no);
+        $("#dealerEmail").text(mydata.email);
+        selectedUserMail = mydata.email
+        var emailLink = document.getElementById('dealerEmail');
+ 
+
+        mchoosenDealer.style.display = 'block'
+        //choosenDealer.style.visibility = 'visible'
+        //document.body.scrollTop = document.documentElement.scrollTop = 0;
+        //href="mailto:user@example.com?subject=Subject&body=message%20goes%20here"
+
+        if(mydata.name == ""){
+            $("#dealerName").text("No Dealer for this province");
+            /*$("#dealerNumber").text("");
+            $("#dealerEmail").text("");
+            $("#dealerlocation").text("");*/
+
+            //dealerName.style.display = 'block';
+            dealerEmail.style.display = 'none';
+            dealerPhone.style.display = 'none';
+            //dealerLocation.style.display = 'none';
+        }
+
+
+        //document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    }
+
+
+    function close02(){
+        dealerRestworld1.style.display = 'block';
+        dealerRestworld2.style.display = 'block';
+        dealerRestworld3.style.display = 'block';
+        dealerRestworld4.style.display = 'block';
+
+        mchoosenDealer.style.display = 'none'
+        //choosenDealer.style.visibility; = 'hidden'
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+    }
+
+
+    function sendUserToMail() {
+        window.location.href = "mailto:"+selectedUserMail+"?subject=Subject&body=message%20goes%20here";
+    }
+
+
+</script>
 
 <style type="text/css">
     #choosenDealer{
@@ -389,12 +386,12 @@ function afterLoaded(){
     width: 100%;
 
 }
-.header-items2, .edgtf-position-right-inner2{
+.header-language, .header-socials{
     position: fixed;
     top: 0;
 }
 
-.header.col-12{
+.header.sec-12{
     position: fixed;
     top: 50px !important;
 }  
@@ -434,7 +431,7 @@ function afterLoaded(){
     width: calc(100% + 27px);
     height: calc(100% + 27px);
 }
-#choosenDealer > div > div.col-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
+#choosenDealer > div > div.sec-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
     margin-top: -11rem;
 }
 @media screen and (min-width: 2000px) {
@@ -447,14 +444,14 @@ function afterLoaded(){
         margin-bottom: 8rem !important;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 850px){
-    #choosenDealer > div > div.col-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
-        margin-top: 1rem;
-    }
-}
 @media screen and (min-width: 2000px) {
     footer{
         margin-top: 10rem !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:830px) {
+    #formForeign > div.row.margin--top-20 > div, #formItaly > div.row.margin--top-20 > div{
+        margin-left: 3rem;
     }
 }
 @media screen and (min-width: 2300px) {
@@ -539,9 +536,7 @@ function afterLoaded(){
       display: none;
     }
 
-    /*#cont-form.hide {
-      opacity: 0;
-    }*/
+    
 
     .menu-title{
         font-weight: bold;
@@ -571,99 +566,12 @@ function afterLoaded(){
     }
     input[type=checkbox]:checked + label + label {
         text-decoration: line-through;
-    }
-
-
-
-
-
-</style>
-
-
-<script type="text/javascript">
-    function showhide() {
-
-        console.log("display");
-        console.log(document.getElementById('cont-form').style.display);
-
-        var x = document.getElementById("cont-form");
-        var speed = 10;
-        var seconds = speed/1000;
-        //if (!x.classList.contains("hide")) {
-        if (x.style.display == "block") {
-          //x.classList.remove("hide");
-          x.style.transition = "opacity "+seconds+"s ease";
-          x.style.opacity = 0;
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.display = 'none';
-            }, speed);
-          //removeFadeOut();
-        } else if(x.style.display == "none") {
-          x.style.display = 'block';
-          //x.style.opacity = 1;
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.transition = "opacity "+seconds+"s ease";
-                x.style.opacity = 1;
-            
-            }, 5);
-        }else{
-           
-          //x.style.opacity = 1;
-          //console.log("atleast");
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.transition = "opacity "+seconds+"s ease";
-                x.style.opacity = 1;
-                x.style.display = 'block';
-            
-            }, 1000); 
-        }
-
-        
-
-      }
-
-      
-
-//removeFadeOut(document.getElementById('test'), 2000);
-
-    function removeFadeOut() {
-        var speed = 2000;
-        var el = document.getElementById("cont-form");
-        var seconds = speed/1000;
-        el.style.transition = "opacity "+seconds+"s ease";
-        el.style.opacity = 0;
-        setTimeout(function() {
-            el.parentNode.removeChild(el);
-        }, speed);
-    }
-
-
-
-
-</script>
-
-
-    
+    }</style>    
     </head>
-<body>
-
-<!-- Google Tag Manager (noscript)
-
- -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCXV85L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<div class="container-fluid container-fluid-main">
+<body><div class="holder-dynamic holder-dynamic-main">
 
     <div class="header2">
-        <div class="header-items2">
+        <div class="header-language">
           <ul>
           <a href="#">IT</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
           <a href="#">EN</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -677,49 +585,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
     
-          <div class="edgtf-position-right-inner2"
-               style="" >
+          <div class="header-socials"
+                >
                               
-            <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" 
+            <a class="header-social-icon-widget-holder header-icon-has-hover" 
             style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 10px;" href="https://it-it.facebook.com/spagnolmobili/" target="_blank">
-                <span class="edgtf-social-icon-widget fa fa-facebook">  
+                <span class="header-social-icon-widget fa fa-facebook">  
                 </span></a>
         
-            <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
-                <span class="edgtf-social-icon-widget fa fa-instagram    "></span>        </a>
+            <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
+                <span class="header-social-icon-widget fa fa-instagram    "></span>        </a>
         
-            <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
+            <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
                 <span class="fa fa-twitter"></span>        </a>
         
-            <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="#" target="_blank">
-                <span class="edgtf-social-icon-widget fa fa-youtube-play    "></span>        </a>
+            <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="#" target="_blank">
+                <span class="header-social-icon-widget fa fa-youtube-play    "></span>        </a>
           <!--<div class="widget edgtf-separator-widget">
             <div class="edgtf-separator-holder clearfix  edgtf-separator-center edgtf-separator-normal">
             <div class="edgtf-separator" style="border-color: #ffffff;border-style: solid;width: 1px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px"></div>
           </div>
         </div>-->
         
-            <a class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="https://www.tomasella.it/area-riservata" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
-              <span class="edgtf-icon-text" style="font-size: 11px">AREA RISERVATA</span>&nbsp&nbsp
-              <span class="edgtf-icon-widget fa fa-lock    "></span>&nbsp
+            <a class="header-icon-widget-holder header-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="#" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
+              <span class="header-icon-text" style="font-size: 14px">AREA RISERVATA</span>&nbsp&nbsp
+              <span class="header-icon-widget fa fa-lock    "></span>&nbsp
                       </a>
           </div>
     
     
       </div>
     
-        <header class="header col-12">
+        <header class="header sec-12">
     
-        <div class="row isDesktop align-items-center">
-            <div style="position: absolute;left: 1%;" class="col-2">
+        <div class="row DesktopView centerAligned">
+            <div style="position: absolute;left: 1%;" class="sec-2">
                 <a href="index.html">
-                    <!--<a href="">logo--black.svg logo--white.svg</a>-->
+                    
                     <img src="images/app/s-logo2.svg" height="300" class="isBlack1" />
-                    <!--<img src="images/app/s-logo.svg" height="100" class="isWhite1" />-->
+                    
                 </a>
             </div>
     
-            <div id="menu-div" class="col-6 offset-1 align-center padding--lr-0">
+            <div id="menu-div" class="sec-6 offset-1 align-center padding--lr-0">
                 <ul class="menu">
                     <li class="menu-has-submenu menu-item">
                         <a href="javascript: void(0);" id="menu-title" class="menu-title" data-menu="menu-title-1">PRODOTTI</a>
@@ -743,21 +651,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     
     
-        <div class="row isMobile align-items-center">
-            <div class="col-2 align-left">
-            </div>
+        <div class="row mobileView centerAligned">
+            
     
-            <div class="col-8 align-center">
+            <div class="sec-8 align-center">
                 <a href="index.html">
                     <img src="images/app/s-logo2.svg" height="22" class="" />
                 </a>
             </div>
     
-            <div class="col-2 align-right">
-                <div class="header__hamburger openMenuMobile">
-                    <span class="header__hamburger__1"></span>
-                    <span class="header__hamburger__2"></span>
-                    <span class="header__hamburger__3"></span>
+            <div class="sec-2 ham-div">
+                <div class="header__toggle">
+                    <i class='bx bx-menu header__hamburger openSideMenu' style="font-size:35px;"id="header-toggle"></i>
                 </div>
             </div>
         </div>
@@ -771,11 +676,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="menu-has-submenu menu-item">
                 <ul style="height: 100%;" class="menu-submenu menu-title-1">
                     <li id="submenu-menu" class="menu-submenu-item row">      
-                    <ul id="menu-div1" class="col-20">
+                    <ul id="menu-div1" class="sec-20">
                                      
-                        <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="120">
-                            <a id="menu-link" href="#">ZONA NOTTE</a>
-                            <ul class="menu-submenu-item-single-list">
+                        <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="120">
+                            <a id="div-name" href="#">ZONA NOTTE</a>
+                            <ul class="single-submenu-item-menu-list">
                             <!--<a href="" style="margin-bottom: 300px;">
                                     
                             </a>-->
@@ -792,7 +697,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                             <!--start -->
     
-                                                                <ul id="submenu-1" class="menu-submenu-item-single-list">
+                                                                <ul id="submenu-1" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="adecofront.html">Ardecó
                                                                     </a>
@@ -838,7 +743,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <li>
                                                         <a onclick="showLettiZonnaSubMenu()" id="submenu-main" href="#">
                                                             Letti
-                                                            <ul id="submenu-300" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-300" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="lettiimbotitifront.html">Letti imbotiti
                                                                     </a>
@@ -897,11 +802,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         </li>
                                                                                                 
                                                                                                                                                                                                                                                                        </ul>
-                                        <ul id="menu-div2" class="col-20"><!--offset-1 -->
+                                        <ul id="menu-div2" class="sec-20"><!--offset-1 -->
                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="270">
-                                        <a id="menu-link" href="#">ZONA GIORNO</a>
-                                                            <ul class="menu-submenu-item-single-list">
+                                            <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="270">
+                                        <a id="div-name" href="#">ZONA GIORNO</a>
+                                                            <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sofas.html">
                                                             >>>>>>>
@@ -936,11 +841,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                                                 
                                      
                                                                                                                                                             </ul>
-                                        <ul id="menu-div3" class="col-20"><!-- offset-1 border-right-grey -->
+                                        <ul id="menu-div3" class="sec-20"><!-- offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                        <a id="menu-link" href="#">KIDS</a>
-                                                <ul class="menu-submenu-item-single-list">
+                                                <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                        <a id="div-name" href="#">KIDS</a>
+                                                <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sideboards.html">
                                                             >>>>>>>
@@ -957,7 +862,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <li>
                                                         <a onclick="showLettiKidsSubMenu()" id="submenu-main" href="#">
                                                             Letti
-                                                            <ul id="submenu-200" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-200" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="lettiimbotitikidsfront.html">Letti imbotiti
                                                                     </a>
@@ -977,7 +882,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
                                                             Letti sovrapposti e a castello
     
-                                                            <ul id="submenu-100" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-100" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="acastero001.html">Fly
                                                                     </a>
@@ -1035,12 +940,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
     
-                                                    <ul id="menu-div4" class="col-20"><!--
+                                                    <ul id="menu-div4" class="sec-20"><!--
                                                     offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                                    <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                        <a id="menu-link" href="#">COMPLEMENTI</a>
-                                                <ul class="menu-submenu-item-single-list">
+                                                                    <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                        <a id="div-name" href="#">COMPLEMENTI</a>
+                                                <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sideboards.html">
                                                             >>>>>>>
@@ -1066,18 +971,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         </a>
                                                     </li>
                                                                                                 <li>
-                                                        <a id="submenu-main" href="sediakids.html">
+                                                        <a id="submenu-main" href="sedia.html">
                                                             Sedie e poltroncine
                                                         </a>
                                                     </li>
                                                                                                 <li>
-                                                        <a id="submenu-main" href="tavolikids.html">
+                                                        <a id="submenu-main" href="tavoli.html">
                                                             Tavoli e tavolini
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="elementagornol.html" id="submenu-main">
-                                                            pensili
+                                                            Pensili
                                                         </a>
                                                     </li>
                                                      </ul>
@@ -1092,12 +997,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
     </div>
 <!-- end -->
-<div class="row isMobile menuMobile">
+<div class="row mobileView menuMobile">
     <div class="mobilemenu">
         <div class="menue">
           <ul class="menus">
             <li class="space">
-              <a href="#" class="hasDropDown heading">PRODOTTI</a>
+              <a href="#" class="hasDropDown heading">PRODOTTI <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </li>
             <li class="space"><a href="catalogh00.html" class="heading">CATALOGHI</a></li>
             <li class="space"><a href="rivenditory.html" class="heading">RIVENDITORI</a></li>
@@ -1117,7 +1022,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
       <div class="items">
         <div class="columns">
-          <a href="#" class="backone heading">Back to menu</a><br>
+          <a href="#" class="backone heading"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to menu</a><br><br>
           <a href="#" class="heading downone">ZONA NOTTE</a>
           <ul class="menu-items">
             <li>
@@ -1183,9 +1088,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <ul class="menu-items">
             <li><a href="boiserie.html">Boiserie</a></li>
             <li><a href="elementimetallo.html">Elementi in metallo</a></li>
-            <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-            <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
-            <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
+            <li><a href="sedia.html">Sedie e poltroncine</a></li>
+            <li><a href="tavoli.html">Tavoli e tavolini</a></li>
+            <li><a href="elementagornol.html" id="submenu-main">Pensili</a></li>
           </ul>
         </div>
       </div>
@@ -1205,8 +1110,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       margin-top: 2rem;
     }
     .mobilemenu{
-        margin-top: 5rem;
-    }
+            margin-top: 3rem;
+        }
     .menus li {
       list-style: none;
     }
@@ -1226,7 +1131,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       /* display: none; */
       transform: translateX(100%);
       position: relative;
-      top: -35rem;
+      top: -70rem;
       margin-left: 2rem;
     }
     .items li {
@@ -1271,19 +1176,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 </style>
 <script type="text/javascript">
+    const showMenu = (headerToggle) =>{
+    const toggleBtn = document.getElementById(headerToggle);
+    // Validate that variables exist
+        toggleBtn.addEventListener('click', ()=>{
+            // change icon
+            toggleBtn.classList.toggle('bx-x');
+        })
+}
+showMenu('header-toggle');
     document.querySelector(".hasDropDown").addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelector(".menue").style.transform = "translateX(-100%)";
       document.querySelector(".menue").style.transitionDuration = "1s";
       document.querySelector(".items").style.transform = "translateX(0%)";
-      document.querySelector(".items").style.transitionDuration = "1s";
+      document.querySelector(".items").style.transitionDuration = "0.5s";
     });
     document.querySelector(".backone").addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelector(".menue").style.transform = "translateX(0%)";
       document.querySelector(".menue").style.transitionDuration = "1s";
       document.querySelector(".items").style.transform = "translateX(100%)";
-      document.querySelector(".items").style.transitionDuration = "1s";
+      document.querySelector(".items").style.transitionDuration = "0.5s";
     });
     document.querySelector(".subdropdown").addEventListener("click", (e) => {
       e.preventDefault();
@@ -1311,35 +1225,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- start here -->
 
   <div id="dealerRest4" class="row row--1     height--50-vh " style="background-image: url('uploads/sections/images/3/revendi2.png');margin-top: -100px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
+        <div class="sec-12 padding--lr-0 hasEffect slidesInUp enterSlideUp justAnimate" data-animation="enterSlideUp" data-delay="300">
             <a href="javascript: void(0);" class="noGallery">
                 <img src="uploads/sections/images/3/revendi2.png">
             </a>
         </div>
 
         
-  </div>
-
-
-
-
-
-  <div id="dealerRest3" class="row margin--bottom-70">
-            <div class="col-lg-6 offset-lg-3 col-12 offset-0">
-                <form method="" action="" id="formItaly" class="form form--stores col-lg-10 offset-lg-1 col-12 offset-0 margin--tb-30">
+  </div>  <div id="dealerRest3" class="row margin--bottom-70">
+            <div class="col-lg-6 offset-lg-3 sec-12 offset-0">
+                <form method="" action="" id="formItaly" class="form form--stores col-lg-10 offset-lg-1 sec-12 offset-0 margin--tb-30">
                     <input type="hidden" name="_token" value="GLuDC5gnxmVLp6iZHL34zFD6hbVZF2hotrsArvYR">
 
                     <input type="hidden" name="type" value="italy">
 
                     <div class="row margin--bottom-50">
-                        <div class="col-12 align-center">
+                        <div class="sec-12 align-center">
                             <h2 class="heading-2 margin--bottom-50">Italy</h2>
-                            <p class="paragraph-2">Find Spagnolmobili near you.</p>
+                            <p class="paragraph-2">Find Agents near you.</p>
                         </div>
                     </div>
 
                     <div class="box-select">
-                        <div class="col-12">
+                        <div class="sec-12">
                             <fieldset class="input-group1">
                                 <div style="background-color:#fff;" class="select-wrapper">
                                   
@@ -1463,24 +1371,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                    
                     <div class="row">
-                        <div class="col-12 align-left">
+                        <div class="sec-12 align-left">
                             <p class="paragraph-1 errorForm"></p>
                         </div>
                     </div>
 
                     <div class="row margin--top-50">
-                        <div class="col-12 align-center">
-                            <p class="paragraph-1">* required fields</p>
+                        <div class="sec-12 align-center">
+                            <p class="paragraph-20">*required field</p>
                         </div>
                     </div>
 
 
                     <div class="row margin--top-20">
-                        <div class="col-12 align-center">
+                        <div class="sec-12 align-center">
                             <fieldset>
                                 <!--<input type="submit" value="Search" class="btn btn-lined1"><span></span>-->
 
-                                <a onclick="onItemSelected1()" id="contact-btn" class=""><button id="close" style="left: 0; margin-top: 0;">SEARCH</button></span></a>
+                                <a id="contact-btn" class="fom"><button id="close" style="left: 0; margin-top: 0;">SEARCH</button></span></a>
 
                             </fieldset>
                         </div>
@@ -1492,7 +1400,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <div id="dealerRest2" class="row row--1    " style="background-image: url('uploads/sections/images/3/revendi1.png');min-height: 50vh;height: 50vh;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
+        <div class="sec-12 padding--lr-0 hasEffect slidesInUp enterSlideUp justAnimate" data-animation="enterSlideUp" data-delay="300">
             <a href="javascript: void(0);" class="noGallery">
                 <img src="uploads/sections/images/3/revendi1.png">
             </a>
@@ -1503,65 +1411,113 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
         <div id="dealerRest1" class="row padding--tb-70">
-            <div class="col-lg-6 offset-lg-3 col-12 offset-0">
-                <form method="" action="" id="formForeign" class="form _form2 form--stores col-lg-10 offset-lg-1 col-12 offset-0 margin--tb-30">
+            <div class="col-lg-6 offset-lg-3 sec-12 offset-0">
+                <form method="" action="" id="formForeign" class="form _form2 form--stores col-lg-10 offset-lg-1 sec-12 offset-0 margin--tb-30">
                     <input type="hidden" name="_token" value="GLuDC5gnxmVLp6iZHL34zFD6hbVZF2hotrsArvYR">
 
                     <input type="hidden" name="type" value="foreign">
 
                     <div class="row margin--bottom-50">
-                        <div class="col-12 align-center">
-                            <h2 class="heading-2 margin--bottom-50">Rest of the world</h2>
+                        <div class="sec-12 align-center">
+                            <h2 class="heading-2 margin--bottom-50">Around the Globe</h2>
                             <p class="paragraph-2">Spagnolmobili around the world.</p>
                         </div>
                     </div>
 
                     <div class="box-select">
-                        <div class="col-12">
+                        <div class="sec-12">
                             <fieldset class="input-group">
                                 <div style="background-color: #fff;" class="select-wrapper">
-                                  <!--<input class="select-dropdown dropdown-trigger" type="text" readonly="true" data-target="select-options-55884461-ee5d-2e6a-f684-eba59707b79b" style="width: 193.075px;"> row-->
-                                  <ul id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b" class="dropdown-content select-dropdown" tabindex="0"><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b0" tabindex="0" class="selected"><span>Continent*</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b1" tabindex="0"><span>Africa</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b2" tabindex="0"><span>North America</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b3" tabindex="0"><span>South America</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b4" tabindex="0"><span>Asia</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b5" tabindex="0"><span>Europe</span></li><li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b6" tabindex="0"><span>Oceania</span></li></ul><svg class="caret" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 3.6" style="enable-background:new 0 0 6 3.6;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-linecap:square;}</style><g transform="translate(-.5 -5.5)"><path class="st0" d="M1.5,6.3l2,2 M5.5,6.3l-2,2"></path></g></svg><select id="continent" name="continent" tabindex="-1">
+                                  <ul id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b" class="dropdown-content select-dropdown" tabindex="0">
+                                    <li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b0" tabindex="0" class="selected"><span>Continent*</span></li>
+                                    <li id="select-options-55884461-ee5d-2e6a-f684-eba59707b79b5" tabindex="0"><span>Europe</span></li></ul><svg class="caret" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 3.6" style="enable-background:new 0 0 6 3.6;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-linecap:square;}</style><g transform="translate(-.5 -5.5)"><path class="st0" d="M1.5,6.3l2,2 M5.5,6.3l-2,2"></path></g></svg><select id="continent" name="continent" tabindex="-1">
                                     <option value="">Continent*</option>
-                                    <option value="africa">Africa</option>
-                                    <option value="north_america">North America</option>
-                                    <option value="south_america">South America</option>
-                                    <option value="asia">Asia</option>
                                     <option value="europe">Europe</option>
-                                    <option value="oceania">Oceania</option>
                                     </select></div>
                             </fieldset>
                         </div>
                     </div>
 
-                    <div style="margin-top: 5%;" class="box-select">
-                        <div class="col-12">
-                            <fieldset class="input-group">
-                                <div style="background-color: #fff;" class="select-wrapper">
-                                  <!--<input class="select-dropdown dropdown-trigger" type="text" readonly="true" data-target="select-options-20f814e6-1378-1408-2989-f8942a4cb333" style="width: 164.025px;">-->
-                                  <ul id="select-options-20f814e6-1378-1408-2989-f8942a4cb333" class="dropdown-content select-dropdown" tabindex="0"><li id="select-options-20f814e6-1378-1408-2989-f8942a4cb3330" tabindex="0" class="selected"><span>Country*</span></li></ul><svg class="caret" version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 6 3.6" style="enable-background:new 0 0 6 3.6;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#000000;stroke-linecap:square;}</style><g transform="translate(-.5 -5.5)"><path class="st0" d="M1.5,6.3l2,2 M5.5,6.3l-2,2"></path></g></svg><select id="state" name="state" tabindex="-1">
+                    <div class="box-select" style="margin-top: 5%;"">
+                        <div class="sec-12">
+                            <fieldset class="input-group1">
+                                <div style="background-color:#fff;" class="select-wrapper">
+                                  
+                           
+                    
+                                  <select id="state2" name="country" tabindex="-1">
                                     <option value="">Country*</option>
-                                </select></div>
+                                    <option value="AL">Albania</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="BY">Belarus</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BA">Bosnia and Herzegovina</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="HR">Croatia (Hrvatska)</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="FR">France</option>
+                                    <option value="GI">Gibraltar</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="VA">Holy See (Vatican City State)</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="LI">Liechtenstein</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MK">Macedonia</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="SM">San Marino</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="FO">Faroe Islands</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="GL">Greenland</option>
+                                    <option value="IS">Iceland</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="SJ">Svalbard and Jan Mayen Islands</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="TR">Turkey</option>
+                                    </select>
+                                </div>
                             </fieldset>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-12 align-left">
+                        <div class="sec-12 align-left">
                             <p class="paragraph-1 errorForm"></p>
                         </div>
                     </div>
 
                     <div class="row margin--top-50">
-                        <div class="col-12 align-center">
-                            <p class="paragraph-1">* required fields</p>
+                        <div class="sec-12 align-center">
+                            <p class="paragraph-21">* required fields</p>
                         </div>
                     </div>
 
                     <div class="row margin--top-20">
-                        <div class="col-12 align-center">
+                        <div class="sec-12 align-center">
                             <fieldset>
-                                <a  id="contact-btn" class=""><button id="close" style="left: 0; margin-top: 0;">SEARCH</button></span></a>
+                                <a id="contact-btn"  class="restofworld"><button id="close" style="left: 0; margin-top: 0;">SEARCH</button></span></a>
                             </fieldset>
                         </div>
                     </div>
@@ -1591,7 +1547,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     margin-left: -4rem !important;
                     margin-top: 1rem;
                 }
-                #choosenDealer > div > div.col-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
+                #formItaly > div.row.margin--top-20 > div > fieldset{
+                    margin-left: 4rem !important;
+                }
+                #choosenDealer > div > div.sec-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
     margin-top: 5rem;
 }
             }
@@ -1601,7 +1560,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
             }
             @media screen and (min-width:1280px) {
-                #choosenDealer > div > div.col-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
+                #choosenDealer > div > div.sec-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores{
     margin-top: -4rem;
 }
             }
@@ -1610,13 +1569,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             }
           </style>
 
-        <div id="choosenDealer" class="col-12 offset-0">
+        <div id="choosenDealer" class="sec-12 offset-0">
                 <div class="row margin--top-70">
-                    <div class="col-12 align-center margin--bottom-50">
-                        <h4 class="paragraph-3 siColStores">Here are the spagnolmobili dealers in<br><span class="state">Italia</span>.</h4>
+                    <div class="sec-12 align-center margin--bottom-50">
+                        <h4 class="paragraph-3 siColStores">Here are the spagnolmobili Agents in<br><span class="state">Italia</span>.</h4>
                         <h4 class="paragraph-3 hidden noColStores">Here is a selection of spagnolmobili dealers in:<br><span class="state">Italia (Belluno)</span>.</h4>
                     </div>
-                    <div class="agent-info col-12">
+                    <div class="agent-info sec-12">
                         <div class="agent">
                           <div class="agent-heading">
                             <h5 class="heading-3" style="margin-bottom: 20px;line-height: 1;">Agents</h5>
@@ -1628,10 +1587,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </h5>
                           </div>
                         </div>
+
                         <div class="email">
                           <div class="emailtag">
                             <p style="margin-bottom: 20px;">
-                              <a href="#" class="phoneStore nvtk-link" data-url="source=phone"
+                              <a onclick="sendUserToMail()" class="phoneStore nvtk-link" data-url="source=phone"
                                 >Email</a
                               >
                             </p>
@@ -1671,16 +1631,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <button onclick="close1() "id="close">CLOSE</button>
             </div>
 
-
-
-        <!-- end -->
-
-
-
         
 
     <script type="text/javascript">
-      
+      document.getElementById("contact-btn").addEventListener('click', ()=>{
+        if(myoption.value===""){
+            document.querySelector('.paragraph-20').textContent = 'Select a provinnce';
+            document.querySelector('.paragraph-20').style.color = 'red';
+        }
+        else{
+            onItemSelected1();
+        }
+      });
+      document.querySelector('.restofworld').addEventListener('click', ()=>{
+        // mydata = dealerData[option.value];
+
+        if(myoptions.value===""){
+            document.querySelector('.paragraph-21').textContent = 'Select a country';
+            document.querySelector('.paragraph-21').style.color = 'red';
+            document.querySelector('.state').textContent = 'DEALERS ABROAD';
+        }
+        else{
+            onItemSelected02();document.querySelector('#choosenDealer > div > div.sec-12.align-center.margin--bottom-50 > h4.paragraph-3.siColStores').textContent = 'DEALERS AROUND THE GLOBE';
+            document.querySelector('.heading-3').textContent = 'DEALERS';
+
+        }
+      });
       var slideImg = document.getElementById("slideImg14");
       var images = new Array(
         "uploads/sections/images/3/p1.jpg",
@@ -1789,7 +1765,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     .links{
         margin-top: 5px;
-        font-size: 12px ;
+      font-size:16px ;
     }
     #website{
         color: #fff;
@@ -1905,7 +1881,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 margin-top: 1px;
             }
             #menu-div{
-                margin-left: 16rem;
+                margin-left: 22rem;
             }
         }
 </style>
@@ -1943,7 +1919,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="r2 r2bis" uk-grid> 
    <div class="putInline">
        <div id="ciccio">    
-           <h6 id="quicklink">All rights reserved</h6>
+           <h6 style="font-size: 17px;" id="quicklink">All rights reserved</h6>
        </div>
        <div class="links">
        <!-- <a href="#" id="quicklink">Dati legali</a> -->
@@ -1962,16 +1938,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 </footer>
-    <div class="notifications-container">
-        <div class="container">
-            <div class="notification-track" id="notification-track">
-                <div class="notification" id="notification-template">
-                    <div class="notification-content">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <script src="jsSpa/build/vendor.js"></script>
 
@@ -1981,34 +1948,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
     
-     <script type="text/javascript">
-        var Config = {
-            locale: "en",
-            urlBase: "https://www.spagnolmobili.it/en",
-            allCurrencies: {"USD":{"name":"USD - Dollaro Americano","symbol":"$","symbol_html":"$"},"GBP":{"name":"GBP - Sterlina Inglese","symbol":"\u00a3","symbol_html":"&pound;"},"EUR":{"name":"EUR - Euro","symbol":"\u20ac","symbol_html":"&euro;"},"AUD":{"name":"AUD - Dollaro Australiano","symbol":"$","symbol_html":"$"},"BRL":{"name":"BRL - Real Brasiliano","symbol":"R$","symbol_html":"R$"},"CAD":{"name":"CAD - Dollaro Canadese","symbol":"$","symbol_html":"$"},"CZK":{"name":"CZK - Corona Ceca","symbol":"K\u010d","symbol_html":""},"DKK":{"name":"DKK - Corona Danese","symbol":"kr","symbol_html":"kr"},"HKD":{"name":"HKD - Dollaro di Hong Kong","symbol":"$","symbol_html":"$"},"HUF":{"name":"HUF - Fiorino Ungherese","symbol":"Ft","symbol_html":"Ft"},"ILS":{"name":"ILS - Nuovo Sicli","symbol":"\u20aa","symbol_html":"&#8362;"},"JPY":{"name":"JPY - Yen Giapponese","symbol":"\u00a5","symbol_html":"&#165;"},"MYR":{"name":"MYR - Ringgit","symbol":"RM","symbol_html":"RM"},"MXN":{"name":"MXN - Peso Messicano","symbol":"$","symbol_html":"$"},"NZD":{"name":"NZD - Dollaro Neozelandese","symbol":"$","symbol_html":"$"},"NOK":{"name":"NOK - Corona Norvegese","symbol":"kr","symbol_html":"kr"},"PHP":{"name":"PHP - Peso Filippino","symbol":"Php","symbol_html":"Php"},"PLN":{"name":"PLN - Zloty Polacco","symbol":"z\u0142","symbol_html":""},"SGD":{"name":"SGD - Dollaro di Singapore","symbol":"$","symbol_html":"$"},"SEK":{"name":"SEK - Corona Svedese","symbol":"kr","symbol_html":"kr"},"CHF":{"name":"CHF - Franco Svizzero","symbol":"CHF","symbol_html":"CHF"},"TWD":{"name":"TWD - Dollaro Taiwanese","symbol":"$","symbol_html":"$"},"THB":{"name":"THB - Baht Tailandese","symbol":"\u0e3f","symbol_html":" &#3647;"},"TRY":{"name":"TRY - Nuova Lira Turca","symbol":"TL","symbol_html":" &#3647;"}},
-            allLocales: {"it":{"name":"Italiano","image":"images\/flags\/16\/Italy.png","admin_name":"Italiano","real_locale":"it_IT","fallback_languages":["it"],"adabe_locale":"ITA"},"en":{"name":"English","image":"images\/flags\/16\/United-Kingdom.png","admin_name":"Inglese","real_locale":"en_UK","fallback_languages":["it"],"adabe_locale":"ENG"},"fr":{"name":"Fran\u00e7ais","image":"images\/flags\/16\/France.png","admin_name":"Francese","real_locale":"fr_FR","fallback_languages":["it"],"adabe_locale":"FRA"},"de":{"name":"Deutsch","image":"images\/flags\/16\/Germany.png","admin_name":"Tedesco","real_locale":"de_DE","fallback_languages":["it"],"adabe_locale":"DEU"},"es":{"name":"Espa\u00f1ol","image":"images\/flags\/16\/Spain.png","admin_name":"Spagnolo","real_locale":"es_ES","fallback_languages":["it"],"adabe_locale":"SPA"}},
-            urlApp: "https://www.spagnolmobili.it",
-            token: "RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4",
-        };
-        var Default = {
-            selectAllAlert: {
-                title: "",
-                text: 'Elementi selezionati: %d',
-                showConfirmButton: true,
-                showCancelButton: true,
-                confirmButtonColor: "#546E7A",
-                confirmButtonText: 'Si',
-                cancelButtonText: 'No',
-                closeOnConfirm: true,
-                closeOnCancel: true,
-                type: "warning"
-            }
-        };
-        var Translations = {
-            progress: 'app.shop.cart.progress',
-            cartUpdated: 'app.shop.cart.updated'
-        }
-    </script><script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
+     <script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
     <script type="text/javascript" src="js/app/vendor/slicka4f0.js?v=0"></script>
     
     <script type="text/javascript" src="js/app/vendor/url.mina4f0.js?v=0"></script>
@@ -2030,7 +1970,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script>
     
     
-    <script type="text/javascript" src="../player.vimeo.com/api/player.js"></script>
+    
     
     
     <script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
@@ -2045,7 +1985,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 newScript.src = "https://www.youtube.com/player_api";
                 $('head').append(newScript);
             }
-    //        $(documnt).ready( function(){
+    
                 App.init();
     
                 
@@ -2238,14 +2178,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             });
         });
     
-        function chiSeiFormNewsletterValue(value) {
-            switch (value) {
-                case '1': return 'Rivenditore';
-                case '2': return 'Progettista / Architetto';
-                case '3': return 'Privato';
-                default: return '';
-            }
-        }
+        
     
         function countriesValue(value) {
             switch (value) {
@@ -2507,15 +2440,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
     
 
-<!-- JS Bottom -->
-    
-
-<!-- Analytics and other js -->
-
-
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="../js.hs-scripts.com/9453654.js"></script>
-    <!-- End of HubSpot Embed Code -->
 
 </body>
 

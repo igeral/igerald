@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="#" />
-<script>
-(LoaderManager=function e(){var r=[],n=!0;return e.addEvent=function(a){return 0==n&&e.start(),a&&-1==r.indexOf(a)&&r.push(a),e},e.eventComplete=function(a){return a&&r.indexOf(a)>=0&&r.splice(r.indexOf(a),1),r.length||(n=!1,e.stop()),e},e.start=function(){return e.onStart()},e.stop=function(){return e.messageClear(),e.progressBarClear(),e.onStop()},e.progressBar=function(){return e.progressBarClear(),$('<div class="loadermanager-progress"><div class="loadermanager-progressbar"></div></div>').appendTo("body"),e},e.progressBarUpdate=function(r){return $("body").find(".loadermanager-progressbar").width(r+"%"),e},e.progressBarClear=function(){return $("body").find(".loadermanager-progress").remove(),e},e.message=function(r){return e.messageClear(),$('<div class="loadermanager-dialog">'+r+"</div>").prependTo("html"),e},e.messageClear=function(){return $("html").find(".loadermanager-dialog").remove(),e},e.onStart=function(){return $("html").removeClass("loadermanager-page_loaded"),e},e.onStop=function(){$("html").removeClass("page_loading").addClass("loadermanager-page_loaded"),$(document).trigger("loadermanager-page_loaded")},e})(),LoaderManager.addEvent("site_loading"),document.documentElement.classList.add("js"),document.documentElement.classList.remove("no-js"),document.documentElement.classList.add("no-touch"),window.addEventListener("touchstart",(function(){document.documentElement.classList.add("touch"),document.documentElement.classList.remove("no-touch")}));
-</script>
+
 
 
 
@@ -14,27 +12,15 @@
 <link rel="stylesheet" href="cssSpa/build/main.css">
 <link rel="stylesheet" href="css/app.css">
 
-<title>Camerreti</title>
+<title>SpagnolMobili | Unica</title>
 <meta name="description" content="">
 <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
 
 
 
-
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4012939-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-4012939-6', { 'anonymize_ip': true });
-  window.GA_MEASUREMENT_ID = 'UA-4012939-6';
-</script>
 <script type="text/javascript">
   addColor();
   function addColor(){
@@ -112,46 +98,40 @@
     top: 0;
     width: 100%;
 }
-.header-items2, .edgtf-position-right-inner2{
+.header-language, .header-socials{
     position: fixed;
     top: 0;
 }
 
-.header.col-12{
+.header.sec-12{
     position: fixed;
     top: 50px !important;
 }
-.edgtf-position-right-inner2{
+.header-socials{
   top: 0.5rem;
 }
-.uk-scrollspy{
+.main-box{
   margin-top: 2rem !important;
 }
-.header.col-12{
+.header.sec-12{
   font-weight: bold;
 }
 @media screen and (min-width: 1280px) and (max-width:1400px){
-  .header-items2{
-    margin-top: 2rem !important;
+  
   }
-}
+
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
     #menu-div {
-      margin-left: 7rem !important;
+      margin-left: 3.5rem !important;
     }
   }
-  @media screen and (min-width: 1400px) and (max-width: 1800px) {
-    #menu-div {
-      margin-left: 7rem !important;
-    }
-  }
-@media screen and (min-width: 1900px) and (max-width:2000px){
+  @media screen and (min-width: 1900px) and (max-width:2000px){
       #menu-div{
-        margin-left: 8rem;
+        margin-left: 7.5rem;
       }
-  }
+  }   
 @media screen and (min-width:320px) and (max-width: 500px){
-  .header.col-12{
+  .header.sec-12{
         position: fixed !important;
         top: 50px !important;
     }
@@ -160,26 +140,32 @@
     top: 0 !important;
     z-index: 20 !important;
   }
-  .col-8.align-center{
-    margin-left: 4rem;
+  .sec-8.align-center{
+    margin-left: -0.2rem;
   }
-  .row--1.row--responsive{
+  .sec-2.ham-div{
+    margin-left: 3.5rem;
+  }
+  .row--1.dynnamic--row{
     position: relative;
     top: 3rem;
   }
-  .edgtf-position-right-inner2{
+  #page_content > section.content_wrapper.product_detail > div:nth-child(1){
+    margin-top: -1rem !important;
+  }
+  .header-socials{
     position: relative !important;
-    /* left: 2rem; */
+    left: -3.5rem !important;
     text-align: center !important;
     width: 100%;
-    top: 0.5rem !important; 
+    top: 0.5rem ; 
 
   }
-  .col-md-2 > ul{
+  .sec-2-sm > ul{
         text-align: center !important;
         margin-left: -3rem !important;
     }
-    .col-md-2 > h6{
+    .sec-2-sm > h6{
         text-align: center;
         margin-left: -1rem !important;
      }
@@ -195,7 +181,7 @@
   
 }
 @media screen and(max-width:768px){
-  .header-items2{
+  .header-language{
     position: relative !important;
     top: 4rem!important;
   }
@@ -204,31 +190,43 @@
     top: 0 !important;
     z-index: 20 !important;
   }
-  .header.col-12{
+  .header.sec-12{
     position: fixed !important;
 
   }
-  .row--1.row--responsive{
+  .row--1.dynnamic--row{
     position: absolute !important;
     top: 5rem !important;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 830px){
-    .header-items2{
-        margin-top: 1.5rem !important;
+    .header-language{
+        margin-top: 0.1rem !important;
     }    
     #page_content > section.content_wrapper.product_detail > div:nth-child(1){
       margin-top: 8rem !important;
       padding-bottom: 2rem;
     }
-     .header.col-12{
+     .header.sec-12{
         position: fixed !important;
         top: 50px !important;
     }
     .items{
       margin-top: 2rem;
     }
-    .col2.align-right{
+    .sec-8.align-center{
+                left: -2.5rem;
+            }
+            .sec-2.ham-div{
+                left: -6.5rem;
+            }
+            .row{
+                margin-left: 0 !important;
+            }
+    .header__hamburger{
+        margin-left: 13rem;
+    }
+    .sec-2.ham-div{
       margin-left: 3rem !important;
     }
 }
@@ -242,9 +240,9 @@
 <body class="product">
 
     
-<div class="container-fluid container-fluid-main">
+<div class="holder-dynamic holder-dynamic-main">
   <div class="header2">
-    <div class="header-items2">
+    <div class="header-language">
       <ul>
       <a href="#">IT</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       <a href="#">EN</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -258,49 +256,44 @@
 
 
 
-      <div class="edgtf-position-right-inner2"
-           style="" >
+      <div class="header-socials">
                           
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" 
+        <a class="header-social-icon-widget-holder header-icon-has-hover" 
         style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 10px;" href="https://it-it.facebook.com/spagnolmobili/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-facebook">  
+            <span class="header-social-icon-widget fa fa-facebook">  
             </span></a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-instagram    "></span>        </a>
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
+            <span class="header-social-icon-widget fa fa-instagram    "></span>        </a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
             <span class="fa fa-twitter"></span>        </a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-pinterest    "></span>        </a>
-      <!--<div class="widget edgtf-separator-widget">
-        <div class="edgtf-separator-holder clearfix  edgtf-separator-center edgtf-separator-normal">
-        <div class="edgtf-separator" style="border-color: #ffffff;border-style: solid;width: 1px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px"></div>
-      </div>
-    </div>-->
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
+            <span class="header-social-icon-widget fa fa-pinterest    "></span>        </a>
+     
     
-        <a class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="https://www.tomasella.it/area-riservata" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
-          <span class="edgtf-icon-text" style="font-size: 11px">AREA RISERVATA</span>&nbsp&nbsp
-          <span class="edgtf-icon-widget fa fa-lock    "></span>&nbsp
+        <a class="header-icon-widget-holder header-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="#" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
+          <span class="header-icon-text" style="font-size: 14px">AREA RISERVATA</span>&nbsp&nbsp
+          <span class="header-icon-widget fa fa-lock    "></span>&nbsp
                   </a>
       </div>
 
 
   </div>
 
-    <header class="header col-12">
+    <header class="header sec-12">
 
-    <div class="row isDesktop align-items-center">
-        <div style="position: absolute;left: 1%;" class="col-2">
+    <div class="row DesktopView centerAligned">
+        <div style="position: absolute;left: 1%;" class="sec-2">
             <a href="index.html">
-                <!--<a href="">logo--black.svg logo--white.svg</a>-->
+                
                 <img src="images/app/s-logo2.svg" height="300" class="isBlack1" />
-                <!--<img src="images/app/s-logo.svg" height="100" class="isWhite1" />-->
+                
             </a>
         </div>
 
-        <div id="menu-div" class="col-6 offset-1 align-center padding--lr-0">
+        <div id="menu-div" class="sec-6 offset-1 align-center padding--lr-0">
             <ul class="menu">
                 <li class="menu-has-submenu menu-item">
                     <a href="javascript: void(0);" id="menu-title" class="menu-title" data-menu="menu-title-1">PRODOTTI</a>
@@ -311,48 +304,29 @@
                 <li class="menu-item">
                     <a href="rivenditory.html" class="menu-title">RIVENDITORI</a>
                 </li>
-                <!--<li class="menu-item">
-                    <a href="#" class="menu-title">CHISIAMO</a>
-                </li>-->
+                
                 <li class="menu-item">
                     <a href="Contacts.html" class="menu-title">CONTATTI</a>
                 </li>
-                <!--<li class="menu-item">
-                    <a href="en/configurator.html" class="menu-title">Configurator</a>
-                </li>-->
+
             </ul>
         </div>
 
-        <!--<div class="col-3 align-right colDX">
-            <ul class="row menu">
-                
-                
-                <li class="menu-item">
-                    <div class="header__hamburger openMenuFull">
-                        <span class="header__hamburger__1"></span>
-                        <span class="header__hamburger__2"></span>
-                        <span class="header__hamburger__3"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>-->
     </div>
 
 
-    <div class="row isMobile align-items-center">
+    <div class="row mobileView centerAligned">
 
-        <div class="col-8 align-center">
+        <div class="sec-8 align-center">
             <a href="index.html">
                 <img src="images/app/s-logo2.svg" height="22" class="" />
             </a>
         </div>
 
-        <div class="col-2 align-right">
-            <div class="header__hamburger openMenuMobile">
-                <span class="header__hamburger__1"></span>
-                <span class="header__hamburger__2"></span>
-                <span class="header__hamburger__3"></span>
-            </div>
+        <div class="sec-2 ham-div">
+            <div class="header__toggle">
+                    <i class='bx bx-menu header__hamburger openSideMenu' style="font-size:35px;"id="header-toggle"></i>
+                </div>
         </div>
     </div>
 
@@ -365,11 +339,11 @@
         <li class="menu-has-submenu menu-item">
             <ul style="height: 100%;" class="menu-submenu menu-title-1">
                 <li id="submenu-menu" class="menu-submenu-item row">      
-                <ul id="menu-div1" class="col-20">
+                <ul id="menu-div1" class="sec-20">
                                  
-                    <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="120">
-                        <a id="menu-link" href="#">ZONA NOTTE</a>
-                        <ul class="menu-submenu-item-single-list">
+                    <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="120">
+                        <a id="div-name" href="#">ZONA NOTTE</a>
+                        <ul class="single-submenu-item-menu-list">
                         <!--<a href="" style="margin-bottom: 300px;">
                                 
                         </a>-->
@@ -386,7 +360,7 @@
 
                                                         <!--start -->
 
-                                                            <ul id="submenu-1" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-1" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="adecofront.html">Ardecó
                                                                 </a>
@@ -417,22 +391,12 @@
                                                         Armadi Scorrevoli
                                                     </a>
                                                 </li>
-                                                <!--<li>
-                                                    <a id="submenu-main" href="#">
-                                                        Sistema Pipe
-                                                    </a>
-                                                </li>
 
-                                                <li>
-                                                    <a id="submenu-main" href="#">
-                                                        Cabine Armadio
-                                                    </a>
-                                                </li>-->
 
                                                 <li>
                                                     <a onclick="showLettiZonnaSubMenu()" id="submenu-main" href="#">
                                                         Letti
-                                                        <ul id="submenu-300" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-300" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="lettiimbotitifront.html">Letti imbotiti
                                                                 </a>
@@ -506,11 +470,11 @@
                                                     </li>
                                                                                             
                                                                                                                                                                                                                                                                    </ul>
-                                    <ul id="menu-div2" class="col-20"><!--offset-1 -->
+                                    <ul id="menu-div2" class="sec-20"><!--offset-1 -->
                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                        <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="270">
-                                    <a id="menu-link" href="#">ZONA GIORNO</a>
-                                                        <ul class="menu-submenu-item-single-list">
+                                        <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="270">
+                                    <a id="div-name" href="#">ZONA GIORNO</a>
+                                                        <ul class="single-submenu-item-menu-list">
                                                 <!--<li>
                                                     <a href="en/sofas.html">
                                                         >>>>>>>
@@ -545,16 +509,12 @@
                                                                                             
                                  
                                                                                                                                                         </ul>
-                                    <ul id="menu-div3" class="col-20"><!-- offset-1 border-right-grey -->
+                                    <ul id="menu-div3" class="sec-20"><!-- offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                    <a id="menu-link" href="#">KIDS</a>
-                                            <ul class="menu-submenu-item-single-list">
-                                                <!--<li>
-                                                    <a href="en/sideboards.html">
-                                                        >>>>>>>
-                                                    </a>
-                                                </li>-->
+                                            <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                    <a id="div-name" href="#">KIDS</a>
+                                            <ul class="single-submenu-item-menu-list">
+                                                
 
 
                                                 <li>
@@ -566,7 +526,7 @@
                                                     <li>
                                                     <a onclick="showLettiKidsSubMenu()" id="submenu-main" href="#">
                                                         Letti
-                                                        <ul id="submenu-200" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-200" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="lettiimbotitikidsfront.html">Letti imbotiti
                                                                 </a>
@@ -586,7 +546,7 @@
                                                     <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
                                                         Letti sovrapposti e a castello
 
-                                                        <ul id="submenu-100" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-100" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="acastero001.html">Fly
                                                                 </a>
@@ -644,17 +604,13 @@
 
 
 
-                                                <ul id="menu-div4" class="col-20"><!--
+                                                <ul id="menu-div4" class="sec-20"><!--
                                                 offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                                                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                    <a id="menu-link" href="#">COMPLEMENTI</a>
-                                            <ul class="menu-submenu-item-single-list">
-                                                <!--<li>
-                                                    <a href="en/sideboards.html">
-                                                        >>>>>>>
-                                                    </a>
-                                                </li>-->
+                                                                <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                    <a id="div-name" href="#">COMPLEMENTI</a>
+                                            <ul class="single-submenu-item-menu-list">
+                                                
 
 
 
@@ -675,18 +631,18 @@
                                                     </a>
                                                 </li>
                                                                                             <li>
-                                                    <a id="submenu-main" href="sediakids.html">
+                                                    <a id="submenu-main" href="sedia.html">
                                                         Sedie e poltroncine
                                                     </a>
                                                 </li>
                                                                                             <li>
-                                                    <a id="submenu-main" href="tavolikids.html">
+                                                    <a id="submenu-main" href="tavoli.html">
                                                         Tavoli e tavolini
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="elementagornol.html" id="submenu-main">
-                                                        pensili
+                                                        Pensili
                                                     </a>
                                                 </li>
                                                  </ul>
@@ -700,12 +656,12 @@
     </ul>
 </div>
 
-<div class="row isMobile menuMobile">
+<div class="row mobileView menuMobile">
   <div class="mobilemenu">
       <div class="menue">
         <ul class="menus">
           <li class="space">
-            <a href="#" class="hasDropDown heading">PRODOTTI</a>
+            <a href="#" class="hasDropDown heading">PRODOTTI <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
           </li>
           <li class="space"><a href="catalogh00.html" class="heading">CATALOGHI</a></li>
           <li class="space"><a href="rivenditory.html" class="heading">RIVENDITORI</a></li>
@@ -725,8 +681,8 @@
 
     <div class="items">
       <div class="columns">
-        <a href="#" class="backone heading">Back to menu</a><br>
-        <a href="#" class="heading downone">ZONA NOTTE</a>
+        <a href="#" class="backone heading"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to menu</a><br><br>
+          <a href="#" class="heading downone">ZONA NOTTE</a>
         <ul class="menu-items">
           <li>
             <a href="#" class="submenu bold subdropdown">Armadi Battenti</a>
@@ -791,9 +747,9 @@
         <ul class="menu-items">
           <li><a href="boiserie.html">Boiserie</a></li>
           <li><a href="elementimetallo.html">Elementi in metallo</a></li>
-          <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-          <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
-          <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
+          <li><a href="sedia.html">Sedie e poltroncine</a></li>
+          <li><a href="tavoli.html">Tavoli e tavolini</a></li>
+          <li><a href="elementagornol.html" id="submenu-main">Pensili</a></li>
         </ul>
       </div>
     </div>
@@ -813,7 +769,7 @@
     margin-top: 2rem;
   }
   .mobilemenu{
-      margin-top: 5rem;
+      margin-top: 3rem;
   }
   .menus li {
     list-style: none;
@@ -834,7 +790,7 @@
     /* display: none; */
     transform: translateX(100%);
     position: relative;
-    top: -37rem;
+    top: 4rem;
     margin-left: 2rem;
   }
   .items li {
@@ -879,19 +835,28 @@
   }
 </style>
 <script type="text/javascript">
-  document.querySelector(".hasDropDown").addEventListener("click", (e) => {
+  const showMenu = (headerToggle) =>{
+    const toggleBtn = document.getElementById(headerToggle);
+    // Validate that variables exist
+        toggleBtn.addEventListener('click', ()=>{
+            // change icon
+            toggleBtn.classList.toggle('bx-x');
+        })
+}
+showMenu('header-toggle');
+    document.querySelector(".hasDropDown").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".menue").style.transform = "translateX(-100%)";
     document.querySelector(".menue").style.transitionDuration = "1s";
-    document.querySelector(".items").style.transform = "translateX(0%)";
-    document.querySelector(".items").style.transitionDuration = "1s";
+    document.querySelector(".items").style.transform = "translateX(-100%)";
+    document.querySelector(".items").style.transitionDuration = "0.5s";
   });
   document.querySelector(".backone").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".menue").style.transform = "translateX(0%)";
     document.querySelector(".menue").style.transitionDuration = "1s";
     document.querySelector(".items").style.transform = "translateX(100%)";
-    document.querySelector(".items").style.transitionDuration = "1s";
+    document.querySelector(".items").style.transitionDuration = "0.5s";
   });
   document.querySelector(".subdropdown").addEventListener("click", (e) => {
     e.preventDefault();
@@ -914,7 +879,7 @@
     document.querySelector(".lacastello").classList.toggle("submenumenu");
   });
 </script>
-        <div class="uk-scrollspy" style="opacity: 1;" id="top">
+        <div class="main-box" style="opacity: 1;" id="top">
 
         <div id="page_content" data-scroll-container>
             
@@ -927,14 +892,14 @@
     <div style="margin-left: 15%;margin-bottom: 9%;margin-top: 2%;">
         <h5 class="t-medium t-regular">Adeco</h5>
         <h1 style="font-style: bold;">
-        Unica
+        UNICA
         </h1>
       </div>
 
 
-      <div class="row row--1  row--responsive" style="
-      background-image: url('./uploads/products/images/25/SYSTEM C1.jpg');margin-top: -80px;">
-        <div class="col-12 padding--lr-0 animated slideInUpSmallPre slideInUpSmall justAnimate" data-animation="slideInUpSmall" data-delay="300">
+      <div class="row row--1  dynnamic--row" style="
+      background-image: url('./uploads/products/images/25/UNICA\ A1.jpg');margin-top: -80px;">
+        <div class="sec-12 padding--lr-0 hasEffect slidesInUp enterSlideUp justAnimate" data-animation="enterSlideUp" data-delay="300">
             <a href="./uploads/products/images/25/UNICA A1.jpg" data-fancybox="gallery">
                 <img height="500" src="./uploads/products/images/25/UNICA A1.jpg">
             </a>
@@ -955,12 +920,21 @@
     <div class="wrapperImg"><figure data-scroll data-scroll-speed="-.8">
                 <img src="./uploads/products/images/25/UNICA A3.jpg" srcset="./uploads/products/images/25/UNICA A3.jpg 2x">
             </figure></div>
-    <div class="text_container" >
+    <div class="text_box" >
     
-     <h2 class="subtitle t-medium bebas">Armadio battente Alterna con modulo TV, cabina Windy, letto Icon Big e complementi Lucky</h2> 
-    <div class="text t-medium t-regular"><p>Il modulo porta TV &egrave; disponibile in varie soluzioni: con vano a giorno, con ante, con cassetti o con cassettoni. Nell&#39;immagine, il modulo porta TV con cassettoni, cassetto e vano a giorno.</p>
+     <h2 class="subtitle t-medium bebas"></h2> 
+    <div class="text t-medium t-regular"><p>Armadio 8 ante battenti
+        mod. Telaino T1.
+        Fianchi, ante e profili
+        in finitura Laccato Opaco Luce.
+        Maniglia Incasso
+        in finitura Laccato Opaco Luce.
+        Interni in finitura Bianco Millerighe.</p>
 
-<p>Il pannello centrale &egrave; dotato di semplice apertura che consente di accedere ad un capiente vano con funzionali ripiani e fori passacavi che permettono ai cavi di correre nel retro del pannello.</p></div>
+<p>Soluzioni funzionali
+    e studiate nel dettaglio, con numerosi accessori liberamente posizionabili
+    ed intercambiabili
+    tra loro.</p></div>
     
     </div>
 </div>
@@ -978,17 +952,17 @@
 	<section style="font-size: 20px;" class="tools">
     <ul>
         <li class="stores">
-            <a href="#" target="_top">
+            <a href="rivenditory.html" target="_top">
                 <span>Dove acquistare</span>
             </a>
         </li>
         <li class="catalogue">
-            <a href="#" target="_top">
+            <a href="catalogh00.html" target="_top">
                 <span>Download catalogo</span>
             </a>
         </li>
                 <li class="contacts">
-            <a href="#" target="_top">
+            <a href="Contacts.html" target="_top">
                 <span>Contatti</span>
             </a>
         </li>
@@ -1067,7 +1041,7 @@
   }
   .links{
       margin-top: 5px;
-      font-size: 12px ;
+    font-size:16px ;
   }
   #website{
       color: #fff;
@@ -1215,7 +1189,7 @@
 <div class="r2 r2bis" uk-grid> 
  <div class="putInline">
      <div id="ciccio">    
-         <h6 id="quicklink">All rights reserved</h6>
+         <h6 style="font-size: 17px;" id="quicklink">All rights reserved</h6>
      </div>
      <div class="links">
      <!-- <a href="#" id="quicklink">Dati legali</a> -->
@@ -1250,34 +1224,7 @@
 
 
 
-<script type="text/javascript">
-    var Config = {
-        locale: "en",
-        urlBase: "https://www.spagnolmobili.it/en",
-        allCurrencies: {"USD":{"name":"USD - Dollaro Americano","symbol":"$","symbol_html":"$"},"GBP":{"name":"GBP - Sterlina Inglese","symbol":"\u00a3","symbol_html":"&pound;"},"EUR":{"name":"EUR - Euro","symbol":"\u20ac","symbol_html":"&euro;"},"AUD":{"name":"AUD - Dollaro Australiano","symbol":"$","symbol_html":"$"},"BRL":{"name":"BRL - Real Brasiliano","symbol":"R$","symbol_html":"R$"},"CAD":{"name":"CAD - Dollaro Canadese","symbol":"$","symbol_html":"$"},"CZK":{"name":"CZK - Corona Ceca","symbol":"K\u010d","symbol_html":""},"DKK":{"name":"DKK - Corona Danese","symbol":"kr","symbol_html":"kr"},"HKD":{"name":"HKD - Dollaro di Hong Kong","symbol":"$","symbol_html":"$"},"HUF":{"name":"HUF - Fiorino Ungherese","symbol":"Ft","symbol_html":"Ft"},"ILS":{"name":"ILS - Nuovo Sicli","symbol":"\u20aa","symbol_html":"&#8362;"},"JPY":{"name":"JPY - Yen Giapponese","symbol":"\u00a5","symbol_html":"&#165;"},"MYR":{"name":"MYR - Ringgit","symbol":"RM","symbol_html":"RM"},"MXN":{"name":"MXN - Peso Messicano","symbol":"$","symbol_html":"$"},"NZD":{"name":"NZD - Dollaro Neozelandese","symbol":"$","symbol_html":"$"},"NOK":{"name":"NOK - Corona Norvegese","symbol":"kr","symbol_html":"kr"},"PHP":{"name":"PHP - Peso Filippino","symbol":"Php","symbol_html":"Php"},"PLN":{"name":"PLN - Zloty Polacco","symbol":"z\u0142","symbol_html":""},"SGD":{"name":"SGD - Dollaro di Singapore","symbol":"$","symbol_html":"$"},"SEK":{"name":"SEK - Corona Svedese","symbol":"kr","symbol_html":"kr"},"CHF":{"name":"CHF - Franco Svizzero","symbol":"CHF","symbol_html":"CHF"},"TWD":{"name":"TWD - Dollaro Taiwanese","symbol":"$","symbol_html":"$"},"THB":{"name":"THB - Baht Tailandese","symbol":"\u0e3f","symbol_html":" &#3647;"},"TRY":{"name":"TRY - Nuova Lira Turca","symbol":"TL","symbol_html":" &#3647;"}},
-        allLocales: {"it":{"name":"Italiano","image":"images\/flags\/16\/Italy.png","admin_name":"Italiano","real_locale":"it_IT","fallback_languages":["it"],"adabe_locale":"ITA"},"en":{"name":"English","image":"images\/flags\/16\/United-Kingdom.png","admin_name":"Inglese","real_locale":"en_UK","fallback_languages":["it"],"adabe_locale":"ENG"},"fr":{"name":"Fran\u00e7ais","image":"images\/flags\/16\/France.png","admin_name":"Francese","real_locale":"fr_FR","fallback_languages":["it"],"adabe_locale":"FRA"},"de":{"name":"Deutsch","image":"images\/flags\/16\/Germany.png","admin_name":"Tedesco","real_locale":"de_DE","fallback_languages":["it"],"adabe_locale":"DEU"},"es":{"name":"Espa\u00f1ol","image":"images\/flags\/16\/Spain.png","admin_name":"Spagnolo","real_locale":"es_ES","fallback_languages":["it"],"adabe_locale":"SPA"}},
-        urlApp: "https://www.spagnolmobili.it",
-        token: "RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4",
-    };
-    var Default = {
-        selectAllAlert: {
-            title: "",
-            text: 'Elementi selezionati: %d',
-            showConfirmButton: true,
-            showCancelButton: true,
-            confirmButtonColor: "#546E7A",
-            confirmButtonText: 'Si',
-            cancelButtonText: 'No',
-            closeOnConfirm: true,
-            closeOnCancel: true,
-            type: "warning"
-        }
-    };
-    var Translations = {
-        progress: 'app.shop.cart.progress',
-        cartUpdated: 'app.shop.cart.updated'
-    }
-</script><script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
 <script type="text/javascript" src="js/app/vendor/slicka4f0.js?v=0"></script>
 
 <script type="text/javascript" src="js/app/vendor/url.mina4f0.js?v=0"></script>
@@ -1290,19 +1237,7 @@
 
 
 <script type="text/javascript" src="js/app/vendor/materialize.js"></script>
-<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script>
-
-
-
-
-
-<script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script>
-
-
-<script type="text/javascript" src="../player.vimeo.com/api/player.js"></script>
-
-
-<script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script><script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
 <script type="text/javascript">
     $(function () {
         if( $("iframe").length > 0 ){
@@ -1314,7 +1249,7 @@
             newScript.src = "https://www.youtube.com/player_api";
             $('head').append(newScript);
         }
-//        $(documnt).ready( function(){
+
             App.init();
 
             
@@ -1322,464 +1257,8 @@
         
     });
 
-    // Newsletter
-    // function onSubmitNewsletterForm(token) {
-    $('.form--newsletter').on('submit', function ($e) {
-        $e.preventDefault();
-
-        var recaptcha = $(this).find(".g-recaptcha-response").val();
-        if (recaptcha === "") {
-            $(this).find(".g-recaptcha-error").html('Check the box to continue.');
-            return;
-        } else {
-            $(this).find(".g-recaptcha-error").html('');
-        }
-
-        var qst = $('.form--newsletter');
-        var formData = qst.serializeArray();
-        var fields =[];
-        formData.map(function(item){
-            if (item.name == 'privacy_consenso_trattamento_dati_personali' && item.value=='on') {
-                item.value = 'true';
-            } else if (item.name == 'chi_sei_form_newsletter') {
-                item.value = chiSeiFormNewsletterValue(item.value);
-            } else if (item.name == 'country') {
-                item.value = countriesValue(item.value);
-            }
-
-            if(item.name != 'fromContact' && item.name != '_token' /*&& item.name != 'privacy'*/) {
-                fields.push(item);
-            }
-        })
-
-        var data = {
-            "submittedAt": Date.now(),
-            "fields": fields
-        }
-
-        console.log(JSON.stringify(data));
-        $.ajax({
-            url: 'https://api.hsforms.com/submissions/v3/integration/submit/9453654/006fa552-5b48-4188-9129-aa77a5935800',
-            type: "post",
-            data: JSON.stringify(data),
-            dataType: 'json',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            error: function (xhr, error, status) {
-                console.log('error', xhr);
-            },
-            beforeSend: function(){
-                // App.showHideLoader();
-                qst.find('.input-group').removeClass('error');
-                qst.find(".errorForm").slideUp();
-            },
-            success: function (data) {
-                console.log(data);
-
-                if( data.error == 1 ){
-                    $.each(data.errors, function (index, value) {
-                        qst.find("[name='"+index+"']").parents('.input-group').addClass('error');
-                        qst.find(".errorForm").html(value).slideDown();
-                        console.log(index + ' --- ' + value);
-                    });
-                }else{
-                    var type = qst.find('input[name="chi_sei_form_newsletter"]:checked').val();
-                    userType = '';
-                    if( type > 0 ){
-                        userType = 'input' + qst.find('input[name="chi_sei_form_newsletter"]:checked').val() + '_contact';
-                    }
-
-                    window.dataLayer.push({
-                        'event': 'iscrizione-newsletter',
-                        'userType': userType
-                    });
-
-                    qst.find('fieldset').slideUp();
-                    qst.find('.messageSuccess').slideDown();
-                    $('.newsletterSuccess').html(data.user_email);
-
-                    setTimeout( function (){
-                        $('.closeNewsletter').trigger('click');
-                    }, 3000);
-                }
-            },
-            complete: function(){
-                // App.showHideLoader();
-            }
-        });
-    });
-
-    $('.form--contacts').on('submit', function ($e) {
-        $e.preventDefault();
-
-
-        var recaptcha = $(this).find(".g-recaptcha-response").val();
-        if (recaptcha === "") {
-            $(this).find(".g-recaptcha-error").html('Check the box to continue.');
-            return;
-        } else {
-            $(this).find(".g-recaptcha-error").html('');
-        }
-
-
-        var qst = $('.form--contacts');
-        var formData = qst.serializeArray();
-
-
-        var fields =[];
-        formData.map(function(item){
-            if ((item.name == 'privacy_consenso_trattamento_dati_personali' || item.name == 'newsletter_consenso_invio_newsletter') && item.value=='on') {
-                item.value = 'true';
-            } else if (item.name == 'chi_sei_form_newsletter') {
-                item.value = chiSeiFormNewsletterValue(item.value);
-            } else if (item.name == 'country') {
-                item.value = countriesValue(item.value);
-            }
-
-            if(item.name != 'fromContact' && item.name != '_token' && item.name != 'privacy') {
-                fields.push(item);
-            }
-        })
-
-        var data = {
-            "submittedAt": Date.now(),
-            "fields": fields
-        }
-
-        var userType        = 'input' + qst.find('input[name="tipology"]:checked').val() + '_contact';
-        var checkNewsletter = qst.find('input[name="newsletter_consenso_invio_newsletter"]').prop('checked') ? 'yes' : 'no';
-        // console.log(userType);
-        console.log(data);
-
-
-        $.ajax({
-            //url: Helper.Router.route('contactSubmit'),
-            url: 'https://api.hsforms.com/submissions/v3/integration/submit/9453654/219a6d16-1e70-4f39-962f-ec3c74a6894b',
-            type: "post",
-            data: JSON.stringify(data),
-            dataType: 'json',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            error: function (xhr, error, status) {
-                console.log('error', xhr);
-                alert(error);
-            },
-            beforeSend: function(){
-                // // App.showHideLoader();
-                qst.find('.input-group').removeClass('error');
-            },
-            success: function (data) {
-                // console.log(data);
-
-                if( data.error == 1 ){
-                    $.each(data.errors, function (index, value) {
-                        qst.find("[name='"+index+"']").parents('.input-group').addClass('error');
-                        console.log(index + ' --- ' + value);
-                    });
-                }else{
-                    qst.find('fieldset').slideUp();
-                    qst.find('.messageSuccess').slideDown();
-
-                    if( $('.product_details').length > 0 ){
-                        window.dataLayer.push({
-                            'event': 'invio-form-prodotti',
-                            'userType': userType,
-                            'checkNewsletter': checkNewsletter
-                        });
-                    }else{
-                        window.dataLayer.push({
-                            'event': 'invio-form-contatti',
-                            'userType': userType,
-                            'checkNewsletter': checkNewsletter
-                        });
-                    }
-
-                    setTimeout( function (){
-                        $('.closeContacts').trigger('click');
-                    }, 3000);
-                }
-            },
-            complete: function(){
-                // App.showHideLoader();
-            }
-        });
-    });
-
-    function chiSeiFormNewsletterValue(value) {
-        switch (value) {
-            case '1': return 'Rivenditore';
-            case '2': return 'Progettista / Architetto';
-            case '3': return 'Privato';
-            default: return '';
-        }
-    }
-
-    function countriesValue(value) {
-        switch (value) {
-            case 'AF': return 'Afghanistan';
-            case 'AX': return 'Aland Islands';
-            case 'AL': return 'Albania';
-            case 'DZ': return 'Algeria';
-            case 'AS': return 'American Samoa';
-            case 'AD': return 'Andorra';
-            case 'AO': return 'Angola';
-            case 'AI': return 'Anguilla';
-            case 'AQ': return 'Antarctica';
-            case 'AG': return 'Antigua And Barbuda';
-            case 'AR': return 'Argentina';
-            case 'AM': return 'Armenia';
-            case 'AW': return 'Aruba';
-            case 'AU': return 'Australia';
-            case 'AT': return 'Austria';
-            case 'AZ': return 'Azerbaijan';
-            case 'BS': return 'Bahamas';
-            case 'BH': return 'Bahrain';
-            case 'BD': return 'Bangladesh';
-            case 'BB': return 'Barbados';
-            case 'BY': return 'Belarus';
-            case 'BE': return 'Belgium';
-            case 'BZ': return 'Belize';
-            case 'BJ': return 'Benin';
-            case 'BM': return 'Bermuda';
-            case 'BT': return 'Bhutan';
-            case 'BO': return 'Bolivia';
-            case 'BA': return 'Bosnia And Herzegovina';
-            case 'BW': return 'Botswana';
-            case 'BV': return 'Bouvet Island';
-            case 'BR': return 'Brazil';
-            case 'IO': return 'British Indian Ocean Territory';
-            case 'BN': return 'Brunei Darussalam';
-            case 'BG': return 'Bulgaria';
-            case 'BF': return 'Burkina Faso';
-            case 'BI': return 'Burundi';
-            case 'KH': return 'Cambodia';
-            case 'CM': return 'Cameroon';
-            case 'CA': return 'Canada';
-            case 'CV': return 'Cape Verde';
-            case 'KY': return 'Cayman Islands';
-            case 'CF': return 'Central African Republic';
-            case 'TD': return 'Chad';
-            case 'CL': return 'Chile';
-            case 'CN': return 'China';
-            case 'CX': return 'Christmas Island';
-            case 'CC': return 'Cocos (Keeling) Islands';
-            case 'CO': return 'Colombia';
-            case 'KM': return 'Comoros';
-            case 'CG': return 'Congo';
-            case 'CD': return 'Congo, Democratic Republic';
-            case 'CK': return 'Cook Islands';
-            case 'CR': return 'Costa Rica';
-            case 'CI': return 'Cote D\'Ivoire';
-            case 'HR': return 'Croatia';
-            case 'CU': return 'Cuba';
-            case 'CW': return 'Curaçao';
-            case 'CY': return 'Cyprus';
-            case 'CZ': return 'Czech Republic';
-            case 'DK': return 'Denmark';
-            case 'DJ': return 'Djibouti';
-            case 'DM': return 'Dominica';
-            case 'DO': return 'Dominican Republic';
-            case 'EC': return 'Ecuador';
-            case 'EG': return 'Egypt';
-            case 'SV': return 'El Salvador';
-            case 'GQ': return 'Equatorial Guinea';
-            case 'ER': return 'Eritrea';
-            case 'EE': return 'Estonia';
-            case 'ET': return 'Ethiopia';
-            case 'FK': return 'Falkland Islands (Malvinas)';
-            case 'FO': return 'Faroe Islands';
-            case 'FJ': return 'Fiji';
-            case 'FI': return 'Finland';
-            case 'FR': return 'France';
-            case 'GF': return 'French Guiana';
-            case 'PF': return 'French Polynesia';
-            case 'TF': return 'French Southern Territories';
-            case 'GA': return 'Gabon';
-            case 'GM': return 'Gambia';
-            case 'GE': return 'Georgia';
-            case 'DE': return 'Germany';
-            case 'GH': return 'Ghana';
-            case 'GI': return 'Gibraltar';
-            case 'GR': return 'Greece';
-            case 'GL': return 'Greenland';
-            case 'GD': return 'Grenada';
-            case 'GP': return 'Guadeloupe';
-            case 'GU': return 'Guam';
-            case 'GT': return 'Guatemala';
-            case 'GG': return 'Guernsey';
-            case 'GN': return 'Guinea';
-            case 'GW': return 'Guinea-Bissau';
-            case 'GY': return 'Guyana';
-            case 'HT': return 'Haiti';
-            case 'HM': return 'Heard Island & Mcdonald Islands';
-            case 'VA': return 'Holy See (Vatican City State)';
-            case 'HN': return 'Honduras';
-            case 'HK': return 'Hong Kong';
-            case 'HU': return 'Hungary';
-            case 'IS': return 'Iceland';
-            case 'IN': return 'India';
-            case 'ID': return 'Indonesia';
-            case 'IR': return 'Iran, Islamic Republic Of';
-            case 'IQ': return 'Iraq';
-            case 'IE': return 'Ireland';
-            case 'IM': return 'Isle Of Man';
-            case 'IL': return 'Israel';
-            case 'IT': return 'Italy';
-            case 'JM': return 'Jamaica';
-            case 'JP': return 'Japan';
-            case 'JE': return 'Jersey';
-            case 'JO': return 'Jordan';
-            case 'KZ': return 'Kazakhstan';
-            case 'KE': return 'Kenya';
-            case 'KI': return 'Kiribati';
-            case 'XK': return 'Kosovo';
-            case 'KW': return 'Kuwait';
-            case 'KG': return 'Kyrgyzstan';
-            case 'LA': return 'Lao People\'s Democratic Republic';
-            case 'LV': return 'Latvia';
-            case 'LB': return 'Lebanon';
-            case 'LS': return 'Lesotho';
-            case 'LR': return 'Liberia';
-            case 'LY': return 'Libyan Arab Jamahiriya';
-            case 'LI': return 'Liechtenstein';
-            case 'LT': return 'Lithuania';
-            case 'LU': return 'Luxembourg';
-            case 'MO': return 'Macao';
-            case 'MK': return 'Macedonia';
-            case 'MG': return 'Madagascar';
-            case 'MW': return 'Malawi';
-            case 'MY': return 'Malaysia';
-            case 'MV': return 'Maldives';
-            case 'ML': return 'Mali';
-            case 'MT': return 'Malta';
-            case 'MH': return 'Marshall Islands';
-            case 'MQ': return 'Martinique';
-            case 'MR': return 'Mauritania';
-            case 'MU': return 'Mauritius';
-            case 'YT': return 'Mayotte';
-            case 'MX': return 'Mexico';
-            case 'FM': return 'Micronesia, Federated States Of';
-            case 'MD': return 'Moldova';
-            case 'MC': return 'Monaco';
-            case 'MN': return 'Mongolia';
-            case 'ME': return 'Montenegro';
-            case 'MS': return 'Montserrat';
-            case 'MA': return 'Morocco';
-            case 'MZ': return 'Mozambique';
-            case 'MM': return 'Myanmar';
-            case 'NA': return 'Namibia';
-            case 'NR': return 'Nauru';
-            case 'NP': return 'Nepal';
-            case 'NL': return 'Netherlands';
-            case 'AN': return 'Netherlands Antilles';
-            case 'NC': return 'New Caledonia';
-            case 'NZ': return 'New Zealand';
-            case 'NI': return 'Nicaragua';
-            case 'NE': return 'Niger';
-            case 'NG': return 'Nigeria';
-            case 'NU': return 'Niue';
-            case 'NF': return 'Norfolk Island';
-            case 'KP': return 'North Korea';
-            case 'MP': return 'Northern Mariana Islands';
-            case 'NO': return 'Norway';
-            case 'OM': return 'Oman';
-            case 'PK': return 'Pakistan';
-            case 'PW': return 'Palau';
-            case 'PS': return 'Palestinian Territory, Occupied';
-            case 'PA': return 'Panama';
-            case 'PG': return 'Papua New Guinea';
-            case 'PY': return 'Paraguay';
-            case 'PE': return 'Peru';
-            case 'PH': return 'Philippines';
-            case 'PN': return 'Pitcairn';
-            case 'PL': return 'Poland';
-            case 'PT': return 'Portugal';
-            case 'PR': return 'Puerto Rico';
-            case 'QA': return 'Qatar';
-            case 'RE': return 'Reunion';
-            case 'RO': return 'Romania';
-            case 'RU': return 'Russian Federation';
-            case 'RW': return 'Rwanda';
-            case 'BL': return 'Saint Barthelemy';
-            case 'SH': return 'Saint Helena';
-            case 'KN': return 'Saint Kitts And Nevis';
-            case 'LC': return 'Saint Lucia';
-            case 'MF': return 'Saint Martin';
-            case 'PM': return 'Saint Pierre And Miquelon';
-            case 'VC': return 'Saint Vincent And Grenadines';
-            case 'WS': return 'Samoa';
-            case 'SM': return 'San Marino';
-            case 'ST': return 'Sao Tome And Principe';
-            case 'SA': return 'Saudi Arabia';
-            case 'SN': return 'Senegal';
-            case 'RS': return 'Serbia';
-            case 'SC': return 'Seychelles';
-            case 'SL': return 'Sierra Leone';
-            case 'SG': return 'Singapore';
-            case 'SX': return 'Sint Maarten';
-            case 'SK': return 'Slovakia';
-            case 'SI': return 'Slovenia';
-            case 'SB': return 'Solomon Islands';
-            case 'SO': return 'Somalia';
-            case 'ZA': return 'South Africa';
-            case 'GS': return 'South Georgia And Sandwich Isl.';
-            case 'KR': return 'South Korea';
-            case 'SS': return 'South Sudan';
-            case 'ES': return 'Spain';
-            case 'LK': return 'Sri Lanka';
-            case 'SD': return 'Sudan';
-            case 'SR': return 'Suriname';
-            case 'SJ': return 'Svalbard And Jan Mayen';
-            case 'SZ': return 'Swaziland';
-            case 'SE': return 'Sweden';
-            case 'CH': return 'Switzerland';
-            case 'SY': return 'Syrian Arab Republic';
-            case 'TW': return 'Taiwan';
-            case 'TJ': return 'Tajikistan';
-            case 'TZ': return 'Tanzania';
-            case 'TH': return 'Thailand';
-            case 'TL': return 'Timor-Leste';
-            case 'TG': return 'Togo';
-            case 'TK': return 'Tokelau';
-            case 'TO': return 'Tonga';
-            case 'TT': return 'Trinidad And Tobago';
-            case 'TN': return 'Tunisia';
-            case 'TR': return 'Turkey';
-            case 'TM': return 'Turkmenistan';
-            case 'TC': return 'Turks And Caicos Islands';
-            case 'TV': return 'Tuvalu';
-            case 'UG': return 'Uganda';
-            case 'UA': return 'Ukraine';
-            case 'AE': return 'United Arab Emirates';
-            case 'GB': return 'United Kingdom';
-            case 'US': return 'United States';
-            case 'UM': return 'United States Outlying Islands';
-            case 'UY': return 'Uruguay';
-            case 'UZ': return 'Uzbekistan';
-            case 'VU': return 'Vanuatu';
-            case 'VE': return 'Venezuela';
-            case 'VN': return 'Viet Nam';
-            case 'VG': return 'Virgin Islands, British';
-            case 'VI': return 'Virgin Islands, U.S.';
-            case 'WF': return 'Wallis And Futuna';
-            case 'EH': return 'Western Sahara';
-            case 'YE': return 'Yemen';
-            case 'ZM': return 'Zambia';
-            case 'ZW': return 'Zimbabwe';
-            default: return '';
-        }
-    }
-
-    // }
+    
 </script>
-
-
-
-
-
-
 <script src="jsSpa/build/app.js"></script>
 
  

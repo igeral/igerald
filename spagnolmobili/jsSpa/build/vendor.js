@@ -3081,7 +3081,7 @@
     },
     wn = {
       props: { margin: String, firstColumn: Boolean },
-      data: { margin: "uk-margin-small-top", firstColumn: "uk-first-column" },
+      data: { margin: "uk-margin-small-top", firstColumn: "spa-first" },
       update: {
         read: function () {
           var t = yn(this.$el.children);
@@ -4829,7 +4829,7 @@
             offsetLeft: 0,
             repeat: !1,
             delay: 0,
-            inViewClass: "uk-scrollspy-inview",
+            inViewClass: "main-box-inview",
           };
         },
         computed: {
@@ -4860,8 +4860,7 @@
               var e = this;
               t.update &&
                 this.elements.forEach(function (t) {
-                  t[fr] ||
-                    (t[fr] = { cls: st(t, "uk-scrollspy-class") || e.cls }),
+                  t[fr] || (t[fr] = { cls: st(t, "main-box-class") || e.cls }),
                     (t[fr].show = Ai(t, e.offsetTop, e.offsetLeft));
                 });
             },
@@ -14236,7 +14235,7 @@
           this
         );
       }),
-      (b.expr.pseudos.animated = function (t) {
+      (b.expr.pseudos.hasEffect = function (t) {
         return b.grep(b.timers, function (e) {
           return t === e.elem;
         }).length;
@@ -18624,12 +18623,12 @@
               limit: { x: this.html.offsetHeight, y: this.html.offsetHeight },
               currentElements: this.currentElements,
             }),
-            this.isMobile
+            this.mobileView
               ? this.isTablet
                 ? (this.context = "tablet")
                 : (this.context = "smartphone")
               : (this.context = "desktop"),
-            this.isMobile && (this.direction = this[this.context].direction),
+            this.mobileView && (this.direction = this[this.context].direction),
             "horizontal" === this.direction
               ? (this.directionAxis = "x")
               : (this.directionAxis = "y"),
@@ -18668,7 +18667,7 @@
               key: "checkContext",
               value: function () {
                 if (this.reloadOnContextChange) {
-                  (this.isMobile =
+                  (this.mobileView =
                     /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
                       navigator.userAgent
                     ) ||
@@ -18676,11 +18675,11 @@
                       navigator.maxTouchPoints > 1) ||
                     this.windowWidth < this.tablet.breakpoint),
                     (this.isTablet =
-                      this.isMobile &&
+                      this.mobileView &&
                       this.windowWidth >= this.tablet.breakpoint);
                   var t = this.context;
                   if (
-                    (this.isMobile
+                    (this.mobileView
                       ? this.isTablet
                         ? (this.context = "tablet")
                         : (this.context = "smartphone")
@@ -20790,7 +20789,7 @@
             key: "init",
             value: function () {
               if (
-                ((this.options.isMobile =
+                ((this.options.mobileView =
                   /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
                     navigator.userAgent
                   ) ||
@@ -20798,12 +20797,12 @@
                     navigator.maxTouchPoints > 1) ||
                   window.innerWidth < this.tablet.breakpoint),
                 (this.options.isTablet =
-                  this.options.isMobile &&
+                  this.options.mobileView &&
                   window.innerWidth >= this.tablet.breakpoint),
-                (this.smooth && !this.options.isMobile) ||
+                (this.smooth && !this.options.mobileView) ||
                 (this.tablet.smooth && this.options.isTablet) ||
                 (this.smartphone.smooth &&
-                  this.options.isMobile &&
+                  this.options.mobileView &&
                   !this.options.isTablet)
                   ? (this.scroll = new ht(this.options))
                   : (this.scroll = new k(this.options)),

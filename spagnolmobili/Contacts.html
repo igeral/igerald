@@ -3,110 +3,85 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <script>
-        dataLayer = [{
-            'pageType': 'homepage',
-            'pageLang': 'en'
-        }];
+    
 
-    </script>
-
-            <!-- Google Tag Manager -->
-        <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TCXV85L');
-        </script>
-        <!-- End Google Tag Manager -->
+           
+   
+       
     
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-<meta name="format-detection" content="telephone=no">
-<meta name="_token" content="RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4"/>
+
+
 
 <!-- Meta Tags -->
-<title>Spagnolmobili | Made in Italy design Furniture</title>
-
-
-<!-- Meta Tags OG -->
-
-
-<!-- for Twitter -->
+<title>Spagnolmobili - Contatti</title><!-- for Twitter -->
 
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
-
-
-
-<!-- Android / iOS -->
-<link rel="manifest" href="images/favicon/manifest.json" crossorigin="use-credentials">
-<meta name="theme-color" content="#212529">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="msapplication-TileColor" content="#212529">
-
-
-<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><!-- CSS -->
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="cssSpa/build/main2.css">
 <script src="https://kit.fontawesome.com/47ba2e2d30.js" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="js/app/vendor/jquery-3.3.1.min.js"></script>
 <script src="../www.google.com/recaptcha/api.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "url": "www.spagnolmobili.it",
-        "name": "Spagnolmobili",
-        "logo": "https://www.novamobili.it/images/app/logo.png",
-        "contactPoint": [{
-            "@type": "ContactPoint",
-            "telephone": "+3904389868",
-            "contactType": "customer service"
-        }],
-        "address": {
-            "@type": "PostalAddress",
-            ZONA NOTTE
-            Armadi Battenti
-            Armadi Scorrevoli
-            Letti
-            Comò e comodini
-            Chiusure scorrevoli
-            ZONA GIORNO
-            Librerie
-            Contenitori
-            Madie
-            KIDS
-            Camerette
-            Letti
-            Letti sovrapposti e a castello
-            Scrittoi
-            Comò e comodini
-            COMPLEMENTI
-            Boiserie
-            Elementi in metallo
-            Sedie e poltroncine
-            Tavoli e tavolini
-            SCARICA
-            Catalogues Technical data sheets Fabric information 3DS files Certifications Press kit
-            
-            "@type": "SearchAction",
-            "target": "www.novamobili.it/search?search={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
+
+    
+
+
+
+<script type="text/javascript">
+
+    // const userName;
+    // const cognome;
+    // const email;
+    // const phone;
+    // const request;
+
+    
+    if(document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', afterLoaded);
+    } else {
+        //The DOMContentLoaded event has already fired. Just run the code.
+        afterLoaded();
+
+        
     }
 
 
+    function afterLoaded() {
+        console.log("dom loaded");
+        userName = document.getElementById('name');
+        cognome = document.getElementById('surname');
+        email = document.getElementById('email');
+        phone = document.getElementById('phone');
+        request = document.getElementById('district');
 
-    </script>
+    }
+
+
+    function sendEmail() {
+        console.log(userName.value);
+        var data = userName.value+":"+cognome.value+
+        ":"+email.value+":"+phone.value+":"+request.value;
+        $.ajax({
+            type:'POST',
+            url: "https://659e-197-250-199-55.ngrok.io/api/"+data
+        }).done(function(res) {
+          console.log(res.lat);
+        });
+    }
+
+</script>
+
+
+
 
     <script type="text/javascript">
         addColor();
@@ -241,13 +216,26 @@
 /* .header{
     z-index: 20 !important; 
 } */
-.header.col-12{
+:root {
+    --error-color: #dc3545;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+}
+.field.error input {
+    border-color: var(--error-color);
+}
+
+.field.success input {
+    border-color: var(--success-color);
+}
+.header.sec-12{
     position: fixed !important;
     top: 50px !important;
 }
 .header2{
     position: fixed !important;
     width: 100%;
+    z-index: 10 !important;
 }
 #contact-l-title{
     margin-top: 4rem;
@@ -271,12 +259,12 @@
     }
     @media screen and (min-width: 2000px) {
         .formopen{
-        margin-top: 68rem;
+        margin-top: 56rem;
     }    
     }
     @media screen and (min-width:1600px) {
         footer{
-            height: 33rem !important;
+            height: 28rem !important;
         }
     }
         @media screen and (min-width: 768px) and (max-width: 830px){
@@ -286,23 +274,35 @@
     #scarica-div > div{
         margin-left: -28%;
     }
+    #cont-form > div > div > form > fieldset{
+        width: 80%;
+    }
+    #direct-btn:nth-child(1){
+        margin-left: 1.5rem;
+    }
     .header2{
         position: fixed !important;
         top: 0 !important;
         width: 100%;
     }
-    .header.col-12{
+    .header.sec-12{
         position: fixed !important;
         top: 50px !important;
     }
     #contact-l-title{
-        margin-top: 10rem;
+        margin-top: 6rem;
     }
     footer{
         height: 40rem;
     }
 
-}   
+}  
+.submitted{
+    background-color: #44c08a;
+    border-radius: 50%;
+    height: 72px;
+    width: 5px;
+} 
 
     /* Hide the browser's default checkbox */
     .container input {
@@ -348,7 +348,7 @@
     /* Create a custom checkbox */
     .checkmark {
       position: absolute;
-      top: 0;
+      top: 5px;
       left: 0;
       height: 25px;
       width: 25px;
@@ -399,9 +399,7 @@
       display: none;
     }
 
-    /*#cont-form.hide {
-      opacity: 0;
-    }*/
+    
 
     .menu-title{
         font-weight: bold;
@@ -450,17 +448,20 @@
     }
     @media screen and (max-width: 1900px) {
         #menu-div{
-            margin-left: 7rem;
+            margin-left: 8rem;
         }
     }
     @media screen and (min-width: 320px) and (max-width: 500px){
         #contact-l-title{
-            margin-top: 9rem !important;
+            margin-top: 8rem !important;
+        }
+        #cont-form{
+            margin-left: 0 !important;
         }
         .header, .header2{
             position: fixed !important;
         }
-        .header.col-12{
+        .header.sec-12{
             top: 50px !important;
             /* z-index: 25 !important; */
         }
@@ -470,14 +471,24 @@
             height: 50px !important;
             width: 100%;
         }
+        .paragraph-2{
+            font-size: 1rem;
+        }
+        p a{
+            font-size: 0.9rem;
+        }
         #direct-btn > a{
             margin-left: -2rem !important;
         }
         #direct-btn1{
             margin-left: 0.5rem !important;
         }
+        #direct-btn1{
+            gap: 15px;
+        }
         #close{
-            gap: 10px;
+            width: 7rem;
+            font-size: 0.8rem;
         }
     }
 
@@ -555,24 +566,9 @@
 
     
     </head>
-<body>
-
-
-
-
-<!-- Google Tag Manager (noscript)
-
- -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCXV85L"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-
-
-
-<div class="container-fluid container-fluid-main">
+<body><div class="holder-dynamic holder-dynamic-main">
     <div class="header2">
-        <div class="header-items2">
+        <div class="header-language">
           <ul>
           <a href="#">IT</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
           <a href="#">EN</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -586,45 +582,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
     
-        <div class="edgtf-position-right-inner2"
-        style="" >
+        <div class="header-socials">
                        
-     <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" 
+     <a class="header-social-icon-widget-holder header-icon-has-hover" 
      style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 10px;" href="https://it-it.facebook.com/spagnolmobili/" target="_blank">
-         <span class="edgtf-social-icon-widget fa fa-facebook">  
+         <span class="header-social-icon-widget fa fa-facebook">  
          </span></a>
  
-     <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
-         <span class="edgtf-social-icon-widget fa fa-instagram    "></span>        </a>
+     <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
+         <span class="header-social-icon-widget fa fa-instagram    "></span>        </a>
  
-     <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
+     <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
          <span class="fa fa-twitter"></span>        </a>
  
-     <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
-         <span class="edgtf-social-icon-widget fa fa-pinterest    "></span>        </a>
+     <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
+         <span class="header-social-icon-widget fa fa-pinterest    "></span>        </a>
 
  
-     <a class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="https://www.tomasella.it/area-riservata" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
-       <span class="edgtf-icon-text" style="font-size: 11px">AREA RISERVATA</span>&nbsp&nbsp
-       <span class="edgtf-icon-widget fa fa-lock    "></span>&nbsp
+     <a class="header-icon-widget-holder header-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="#" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
+       <span class="header-icon-text" style="font-size: 14px">AREA RISERVATA</span>&nbsp&nbsp
+       <span class="header-icon-widget fa fa-lock    "></span>&nbsp
                </a>
    </div>
     
     
       </div>
     
-        <header class="header col-12">
+        <header class="header sec-12">
     
-        <div class="row isDesktop align-items-center">
-            <div style="position: absolute;left: 1%;" class="col-2">
+        <div class="row DesktopView centerAligned">
+            <div style="position: absolute;left: 1%;" class="sec-2">
                 <a href="index.html">
-                    <!--<a href="">logo--black.svg logo--white.svg</a>-->
+                    
                     <img src="images/app/s-logo2.svg" height="300" class="isBlack1" />
-                    <!--<img src="images/app/s-logo.svg" height="100" class="isWhite1" />-->
+                    
                 </a>
             </div>
     
-            <div id="menu-div" class="col-6 offset-1 align-center padding--lr-0">
+            <div id="menu-div" class="sec-6 offset-1 align-center padding--lr-0">
                 <ul class="menu">
                     <li class="menu-has-submenu menu-item">
                         <a href="#" onclick="hideMyItems()" id="menu-title" class="menu-title" data-menu="menu-title-1">PRODOTTI</a>
@@ -651,21 +646,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
     
-        <div class="row isMobile align-items-center">
-            <div class="col-2 align-left">
-            </div>
+        <div class="row mobileView centerAligned">
+            
     
-            <div class="col-8 align-center">
+            <div class="sec-8 align-center">
                 <a href="index.html">
                     <img src="images/app/s-logo2.svg" height="22" class="" />
                 </a>
             </div>
     
-            <div class="col-2 align-right">
-                <div class="header__hamburger openMenuMobile">
-                    <span class="header__hamburger__1"></span>
-                    <span class="header__hamburger__2"></span>
-                    <span class="header__hamburger__3"></span>
+            <div class="sec-2 ham-div">
+                <div class="header__toggle">
+                    <i class='bx bx-menu header__hamburger openSideMenu' style="font-size:35px;"id="header-toggle"></i>
                 </div>
             </div>
         </div>
@@ -679,11 +671,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <li class="menu-has-submenu menu-item">
                 <ul style="height: 100%;" class="menu-submenu menu-title-1">
                     <li id="submenu-menu" class="menu-submenu-item row">      
-                    <ul id="menu-div1" class="col-20">
+                    <ul id="menu-div1" class="sec-20">
                                      
-                        <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="120">
-                            <a id="menu-link" href="#">ZONA NOTTE</a>
-                            <ul class="menu-submenu-item-single-list">
+                        <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="120">
+                            <a id="div-name" href="#">ZONA NOTTE</a>
+                            <ul class="single-submenu-item-menu-list">
                             <!--<a href="" style="margin-bottom: 300px;">
                                     
                             </a>-->
@@ -700,7 +692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                             <!--start -->
     
-                                                                <ul id="submenu-1" class="menu-submenu-item-single-list">
+                                                                <ul id="submenu-1" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="adecofront.html">Ardecó
                                                                     </a>
@@ -746,7 +738,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                     <li>
                                                         <a onclick="showLettiZonnaSubMenu()" id="submenu-main" href="#">
                                                             Letti
-                                                            <ul id="submenu-300" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-300" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="lettiimbotitifront.html">Letti imbotiti
                                                                     </a>
@@ -820,11 +812,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         </li>
                                                                                                 
                                                                                                                                                                                                                                                                        </ul>
-                                        <ul id="menu-div2" class="col-20"><!--offset-1 -->
+                                        <ul id="menu-div2" class="sec-20"><!--offset-1 -->
                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="270">
-                                        <a id="menu-link" href="#">ZONA GIORNO</a>
-                                                            <ul class="menu-submenu-item-single-list">
+                                            <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="270">
+                                        <a id="div-name" href="#">ZONA GIORNO</a>
+                                                            <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sofas.html">
                                                             >>>>>>>
@@ -859,11 +851,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                                                                 
                                      
                                                                                                                                                             </ul>
-                                        <ul id="menu-div3" class="col-20"><!-- offset-1 border-right-grey -->
+                                        <ul id="menu-div3" class="sec-20"><!-- offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                        <a id="menu-link" href="#">KIDS</a>
-                                                <ul class="menu-submenu-item-single-list">
+                                                <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                        <a id="div-name" href="#">KIDS</a>
+                                                <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sideboards.html">
                                                             >>>>>>>
@@ -880,7 +872,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <li>
                                                         <a onclick="showLettiKidsSubMenu()" id="submenu-main" href="#">
                                                             Letti
-                                                            <ul id="submenu-200" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-200" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="lettiimbotitikidsfront.html">Letti imbotiti
                                                                     </a>
@@ -900,7 +892,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
                                                             Letti sovrapposti e a castello
     
-                                                            <ul id="submenu-100" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-100" class="single-submenu-item-menu-list">
                                                                 <li>
                                                                     <a href="acastero001.html">Fly
                                                                     </a>
@@ -958,12 +950,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     
     
-                                                    <ul id="menu-div4" class="col-20"><!--
+                                                    <ul id="menu-div4" class="sec-20"><!--
                                                     offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                                    <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                        <a id="menu-link" href="#">COMPLEMENTI</a>
-                                                <ul class="menu-submenu-item-single-list">
+                                                                    <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                        <a id="div-name" href="#">COMPLEMENTI</a>
+                                                <ul class="single-submenu-item-menu-list">
                                                     <!--<li>
                                                         <a href="en/sideboards.html">
                                                             >>>>>>>
@@ -989,18 +981,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                                         </a>
                                                     </li>
                                                                                                 <li>
-                                                        <a id="submenu-main" href="sediakids.html">
+                                                        <a id="submenu-main" href="sedia.html">
                                                             Sedie e poltroncine
                                                         </a>
                                                     </li>
                                                                                                 <li>
-                                                        <a id="submenu-main" href="tavolikids.html">
+                                                        <a id="submenu-main" href="tavoli.html">
                                                             Tavoli e tavolini
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="elementagornol.html" id="submenu-main">
-                                                            pensili
+                                                            Pensili
                                                         </a>
                                                     </li>
                                                      </ul>
@@ -1012,12 +1004,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
         </ul>
     </div>
-    <div class="row isMobile menuMobile">
+    <div class="row mobileView menuMobile">
         <div class="mobilemenu">
             <div class="menue">
               <ul class="menus">
                 <li class="space">
-                  <a href="#" class="hasDropDown heading">PRODOTTI</a>
+                  <a href="#" class="hasDropDown heading">PRODOTTI <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
                 </li>
                 <li class="space"><a href="catalogh00.html" class="heading">CATALOGHI</a></li>
                 <li class="space"><a href="rivenditory.html" class="heading">RIVENDITORI</a></li>
@@ -1037,7 +1029,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
           <div class="items">
             <div class="columns">
-              <a href="#" class="backone heading">Back to menu</a><br>
+                <a href="#" class="backone heading"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to menu</a><br><br>
               <a href="#" class="heading downone">ZONA NOTTE</a>
               <ul class="menu-items">
                 <li>
@@ -1103,9 +1095,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <ul class="menu-items">
                 <li><a href="boiserie.html">Boiserie</a></li>
                 <li><a href="elementimetallo.html">Elementi in metallo</a></li>
-                <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-                <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
-                <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
+                <li><a href="sedia.html">Sedie e poltroncine</a></li>
+                <li><a href="tavoli.html">Tavoli e tavolini</a></li>
+                <li><a href="elementagornol.html" id="submenu-main">Pensili</a></li>
               </ul>
             </div>
           </div>
@@ -1125,7 +1117,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           margin-top: 2rem;
         }
         .mobilemenu{
-            margin-top: 5rem;
+            margin-top: 3rem;
         }
         .menus li {
           list-style: none;
@@ -1191,19 +1183,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     </style>
     <script type="text/javascript">
-        document.querySelector(".hasDropDown").addEventListener("click", (e) => {
+        const showMenu = (headerToggle) =>{
+    const toggleBtn = document.getElementById(headerToggle);
+    // Validate that variables exist
+        toggleBtn.addEventListener('click', ()=>{
+            // change icon
+            toggleBtn.classList.toggle('bx-x');
+        })
+}
+showMenu('header-toggle');
+    document.querySelector(".hasDropDown").addEventListener("click", (e) => {
           e.preventDefault();
           document.querySelector(".menue").style.transform = "translateX(-100%)";
           document.querySelector(".menue").style.transitionDuration = "1s";
           document.querySelector(".items").style.transform = "translateX(-100%)";
-          document.querySelector(".items").style.transitionDuration = "1s";
+          document.querySelector(".items").style.transitionDuration = "0.5s";
         });
         document.querySelector(".backone").addEventListener("click", (e) => {
           e.preventDefault();
           document.querySelector(".menue").style.transform = "translateX(0%)";
           document.querySelector(".menue").style.transitionDuration = "1s";
           document.querySelector(".items").style.transform = "translateX(100%)";
-          document.querySelector(".items").style.transitionDuration = "1s";
+          document.querySelector(".items").style.transitionDuration = "0.5s";
         });
         document.querySelector(".subdropdown").addEventListener("click", (e) => {
           e.preventDefault();
@@ -1238,29 +1239,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="direct-div"> 
 
         <div class="row margin--bottom-90">
-            <div class="col-lg-6 offset-lg-3 col-12 offset-0">
+            <div class="col-lg-6 offset-lg-3 sec-12 offset-0">
                 <div class="row">
-                    <div class="col-6 align-center">
+                    <div class="sec-6 align-center">
                         <h5 class="heading-4 margin--bottom-25"></h5>
                         <p id="adress" class="paragraph-2 margin--bottom-45">
-                            Mobil s.r.l.  -  SpagnolMobili<br>
+                            Mobil s.r.l.  -  Spagnol Mobili<br>
                             Via Vidor,1-31010 Mosnigo 
                             <br>di Moriago (TV) - ITALY</p>
 
                     </div>
-                    <div style="display: block;" id="phones-cont" class="col-6 align-center">
+                    <div style="display: block;" id="phones-cont" class="sec-6 align-center">
                         <h5 class="heading-4 margin--bottom-25"></h5>
-                        <p id="phones" class="paragraph-2 margin--bottom-45">T <a href="tel:+3904389868">+39 0438 9868</a><br> F <a href="tel:+39043898699">+39 0438 9869</a></p>
+                        <p id="phones" class="paragraph-2 margin--bottom-45">T <a href="tel:+3904388911">+39 0438 8911</a><br> F <a href="tel:+39043898699">+39 0438 89 0082</a></p>
                     </div>
                 </div>
             
                 <div id="direct-btn1" class="row">
-                    <div id="direct-btn" class="col-6 align-center">
+                    <div id="direct-btn" class="sec-6 align-center">
                         <a href="https://www.google.it/maps/place/SpagnolGroup+-+Mobil+Srl/@45.870612,12.0757166,17z/data=!3m1!4b1!4m5!3m4!1s0x4779227c00527cd1:0x8b23e4774052195c!8m2!3d45.8706076!4d12.0779152" target="_blank" class=""><button id="close">DIRECTIONS</button></span></a>
                     </div>
-                    <div id="direct-btn" class="col-6 align-center">
+                    <div id="direct-btn" class="sec-6 align-center">
 
-                        <a id="contact-btn" onclick="showhide()" class=""><button id="close">CONTACT</button></span></a>
+                        <a id="contact-btn" onclick="showhide()" class=""><button id="close">CONTATTI</button></span></a>
 
                     </div>
                 </div>
@@ -1270,8 +1271,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
 
-        <div id="cont-form" class="row margin--bottom-90">
-            <div style="text-align: left;" class="col-lg-6 offset-lg-3 col-12 align-center">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    <script type="text/javascript"> 
+
+    </script>
+
+
+
+
+    <script type="text/javascript">
+
+        // const userName;
+        // const cognome;
+        // const email;
+        // const phone;
+        // const request;
+
+        
+        if(document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', afterLoaded);
+        } else {
+            //The DOMContentLoaded event has already fired. Just run the code.
+            afterLoaded();
+
+            
+        }
+
+
+        function afterLoaded() {
+            console.log("dom loaded");
+
+
+        }
+
+
+
+
+    </script>        <div id="cont-form" class="row margin--bottom-90">
+            <div style="text-align: left;" class="col-lg-6 offset-lg-3 sec-12 align-center">
                 <div wire:id="tWhUPkLKg6EIEdA42McA">
     
     <form  class="cs-form uk-width-2-3@m" wire:submit.prevent="submit" method="post">
@@ -1284,46 +1325,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
             <div class="field">
                 <label class="discard placeholder uk-form-label" for="name">Name *</label>
-                <input wire:model.defer="name" id="name" type="text" class="uk-input " name="name" value="" autocomplete="name">
-                        
+                <input wire:model.defer="name" id="name" type="text" class="uk-input "name="name" value="" autocomplete="name" required>
+                <small></small>  
                                     
             </div>
             <div class="field">
-                <label class="discard placeholder uk-form-label" for="surname">Surname *</label>
-                <input wire:model.defer="surname" id="surname" type="text" class="uk-input " name="surname" value="" autocomplete="surname">
-                
-                
-                            </div>
+                <label class="discard placeholder uk-form-label" for="surname">Cognome *</label>
+                <input wire:model.defer="surname" id="surname" type="text" class="uk-input " name="surname" value="" autocomplete="surname" required>
+                <small></small>               
+            </div>
             <div class="field">
                 <label class="discard placeholder uk-form-label" for="email">email *</label>
-                <input wire:model.defer="email" id="email" type="text" class="uk-input " name="email" value="" autocomplete="email">
+                <input wire:model.defer="email" id="email" type="text" class="uk-input " name="email" value="" autocomplete="email" required>
+                <small></small>  
                             
             </div>
             <div class="field" for="phone">
                 <label class="discard placeholder uk-form-label">Phone no*</label>
                 <input wire:model.defer="phone" id="phone" type="text" class="uk-input " name="phone" value="" autocomplete="phone">
-                
-                
-                            </div>
-            <div class="field">
-                <label class="discard placeholder uk-form-label" for="country">Nationality*</label>
-                <input wire:model.defer="country" id="country" type="text" class="uk-input " name="country" value="" autocomplete="country">
-                            </div>
-
-            <div class="field" for="phone">
-                <label class="discard placeholder uk-form-label">City*</label>
-                <input wire:model.defer="phone" id="phone" type="text" class="uk-input " name="phone" value="" autocomplete="phone">
-                
-                <div class="field" for="phone">
-                <label class="discard placeholder uk-form-label">Province*</label>
-                <input wire:model.defer="phone" id="phone" type="text" class="uk-input " name="phone" value="" autocomplete="phone">
+                <small></small>                  
+            </div>
                 
             
             
             <div class="field" for="district">
                 <label class="discard placeholder uk-form-label">Request*</label>
                 <!-- <input wire:model.defer="district" id="district" type="text" class="uk-input " name="district" value="" autocomplete="district" style="border: solid; height: 7rem; border-width:1px;"> -->
-                <textarea wire:model.defer="district" name="district" id="district" cols="30" rows="10" style="border: solid; height: 7rem; border-width:1px;"></textarea>
+                <textarea wire:model.defer="district" name="district" id="district" cols="30" rows="10" style="border: solid; height: 7rem; border-width:1px;" required></textarea>
                 
                             </div>
 
@@ -1353,17 +1381,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        
 
             <div class="field">
-                <button style="
+                <input style="
                 background-color: #1F1F1F;color: #fff;
-                border: 1px solid transparent;margin-top: 20px;
+                border: 1px solid transparent;margin-top: 20px; border-radius: 2rem ;
                 " 
-                type="submit" class="btn btn-lined1">Invia<span class="span1"></span></button>
+                type="submit" id="formsubmit" class="btn btn-lined1" value="Invia ">
+                <!-- <button style="
+                background-color: #1F1F1F;color: #fff;
+                border: 1px solid transparent;margin-top: 20px; border-radius: 2rem ;
+                " 
+                type="submit" id="formsubmit" class="btn btn-lined1">Invia<span class="span1"></span></button> -->
             </div>
         </fieldset>
     </form>
-
-
-            
         </div>
             </div>
         </div>
@@ -1372,9 +1402,107 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <script type="text/javascript">
-      
-      var slideImg = document.getElementById("slideImg14");
-      var images = new Array(
+          function sendEmail() {
+            swal("Submited successfully");
+            console.log("data is available");
+            var data = userName.value+":"+cognome.value+
+            ":"+email.value+":"+phone.value+":"+request.value;
+            $.ajax({
+                type:'POST',
+                crossDomain: true,
+                url: "https://spagnolmailserver.herokuapp.com/api/"+data
+            }).done(function(res) {
+              console.log(res.lat);
+            });
+        }
+        var userName = document.getElementById('name');
+        var cognome = document.getElementById('surname');
+        var emails = document.getElementById('email');
+        var phone = document.getElementById('phone');
+        var request = document.getElementById('district');
+        const submitform = document.querySelector('#formsubmit');
+
+        const isRequired = value => value === '' ? false : true;
+        const isBetween = (length, min, max) => length < min || length > max ? false : true;
+        const isEmailValid = (email) => {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        };
+        const showError = (input, message) => {
+// get the form-field element
+            const formField = input.parentElement;
+// add the error class
+            formField.classList.remove('success');
+            formField.classList.add('error');
+
+// show the error message
+            const error = formField.querySelector('small');
+            error.textContent = message;
+        };
+        const showSuccess = (input) => {
+            // get the form-field element
+            const formField = input.parentElement;
+
+            // remove the error class
+            formField.classList.remove('error');
+            formField.classList.add('success');
+
+            // hide the error message
+            const error = formField.querySelector('small');
+            error.textContent = '';
+        }
+        const checkUsername = () => {
+            let valid = false;
+            const min = 3,
+                max = 25;
+            const username = userName.value.trim();
+
+            if (!isRequired(username)) {
+                showError(userName, 'Name cannot be blank.');
+            } else if (!isBetween(username.length, min, max)) {
+                showError(userName, `Username must be between ${min} and ${max} characters.`)
+            } else {
+                showSuccess(userName);
+                valid = true;
+            }
+            console.log('It works!')
+            return valid;
+        }
+        const checkEmail = () => {
+            let valid = false;
+            const email = emails.value.trim();
+            if (!isRequired(email)) {
+                showError(emails, 'Email cannot be blank.');
+            } else if (!isEmailValid(email)) {
+                showError(emails, 'Email is not valid.')
+            } else {
+                showSuccess(emails);
+                valid = true;
+            }
+            return valid;
+        }
+        
+        submitform.addEventListener('click', (e)=>{
+            e.preventDefault();
+            let isUsernameValid = checkUsername(), isEmailValid = checkEmail();
+            
+            let isFormValid = isUsernameValid && isEmailValid;
+            
+            // submit to the server if the form is valid
+            if (isFormValid) {
+                sendEmail();
+                document.querySelector('.cs-form').reset();
+            }
+            else{
+                checkEmail();
+                checkUsername();
+            }
+        });
+
+        
+        
+        var slideImg = document.getElementById("slideImg14");
+        var images = new Array(
         "uploads/sections/images/3/p1.jpg",
         "uploads/sections/images/3/p2.jpg",
         "uploads/sections/images/3/p3.jpg",
@@ -1400,6 +1528,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </script>
  
 <style>
+    #cont-form{
+        margin-left: 9%;
+    }
     .logosSeries {
         display: flex;
         flex-direction: column !important;
@@ -1471,7 +1602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     .links{
         margin-top: 5px;
-        font-size: 12px ;
+      font-size:16px ;
     }
     #website{
         color: #fff;
@@ -1500,9 +1631,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             margin-left: 300px;
             margin-top: -25px;
     } 
-    footer{
-        /* margin-top: 53%; */
-    }
     .putDown a{
         margin-top: 0;
     }
@@ -1567,11 +1695,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         @media screen and (min-width: 2160px){
             footer{
-                margin-top: 20rem;
+                margin-top: 16rem;
                 height: 23rem;
             }
             
         }
+    .hides{
+        display: none;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 </style>
 <footer class="footer" id="footer" data-scroll-section>
 <div class="highFooter">
@@ -1591,26 +1724,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
    </div>
 
-   <script>
-             document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').addEventListener('click', (e)=>{
-        e.preventDefault();
-        document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').style.backgroundColor = `#44c08a`;
-        document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').style.borderRadius = '50%';
-        document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').style.height = '72px'
-        document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').style.width = '5px'
-        document.querySelector('#cont-form > div > div > form > fieldset > div:nth-child(6) > div > div:nth-child(5) > button').innerHTML = `<i class="fa fa-check" aria-hidden="true" style="margin-left:-8px;"></i>`;
-        document.querySelector('.thankyou').style.display = 'grid';
-        document.querySelector('#direct-div').style.display = 'none'
-        document.querySelector('.okay').addEventListener('click', ()=>{
-            document.querySelector('.thankyou').style.display = 'none';
-        document.querySelector('#direct-div').style.display = 'block';
-        })
-        document.querySelector('.cancel').addEventListener('click', ()=>{
-                    document.querySelector('.thankyou').style.display = 'none';
-        document.querySelector('#direct-div').style.display = 'block';
-        })
-      })
-   </script>
 
    <div class="social0">
     <a href="https://it-it.facebook.com/spagnolmobili/"><i class="fa fa-facebook"></i> </a>
@@ -1624,7 +1737,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="r2 r2bis" uk-grid> 
    <div class="putInline">
        <div id="ciccio">    
-           <h6 id="quicklink">All rights reserved</h6>
+           <h6 style="font-size: 17px;" id="quicklink">All rights reserved</h6>
        </div>
        <div class="links">
        <!-- <a href="#" id="quicklink">Dati legali</a> -->
@@ -1663,34 +1776,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 </div>
 
-<script type="text/javascript">
-    var Config = {
-        locale: "en",
-        urlBase: "https://www.spagnolmobili.it/en",
-        allCurrencies: {"USD":{"name":"USD - Dollaro Americano","symbol":"$","symbol_html":"$"},"GBP":{"name":"GBP - Sterlina Inglese","symbol":"\u00a3","symbol_html":"&pound;"},"EUR":{"name":"EUR - Euro","symbol":"\u20ac","symbol_html":"&euro;"},"AUD":{"name":"AUD - Dollaro Australiano","symbol":"$","symbol_html":"$"},"BRL":{"name":"BRL - Real Brasiliano","symbol":"R$","symbol_html":"R$"},"CAD":{"name":"CAD - Dollaro Canadese","symbol":"$","symbol_html":"$"},"CZK":{"name":"CZK - Corona Ceca","symbol":"K\u010d","symbol_html":""},"DKK":{"name":"DKK - Corona Danese","symbol":"kr","symbol_html":"kr"},"HKD":{"name":"HKD - Dollaro di Hong Kong","symbol":"$","symbol_html":"$"},"HUF":{"name":"HUF - Fiorino Ungherese","symbol":"Ft","symbol_html":"Ft"},"ILS":{"name":"ILS - Nuovo Sicli","symbol":"\u20aa","symbol_html":"&#8362;"},"JPY":{"name":"JPY - Yen Giapponese","symbol":"\u00a5","symbol_html":"&#165;"},"MYR":{"name":"MYR - Ringgit","symbol":"RM","symbol_html":"RM"},"MXN":{"name":"MXN - Peso Messicano","symbol":"$","symbol_html":"$"},"NZD":{"name":"NZD - Dollaro Neozelandese","symbol":"$","symbol_html":"$"},"NOK":{"name":"NOK - Corona Norvegese","symbol":"kr","symbol_html":"kr"},"PHP":{"name":"PHP - Peso Filippino","symbol":"Php","symbol_html":"Php"},"PLN":{"name":"PLN - Zloty Polacco","symbol":"z\u0142","symbol_html":""},"SGD":{"name":"SGD - Dollaro di Singapore","symbol":"$","symbol_html":"$"},"SEK":{"name":"SEK - Corona Svedese","symbol":"kr","symbol_html":"kr"},"CHF":{"name":"CHF - Franco Svizzero","symbol":"CHF","symbol_html":"CHF"},"TWD":{"name":"TWD - Dollaro Taiwanese","symbol":"$","symbol_html":"$"},"THB":{"name":"THB - Baht Tailandese","symbol":"\u0e3f","symbol_html":" &#3647;"},"TRY":{"name":"TRY - Nuova Lira Turca","symbol":"TL","symbol_html":" &#3647;"}},
-        allLocales: {"it":{"name":"Italiano","image":"images\/flags\/16\/Italy.png","admin_name":"Italiano","real_locale":"it_IT","fallback_languages":["it"],"adabe_locale":"ITA"},"en":{"name":"English","image":"images\/flags\/16\/United-Kingdom.png","admin_name":"Inglese","real_locale":"en_UK","fallback_languages":["it"],"adabe_locale":"ENG"},"fr":{"name":"Fran\u00e7ais","image":"images\/flags\/16\/France.png","admin_name":"Francese","real_locale":"fr_FR","fallback_languages":["it"],"adabe_locale":"FRA"},"de":{"name":"Deutsch","image":"images\/flags\/16\/Germany.png","admin_name":"Tedesco","real_locale":"de_DE","fallback_languages":["it"],"adabe_locale":"DEU"},"es":{"name":"Espa\u00f1ol","image":"images\/flags\/16\/Spain.png","admin_name":"Spagnolo","real_locale":"es_ES","fallback_languages":["it"],"adabe_locale":"SPA"}},
-        urlApp: "https://www.spagnolmobili.it",
-        token: "RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4",
-    };
-    var Default = {
-        selectAllAlert: {
-            title: "",
-            text: 'Elementi selezionati: %d',
-            showConfirmButton: true,
-            showCancelButton: true,
-            confirmButtonColor: "#546E7A",
-            confirmButtonText: 'Si',
-            cancelButtonText: 'No',
-            closeOnConfirm: true,
-            closeOnCancel: true,
-            type: "warning"
-        }
-    };
-    var Translations = {
-        progress: 'app.shop.cart.progress',
-        cartUpdated: 'app.shop.cart.updated'
-    }
-</script><script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
 <script type="text/javascript" src="js/app/vendor/slicka4f0.js?v=0"></script>
 
 <script type="text/javascript" src="js/app/vendor/url.mina4f0.js?v=0"></script>
@@ -1703,19 +1789,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <script type="text/javascript" src="js/app/vendor/materialize.js"></script>
-<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script>
-
-
-
-
-
-<script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script>
-
-
-<script type="text/javascript" src="../player.vimeo.com/api/player.js"></script>
-
-
-<script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script><script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
 <script type="text/javascript">
     $(function () {
         if( $("iframe").length > 0 ){
@@ -1727,7 +1801,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             newScript.src = "https://www.youtube.com/player_api";
             $('head').append(newScript);
         }
-//        $(documnt).ready( function(){
+
             App.init();
 //        });
 //        Shop.init();
@@ -1960,276 +2034,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         }
     }
 
-    function countriesValue(value) {
-        switch (value) {
-            case 'AF': return 'Afghanistan';
-            case 'AX': return 'Aland Islands';
-            case 'AL': return 'Albania';
-            case 'DZ': return 'Algeria';
-            case 'AS': return 'American Samoa';
-            case 'AD': return 'Andorra';
-            case 'AO': return 'Angola';
-            case 'AI': return 'Anguilla';
-            case 'AQ': return 'Antarctica';
-            case 'AG': return 'Antigua And Barbuda';
-            case 'AR': return 'Argentina';
-            case 'AM': return 'Armenia';
-            case 'AW': return 'Aruba';
-            case 'AU': return 'Australia';
-            case 'AT': return 'Austria';
-            case 'AZ': return 'Azerbaijan';
-            case 'BS': return 'Bahamas';
-            case 'BH': return 'Bahrain';
-            case 'BD': return 'Bangladesh';
-            case 'BB': return 'Barbados';
-            case 'BY': return 'Belarus';
-            case 'BE': return 'Belgium';
-            case 'BZ': return 'Belize';
-            case 'BJ': return 'Benin';
-            case 'BM': return 'Bermuda';
-            case 'BT': return 'Bhutan';
-            case 'BO': return 'Bolivia';
-            case 'BA': return 'Bosnia And Herzegovina';
-            case 'BW': return 'Botswana';
-            case 'BV': return 'Bouvet Island';
-            case 'BR': return 'Brazil';
-            case 'IO': return 'British Indian Ocean Territory';
-            case 'BN': return 'Brunei Darussalam';
-            case 'BG': return 'Bulgaria';
-            case 'BF': return 'Burkina Faso';
-            case 'BI': return 'Burundi';
-            case 'KH': return 'Cambodia';
-            case 'CM': return 'Cameroon';
-            case 'CA': return 'Canada';
-            case 'CV': return 'Cape Verde';
-            case 'KY': return 'Cayman Islands';
-            case 'CF': return 'Central African Republic';
-            case 'TD': return 'Chad';
-            case 'CL': return 'Chile';
-            case 'CN': return 'China';
-            case 'CX': return 'Christmas Island';
-            case 'CC': return 'Cocos (Keeling) Islands';
-            case 'CO': return 'Colombia';
-            case 'KM': return 'Comoros';
-            case 'CG': return 'Congo';
-            case 'CD': return 'Congo, Democratic Republic';
-            case 'CK': return 'Cook Islands';
-            case 'CR': return 'Costa Rica';
-            case 'CI': return 'Cote D\'Ivoire';
-            case 'HR': return 'Croatia';
-            case 'CU': return 'Cuba';
-            case 'CW': return 'Curaçao';
-            case 'CY': return 'Cyprus';
-            case 'CZ': return 'Czech Republic';
-            case 'DK': return 'Denmark';
-            case 'DJ': return 'Djibouti';
-            case 'DM': return 'Dominica';
-            case 'DO': return 'Dominican Republic';
-            case 'EC': return 'Ecuador';
-            case 'EG': return 'Egypt';
-            case 'SV': return 'El Salvador';
-            case 'GQ': return 'Equatorial Guinea';
-            case 'ER': return 'Eritrea';
-            case 'EE': return 'Estonia';
-            case 'ET': return 'Ethiopia';
-            case 'FK': return 'Falkland Islands (Malvinas)';
-            case 'FO': return 'Faroe Islands';
-            case 'FJ': return 'Fiji';
-            case 'FI': return 'Finland';
-            case 'FR': return 'France';
-            case 'GF': return 'French Guiana';
-            case 'PF': return 'French Polynesia';
-            case 'TF': return 'French Southern Territories';
-            case 'GA': return 'Gabon';
-            case 'GM': return 'Gambia';
-            case 'GE': return 'Georgia';
-            case 'DE': return 'Germany';
-            case 'GH': return 'Ghana';
-            case 'GI': return 'Gibraltar';
-            case 'GR': return 'Greece';
-            case 'GL': return 'Greenland';
-            case 'GD': return 'Grenada';
-            case 'GP': return 'Guadeloupe';
-            case 'GU': return 'Guam';
-            case 'GT': return 'Guatemala';
-            case 'GG': return 'Guernsey';
-            case 'GN': return 'Guinea';
-            case 'GW': return 'Guinea-Bissau';
-            case 'GY': return 'Guyana';
-            case 'HT': return 'Haiti';
-            case 'HM': return 'Heard Island & Mcdonald Islands';
-            case 'VA': return 'Holy See (Vatican City State)';
-            case 'HN': return 'Honduras';
-            case 'HK': return 'Hong Kong';
-            case 'HU': return 'Hungary';
-            case 'IS': return 'Iceland';
-            case 'IN': return 'India';
-            case 'ID': return 'Indonesia';
-            case 'IR': return 'Iran, Islamic Republic Of';
-            case 'IQ': return 'Iraq';
-            case 'IE': return 'Ireland';
-            case 'IM': return 'Isle Of Man';
-            case 'IL': return 'Israel';
-            case 'IT': return 'Italy';
-            case 'JM': return 'Jamaica';
-            case 'JP': return 'Japan';
-            case 'JE': return 'Jersey';
-            case 'JO': return 'Jordan';
-            case 'KZ': return 'Kazakhstan';
-            case 'KE': return 'Kenya';
-            case 'KI': return 'Kiribati';
-            case 'XK': return 'Kosovo';
-            case 'KW': return 'Kuwait';
-            case 'KG': return 'Kyrgyzstan';
-            case 'LA': return 'Lao People\'s Democratic Republic';
-            case 'LV': return 'Latvia';
-            case 'LB': return 'Lebanon';
-            case 'LS': return 'Lesotho';
-            case 'LR': return 'Liberia';
-            case 'LY': return 'Libyan Arab Jamahiriya';
-            case 'LI': return 'Liechtenstein';
-            case 'LT': return 'Lithuania';
-            case 'LU': return 'Luxembourg';
-            case 'MO': return 'Macao';
-            case 'MK': return 'Macedonia';
-            case 'MG': return 'Madagascar';
-            case 'MW': return 'Malawi';
-            case 'MY': return 'Malaysia';
-            case 'MV': return 'Maldives';
-            case 'ML': return 'Mali';
-            case 'MT': return 'Malta';
-            case 'MH': return 'Marshall Islands';
-            case 'MQ': return 'Martinique';
-            case 'MR': return 'Mauritania';
-            case 'MU': return 'Mauritius';
-            case 'YT': return 'Mayotte';
-            case 'MX': return 'Mexico';
-            case 'FM': return 'Micronesia, Federated States Of';
-            case 'MD': return 'Moldova';
-            case 'MC': return 'Monaco';
-            case 'MN': return 'Mongolia';
-            case 'ME': return 'Montenegro';
-            case 'MS': return 'Montserrat';
-            case 'MA': return 'Morocco';
-            case 'MZ': return 'Mozambique';
-            case 'MM': return 'Myanmar';
-            case 'NA': return 'Namibia';
-            case 'NR': return 'Nauru';
-            case 'NP': return 'Nepal';
-            case 'NL': return 'Netherlands';
-            case 'AN': return 'Netherlands Antilles';
-            case 'NC': return 'New Caledonia';
-            case 'NZ': return 'New Zealand';
-            case 'NI': return 'Nicaragua';
-            case 'NE': return 'Niger';
-            case 'NG': return 'Nigeria';
-            case 'NU': return 'Niue';
-            case 'NF': return 'Norfolk Island';
-            case 'KP': return 'North Korea';
-            case 'MP': return 'Northern Mariana Islands';
-            case 'NO': return 'Norway';
-            case 'OM': return 'Oman';
-            case 'PK': return 'Pakistan';
-            case 'PW': return 'Palau';
-            case 'PS': return 'Palestinian Territory, Occupied';
-            case 'PA': return 'Panama';
-            case 'PG': return 'Papua New Guinea';
-            case 'PY': return 'Paraguay';
-            case 'PE': return 'Peru';
-            case 'PH': return 'Philippines';
-            case 'PN': return 'Pitcairn';
-            case 'PL': return 'Poland';
-            case 'PT': return 'Portugal';
-            case 'PR': return 'Puerto Rico';
-            case 'QA': return 'Qatar';
-            case 'RE': return 'Reunion';
-            case 'RO': return 'Romania';
-            case 'RU': return 'Russian Federation';
-            case 'RW': return 'Rwanda';
-            case 'BL': return 'Saint Barthelemy';
-            case 'SH': return 'Saint Helena';
-            case 'KN': return 'Saint Kitts And Nevis';
-            case 'LC': return 'Saint Lucia';
-            case 'MF': return 'Saint Martin';
-            case 'PM': return 'Saint Pierre And Miquelon';
-            case 'VC': return 'Saint Vincent And Grenadines';
-            case 'WS': return 'Samoa';
-            case 'SM': return 'San Marino';
-            case 'ST': return 'Sao Tome And Principe';
-            case 'SA': return 'Saudi Arabia';
-            case 'SN': return 'Senegal';
-            case 'RS': return 'Serbia';
-            case 'SC': return 'Seychelles';
-            case 'SL': return 'Sierra Leone';
-            case 'SG': return 'Singapore';
-            case 'SX': return 'Sint Maarten';
-            case 'SK': return 'Slovakia';
-            case 'SI': return 'Slovenia';
-            case 'SB': return 'Solomon Islands';
-            case 'SO': return 'Somalia';
-            case 'ZA': return 'South Africa';
-            case 'GS': return 'South Georgia And Sandwich Isl.';
-            case 'KR': return 'South Korea';
-            case 'SS': return 'South Sudan';
-            case 'ES': return 'Spain';
-            case 'LK': return 'Sri Lanka';
-            case 'SD': return 'Sudan';
-            case 'SR': return 'Suriname';
-            case 'SJ': return 'Svalbard And Jan Mayen';
-            case 'SZ': return 'Swaziland';
-            case 'SE': return 'Sweden';
-            case 'CH': return 'Switzerland';
-            case 'SY': return 'Syrian Arab Republic';
-            case 'TW': return 'Taiwan';
-            case 'TJ': return 'Tajikistan';
-            case 'TZ': return 'Tanzania';
-            case 'TH': return 'Thailand';
-            case 'TL': return 'Timor-Leste';
-            case 'TG': return 'Togo';
-            case 'TK': return 'Tokelau';
-            case 'TO': return 'Tonga';
-            case 'TT': return 'Trinidad And Tobago';
-            case 'TN': return 'Tunisia';
-            case 'TR': return 'Turkey';
-            case 'TM': return 'Turkmenistan';
-            case 'TC': return 'Turks And Caicos Islands';
-            case 'TV': return 'Tuvalu';
-            case 'UG': return 'Uganda';
-            case 'UA': return 'Ukraine';
-            case 'AE': return 'United Arab Emirates';
-            case 'GB': return 'United Kingdom';
-            case 'US': return 'United States';
-            case 'UM': return 'United States Outlying Islands';
-            case 'UY': return 'Uruguay';
-            case 'UZ': return 'Uzbekistan';
-            case 'VU': return 'Vanuatu';
-            case 'VE': return 'Venezuela';
-            case 'VN': return 'Viet Nam';
-            case 'VG': return 'Virgin Islands, British';
-            case 'VI': return 'Virgin Islands, U.S.';
-            case 'WF': return 'Wallis And Futuna';
-            case 'EH': return 'Western Sahara';
-            case 'YE': return 'Yemen';
-            case 'ZM': return 'Zambia';
-            case 'ZW': return 'Zimbabwe';
-            default: return '';
-        }
-    }
-
+ 
     // }
 </script>
 
-<!-- JS Bottom -->
+
     
 
-<!-- Analytics and other js -->
 
 
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="../js.hs-scripts.com/9453654.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    
+    
+    
 </body>
 
-<!-- Mirrored from www.novamobili.it/en by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Oct 2021 13:24:17 GMT -->
 </html>

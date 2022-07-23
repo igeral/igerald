@@ -4,48 +4,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-<meta name="_token" content="Eh8M135d8bn2kTK7hZg6MVWtBDW6fqxofBhfLs9I"/>
+
 
 <!-- Meta Tags -->
-<title>Letti</title>
-<meta name="description" content="#"/>
-<meta name="keywords" content=""/>
-<meta name="author" content=""/>
-<meta name="copyright" content=""/>
-<meta name="application-name" content=""/>
-<link rel="canonical" href="#"/>
-
-
-
-<!-- Meta Tags OG -->
-<meta property="og:site_name" content="Spagnolmobili"/>
-
-<meta property="og:type" content="website"/>
-<meta property="og:title" content=""/>
-<meta property="og:url" content="#"/>
-<meta property="og:image" content="#"/>
-<meta property="og:image:alt" content=""/>
-<meta property="og:description" content="#"/>
-
-<meta property="fb:app_id" content="337625203465730"/>
-
-<!-- for Twitter -->
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Teens&#039; desk seatings - Spagnolmobili"/>
-<meta name="twitter:description" content=""/>
-<meta name="twitter:image" content=""/>
-
-<!-- Favicon -->
+<title>Letti</title><!-- Favicon -->
 
 <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
-<!-- Android / iOS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
 
 <meta name="application-name" content="Spagnolmobili">
-<meta name="theme-color" content="#9dccd5">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="msapplication-TileColor" content="#9dccd5">
-<meta name="msapplication-TileImage" content="#">
+
 
 <!-- CSS -->
 <link rel="stylesheet" href="css/test.css">
@@ -123,38 +92,38 @@
   </script>
 
   <style type="text/css">
-    /* #submenu-main{
-        display: none;
-    }
-    #submenu-100{
-        display: none;
-    }
-    #submenu-200{
-        display: none;
-    }
-    #submenu-300{
-        display: none;
-    } */
+    
     .header2{
     position: fixed;
     z-index: 50;
     top: 0;
     width: 100%;
 }
-.header-items2, .edgtf-position-right-inner2{
+.header-language, .header-socials{
     position: fixed;
     top: 0;
 }
 
-.header.col-12{
+.header.sec-12{
     position: fixed;
     top: 50px !important;
-    padding-bottom: 3px;
+    padding-bottom: 25px;
     z-index: 7;
 }
+@media screen and (min-width:320px) and (max-width: 528px){
+    .header.sec-12{
+        padding-bottom: 0 !important;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1650px){
+      #menu-div{
+        margin-left: 7rem;
+      }
+  }
+
 @media screen and (min-width: 1900px) and (max-width:2000px){
       #menu-div{
-        margin-left: 11rem;
+        margin-left: 8rem;
       }
   }
 @media (max-width: 1220px) {
@@ -164,11 +133,11 @@
       border: 2px solid #efefef;
       background-color: #fff; } 
     }
-.nd-section-pd-heading.nd-section-sm-fullscreen{
+.sp-section-pd-heading.sp-section-sm-fullscreen{
 
         z-index: 0 !important;
       }
-      .uk-scrollspy{
+      .main-box{
   margin-top: 0!important;
 }
 @media screen and (min-width:768px) and (max-width:830px) {
@@ -178,6 +147,12 @@
         .items{
             margin-top: 4rem;
         }
+        .sec-8.align-center{
+        left: -3.5rem !important;
+    }
+    .sec-2.ham-div{
+      left: 1.2rem !important;
+    }
     }
   </style>
 
@@ -226,7 +201,7 @@
     }
 
 
-    .nd-pd-heading-images {
+    .sp-pd-heading-images {
             position: relative;
             max-width: 65%;
             padding-top: 5%;
@@ -300,9 +275,7 @@
       display: none;
     }
 
-    /*#cont-form.hide {
-      opacity: 0;
-    }*/
+    
 
     .menu-title{
         font-weight: bold;
@@ -341,10 +314,7 @@
             padding-bottom: 0px;
         }
 
-        /*#footer{
-           margin-bottom: 0px;
-           position: fixed;
-        }*/
+        
     }
 
 
@@ -354,7 +324,7 @@
         margin-top: 150px;
       }
 
-      #nuk-words{
+      #spa-words{
         margin-top: -220px;
       }
 
@@ -382,15 +352,7 @@
         transform: scale(1.2);
       }
 
-      /*0% {
-        transform: scale(1, 1);
-      }
-      50% {
-        transform: scale(1.5, 1.5);
-      }
-      100% {
-        transform: scale(1, 1);
-      }*/
+      
     }
 
 
@@ -398,126 +360,16 @@
 </style>
 
 
-<script type="text/javascript">
-    function showhide() {
 
-        console.log("display");
-        console.log(document.getElementById('cont-form').style.display);
-
-        var x = document.getElementById("cont-form");
-        var speed = 10;
-        var seconds = speed/1000;
-        //if (!x.classList.contains("hide")) {
-        if (x.style.display == "block") {
-          //x.classList.remove("hide");
-          x.style.transition = "opacity "+seconds+"s ease";
-          x.style.opacity = 0;
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.display = 'none';
-            }, speed);
-          //removeFadeOut();
-        } else if(x.style.display == "none") {
-          x.style.display = 'block';
-          //x.style.opacity = 1;
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.transition = "opacity "+seconds+"s ease";
-                x.style.opacity = 1;
-            
-            }, 5);
-        }else{
-           
-          //x.style.opacity = 1;
-          //console.log("atleast");
-          setTimeout(function() {
-                //x.classList.remove("hide");
-                //x.parentNode.removeChild(el);
-                x.style.transition = "opacity "+seconds+"s ease";
-                x.style.opacity = 1;
-                x.style.display = 'block';
-            
-            }, 1000); 
-        }
-
-        
-
-      }
-
-      
-
-//removeFadeOut(document.getElementById('test'), 2000);
-
-    function removeFadeOut() {
-        var speed = 2000;
-        var el = document.getElementById("cont-form");
-        var seconds = speed/1000;
-        el.style.transition = "opacity "+seconds+"s ease";
-        el.style.opacity = 0;
-        setTimeout(function() {
-            el.parentNode.removeChild(el);
-        }, speed);
-    }
-
-
-
-
-</script>
-
-
-<script>
-window.dataLayer = [{
-    'pageType': 'category',
-    'pageLang': 'en',
-    'productCategory': 'Seating'
-    
-}];
-</script>
-
-<!-- Google Tag Manager -->
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K4W8M8F');
-</script>
-<!-- End Google Tag Manager -->
-
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
-
-<!-- Alternate -->
-
-            
-<!-- Analytics -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-106845430-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-<!-- Structured Data -->
 
         </head>
 <body class="" id="body">
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4W8M8F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+   
 
 <!-- Header -->
 <div class="header2">
-    <div class="header-items2">
+    <div class="header-language">
       <ul>
       <a href="#">IT</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
       <a href="#">EN</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -531,31 +383,26 @@ window.dataLayer = [{
 
 
 
-      <div class="edgtf-position-right-inner2"
-           style="" >
+      <div class="header-socials">
                           
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" 
+        <a class="header-social-icon-widget-holder header-icon-has-hover" 
         style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 10px;" href="https://it-it.facebook.com/spagnolmobili/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-facebook">  
+            <span class="header-social-icon-widget fa fa-facebook">  
             </span></a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-instagram    "></span>        </a>
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://www.instagram.com/spagnolgroup/" target="_blank">
+            <span class="header-social-icon-widget fa fa-instagram    "></span>        </a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 5px 0px 5px;" href="https://twitter.com/SpagnolGroup" target="_blank">
             <span class="fa fa-twitter"></span>        </a>
     
-        <a class="edgtf-social-icon-widget-holder edgtf-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
-            <span class="edgtf-social-icon-widget fa fa-pinterest    "></span>        </a>
-      <!--<div class="widget edgtf-separator-widget">
-        <div class="edgtf-separator-holder clearfix  edgtf-separator-center edgtf-separator-normal">
-        <div class="edgtf-separator" style="border-color: #ffffff;border-style: solid;width: 1px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px"></div>
-      </div>
-    </div>-->
+        <a class="header-social-icon-widget-holder header-icon-has-hover" style="color: #ffffff;;font-size: 14px;margin: 0px 10px 0px 5px;" href="https://www.pinterest.it/spagnolgroup/" target="_blank">
+            <span class="header-social-icon-widget fa fa-pinterest    "></span>        </a>
+     
     
-        <a class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="https://www.tomasella.it/area-riservata" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
-          <span class="edgtf-icon-text" style="font-size: 11px">AREA RISERVATA</span>&nbsp&nbsp
-          <span class="edgtf-icon-widget fa fa-lock    "></span>&nbsp
+        <a class="header-icon-widget-holder header-icon-has-hover edgtf-text-left" data-hover-color="#ffffff" href="#" target="_self" style="color: #ffffff;font-size: 13px;margin: 0px 5px 0px 5px">
+          <span class="header-icon-text" style="font-size: 14px">AREA RISERVATA</span>&nbsp&nbsp
+          <span class="header-icon-widget fa fa-lock    "></span>&nbsp
                   </a>
       </div>
 
@@ -563,18 +410,18 @@ window.dataLayer = [{
   </div>
 
     
-    <header class="header col-12">
+    <header class="header sec-12">
 
-    <div class="row isDesktop align-items-center">
-        <div style="position: absolute;left: 1%;" class="col-2">
+    <div class="row DesktopView centerAligned">
+        <div style="position: absolute;left: 1%;" class="sec-2">
             <a href="index.html">
-                <!--<a href="">logo--black.svg logo--white.svg</a>-->
+                
                 <img src="images/app/s-logo2.svg" height="300" class="isBlack1" />
-                <!--<img src="images/app/s-logo.svg" height="100" class="isWhite1" />-->
+                
             </a>
         </div>
 
-        <div id="menu-div" class="col-6 offset-1 align-center padding--lr-0">
+        <div id="menu-div" class="sec-6 offset-1 align-center padding--lr-0">
             <ul class="menu">
                 <li class="menu-has-submenu menu-item">
                     <a href="javascript: void(0);" id="menu-title" class="menu-title" data-menu="menu-title-1">PRODOTTI</a>
@@ -585,9 +432,7 @@ window.dataLayer = [{
                 <li class="menu-item">
                     <a href="rivenditory.html" class="menu-title">RIVENDITORI</a>
                 </li>
-                <!--<li class="menu-item">
-                    <a href="#" class="menu-title">CHISIAMO</a>
-                </li>-->
+                
                 <li class="menu-item">
                     <a href="Contacts.html" class="menu-title">CONTATTI</a>
                 </li>
@@ -597,43 +442,23 @@ window.dataLayer = [{
             </ul>
         </div>
 
-        <!--<div class="col-3 align-right colDX">
-            <ul class="row menu">
-                
-                
-                <li class="menu-item">
-                    <div class="header__hamburger openMenuFull">
-                        <span class="header__hamburger__1"></span>
-                        <span class="header__hamburger__2"></span>
-                        <span class="header__hamburger__3"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>-->
+
     </div>
 
 
-    <div class="row isMobile align-items-center">
-        <div class="col-2 align-left">
-            <div class="nav_search">
-                <a href="javascript: void(0);" class="openSearch">
-                    <!--<img src="images/app/search_black.svg" width="25" height="25" />-->
-                </a>
-            </div>
-        </div>
+    <div class="row mobileView centerAligned">
+        
 
-        <div class="col-8 align-center">
+        <div class="sec-8 align-center">
             <a href="index.html">
                 <img src="images/app/s-logo2.svg" height="22" class="" />
             </a>
         </div>
 
-        <div class="col-2 align-right">
-            <div class="header__hamburger openMenuMobile">
-                <span class="header__hamburger__1"></span>
-                <span class="header__hamburger__2"></span>
-                <span class="header__hamburger__3"></span>
-            </div>
+        <div class="sec-2 ham-div">
+            <div class="header__toggle">
+                    <i class='bx bx-menu header__hamburger openSideMenu' style="font-size:35px;"id="header-toggle"></i>
+                </div>
         </div>
     </div>
 
@@ -646,11 +471,11 @@ window.dataLayer = [{
         <li class="menu-has-submenu menu-item">
             <ul style="height: 100%;" class="menu-submenu menu-title-1">
                 <li id="submenu-menu" class="menu-submenu-item row">      
-                <ul id="menu-div1" class="col-20">
+                <ul id="menu-div1" class="sec-20">
                                  
-                    <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="120">
-                        <a id="menu-link" href="#">ZONA NOTTE</a>
-                        <ul class="menu-submenu-item-single-list">
+                    <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="120">
+                        <a id="div-name" href="#">ZONA NOTTE</a>
+                        <ul class="single-submenu-item-menu-list">
                         <!--<a href="" style="margin-bottom: 300px;">
                                 
                         </a>-->
@@ -667,7 +492,7 @@ window.dataLayer = [{
 
                                                         <!--start -->
 
-                                                            <ul id="submenu-1" class="menu-submenu-item-single-list">
+                                                            <ul id="submenu-1" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="adecofront.html">Ardecó
                                                                 </a>
@@ -698,22 +523,12 @@ window.dataLayer = [{
                                                         Armadi Scorrevoli
                                                     </a>
                                                 </li>
-                                                <!--<li>
-                                                    <a id="submenu-main" href="#">
-                                                        Sistema Pipe
-                                                    </a>
-                                                </li>
 
-                                                <li>
-                                                    <a id="submenu-main" href="#">
-                                                        Cabine Armadio
-                                                    </a>
-                                                </li>-->
 
                                                 <li>
                                                     <a onclick="showLettiZonnaSubMenu()" id="submenu-main" href="#">
                                                         Letti
-                                                        <ul id="submenu-300" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-300" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="lettiimbotitifront.html">Letti imbotiti
                                                                 </a>
@@ -787,11 +602,11 @@ window.dataLayer = [{
                                                     </li>
                                                                                             
                                                                                                                                                                                                                                                                    </ul>
-                                    <ul id="menu-div2" class="col-20"><!--offset-1 -->
+                                    <ul id="menu-div2" class="sec-20"><!--offset-1 -->
                                                                                                                                                                                                                                                                                                                                                                                                                 
-                                        <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="270">
-                                    <a id="menu-link" href="#">ZONA GIORNO</a>
-                                                        <ul class="menu-submenu-item-single-list">
+                                        <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="270">
+                                    <a id="div-name" href="#">ZONA GIORNO</a>
+                                                        <ul class="single-submenu-item-menu-list">
                                                 <!--<li>
                                                     <a href="en/sofas.html">
                                                         >>>>>>>
@@ -826,16 +641,12 @@ window.dataLayer = [{
                                                                                             
                                  
                                                                                                                                                         </ul>
-                                    <ul id="menu-div3" class="col-20"><!-- offset-1 border-right-grey -->
+                                    <ul id="menu-div3" class="sec-20"><!-- offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                    <a id="menu-link" href="#">KIDS</a>
-                                            <ul class="menu-submenu-item-single-list">
-                                                <!--<li>
-                                                    <a href="en/sideboards.html">
-                                                        >>>>>>>
-                                                    </a>
-                                                </li>-->
+                                            <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                    <a id="div-name" href="#">KIDS</a>
+                                            <ul class="single-submenu-item-menu-list">
+                                                
 
 
                                                 <li>
@@ -847,7 +658,7 @@ window.dataLayer = [{
                                                     <li>
                                                     <a onclick="showLettiKidsSubMenu()" id="submenu-main" href="#">
                                                         Letti
-                                                        <ul id="submenu-200" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-200" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="lettiimbotitikidsfront.html">Letti imbotiti
                                                                 </a>
@@ -867,7 +678,7 @@ window.dataLayer = [{
                                                     <a onclick="showLettiSubMenu()" class="mycastello" id="submenu-main" href="#">
                                                         Letti sovrapposti e a castello
 
-                                                        <ul id="submenu-100" class="menu-submenu-item-single-list">
+                                                        <ul id="submenu-100" class="single-submenu-item-menu-list">
                                                             <li>
                                                                 <a href="acastero001.html">Fly
                                                                 </a>
@@ -925,17 +736,13 @@ window.dataLayer = [{
 
 
 
-                                                <ul id="menu-div4" class="col-20"><!--
+                                                <ul id="menu-div4" class="sec-20"><!--
                                                 offset-1 border-right-grey -->
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-                                                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="330">
-                                    <a id="menu-link" href="#">COMPLEMENTI</a>
-                                            <ul class="menu-submenu-item-single-list">
-                                                <!--<li>
-                                                    <a href="en/sideboards.html">
-                                                        >>>>>>>
-                                                    </a>
-                                                </li>-->
+                                                                <li class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect" data-animation="slideLeftToRightSmall" data-delay="330">
+                                    <a id="div-name" href="#">COMPLEMENTI</a>
+                                            <ul class="single-submenu-item-menu-list">
+                                                
 
 
 
@@ -956,50 +763,25 @@ window.dataLayer = [{
                                                     </a>
                                                 </li>
                                                                                             <li>
-                                                    <a id="submenu-main" href="sediakids.html">
+                                                    <a id="submenu-main" href="sedia.html">
                                                         Sedie e poltroncine
                                                     </a>
                                                 </li>
                                                                                             <li>
-                                                    <a id="submenu-main" href="tavolikids.html">
+                                                    <a id="submenu-main" href="tavoli.html">
                                                         Tavoli e tavolini
                                                     </a>
                                                 </li>
                                                 <li>
                                                     <a href="elementagornol.html" id="submenu-main">
-                                                        pensili
+                                                        Pensili
                                                     </a>
                                                 </li>
                                                  </ul>
                                                     </li>
                                                 </ul>
 
-                    
-                                            <!--<ul class="col-2 offset-1">
-                                                                                            <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="360">
-                                    <a href="en/bedroom.html">COMPLEMENTI</a>
-                                    
-                                </li>
 
-
-                            
-                                                                                                        ass="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="390">
-                                    <a href="en/living-room.html">Boiserie</a>
-                                    
-                                </li>
-                                                                                             
-                                <li class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre" data-animation="slideLeftToRightSmall" data-delay="420">
-                                    <a href="javascript: void(0);">Homes</a>
-                                    <ul class="menu-submenu-item-single-list">
-                                                                                    <li>
-                                                <a href="en/stories/penthouse-in-the-city.html">Penthouse in the city</a>
-                                            </li>
-                                                                                    <li>
-                                                <a href="en/stories/loft-in-the-hills.html">Loft in the hills</a>
-                                            </li>
-                                    </ul>
-                                </li>
-                                                    </ul>-->
                                     </li>
             </ul>
         </li>
@@ -1012,12 +794,12 @@ window.dataLayer = [{
 
 
 <!-- start mobile -->
-<div class="row isMobile menuMobile">
+<div class="row mobileView menuMobile">
     <div class="mobilemenu">
         <div class="menue">
           <ul class="menus">
             <li class="space">
-              <a href="#" class="hasDropDown heading">PRODOTTI</a>
+              <a href="#" class="hasDropDown heading">PRODOTTI <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </li>
             <li class="space"><a href="catalogh00.html" class="heading">CATALOGHI</a></li>
             <li class="space"><a href="rivenditory.html" class="heading">RIVENDITORI</a></li>
@@ -1037,7 +819,7 @@ window.dataLayer = [{
   
       <div class="items">
         <div class="columns">
-          <a href="#" class="backone heading">Back to menu</a><br>
+          <a href="#" class="backone heading"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to menu</a><br><br>
           <a href="#" class="heading downone">ZONA NOTTE</a>
           <ul class="menu-items">
             <li>
@@ -1103,9 +885,9 @@ window.dataLayer = [{
           <ul class="menu-items">
             <li><a href="boiserie.html">Boiserie</a></li>
             <li><a href="elementimetallo.html">Elementi in metallo</a></li>
-            <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-            <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
-            <li><a href="elementagornol.html" id="submenu-main">pensili</a></li>
+            <li><a href="sedia.html">Sedie e poltroncine</a></li>
+            <li><a href="tavoli.html">Tavoli e tavolini</a></li>
+            <li><a href="elementagornol.html" id="submenu-main">Pensili</a></li>
           </ul>
         </div>
       </div>
@@ -1125,8 +907,8 @@ window.dataLayer = [{
       margin-top: 2rem;
     }
     .mobilemenu{
-        margin-top: 5rem;
-    }
+            margin-top: 3rem;
+        }
     .menus li {
       list-style: none;
     }
@@ -1191,19 +973,28 @@ window.dataLayer = [{
     }
 </style>
 <script type="text/javascript">
+    const showMenu = (headerToggle) =>{
+    const toggleBtn = document.getElementById(headerToggle);
+    // Validate that variables exist
+        toggleBtn.addEventListener('click', ()=>{
+            // change icon
+            toggleBtn.classList.toggle('bx-x');
+        })
+}
+showMenu('header-toggle');
     document.querySelector(".hasDropDown").addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelector(".menue").style.transform = "translateX(-100%)";
       document.querySelector(".menue").style.transitionDuration = "1s";
       document.querySelector(".items").style.transform = "translateX(-100%)";
-      document.querySelector(".items").style.transitionDuration = "1s";
+      document.querySelector(".items").style.transitionDuration = "0.5s";
     });
     document.querySelector(".backone").addEventListener("click", (e) => {
       e.preventDefault();
       document.querySelector(".menue").style.transform = "translateX(0%)";
       document.querySelector(".menue").style.transitionDuration = "1s";
       document.querySelector(".items").style.transform = "translateX(100%)";
-      document.querySelector(".items").style.transitionDuration = "1s";
+      document.querySelector(".items").style.transitionDuration = "0.5s";
     });
     document.querySelector(".subdropdown").addEventListener("click", (e) => {
       e.preventDefault();
@@ -1227,20 +1018,14 @@ window.dataLayer = [{
     });
   </script>
 <!-- end mobile -->
-
-
-
-
-
-
-<div class="nd-section-pd-heading nd-section-sm-fullscreen">
-        <div class="nd-product-content is_stuck" data-sticky="">
-            <div class="nd-procut-content-main">
+<div class="sp-section-pd-heading sp-section-sm-fullscreen">
+        <div class="sp-product-content is_stuck" data-sticky="">
+            <div class="sp-procut-content-main">
 
               <!-- start  animation on beds-->
-                <div class="nd-product-section-first">
+                <div class="sp-product-section-first">
                   
-                    <div id="productCarousel" class="carousel  nd-product-carousel visible-xs slide" data-ride="carousel">
+                    <div id="productCarousel" class="carousel  sp-carousel visible-xs slide" data-ride="carousel">
                    
                         <ol class="carousel-indicators">
                                     <li data-target="#productCarousel" data-slide-to="0" class=""></li>
@@ -1251,7 +1036,7 @@ window.dataLayer = [{
                  
                         <div class="carousel-inner">
                                 <div id="zoom-in-zoom-out" >
-                                    <img src="./uploads/products/images/67/Thor.jpg" alt="Nuk single bed">
+                                    <img src="./uploads/products/images/67/Thor.jpg" alt="Collezione Camerrette">
                                 </div>
                           </div>
 
@@ -1279,43 +1064,31 @@ window.dataLayer = [{
                 </div>
 
                 <!-- end -->
-                <div id="nuk-words" style="font-size: 60px;color: black;" class="nd-product-description virtual-tour-hidden">
+                <div id="spa-words" style="font-size: 60px;color: black;" class="sp-description virtual-tour-hidden">
 
-                  <h1 style="font-size: 30px;" class="nd-product-title">NUK SINGLE BED</h1>
+                  <h1 style="font-size: 30px;" >THOR</h1>
+                  <p>L. 200 _ P. 100 _ H. 75 cm <br>
+                    L. 240 _ P. 100 _ H. 75 cm</p>
 
 
-                    <p></p><p>The Nuk headboard, which is available in all Nidi colours, can be paired with a wide choice of legs and you can choose the bed surround, which can incorporate a trundle bed, drawers or lift-up mattress base. And the headboard can be customized with covers!</p><p></p>
+                    
 
-                    <div class="nd-product-links hidden-xs">
-                                      <a href="#" data-wa="download-scheda-prodotto" data-file="Nuk" download="">Download technical sheets</a>
-                                                                                                                   <a href="#" data-wa="download-modello-3ds" data-file="Nuk" download="">Download 3DS</a>
-                                                                        </div>
+
                 </div>
 
-                <!--<div class="nd-product-buttons-mobiles visible-xs">
-                                        <a data-wa="cta2" href="#" class="btn btn-lined btn-lg">Find a dealer</a>
-                    <a data-wa="cta1" href="#" class="btn btn-lined btn-lg">Make an enquiry</a>
-                                             <a data-wa="cta3" href="javascript: void(0);" class="btn btn-lined btn-lined-yellow btn-lg configProduct">Configure!</a>
-                                    </div>
 
-                <div class="nd-product-buttons-mobiles hidden-xs">
-                                        <a data-wa="cta1" href="#" class="btn btn-lined btn-lg">Make an enquiry</a>
-                    <a data-wa="cta2" href="#" class="btn btn-lined btn-lg">Find a dealer</a>
-                                            <a data-wa="cta3" href="javascript: void(0);" class="btn btn-lined btn-lined-yellow btn-lg configProduct">Configure!</a>
-                                    </div>-->
             </div>
 
 
-                        <!--<button data-toggle-class="nd-open-finiture-menu" data-target=".nd-product-finiture-section" class="hidden-xs nd-product-finiture-button btn-lined btn-lg btn-filled">
-                Finishes            </button>-->
+                        
 
             
 
         </div>
   
-        <div class="nd-pd-heading-images hidden-xs">
-                                        <div class="nd-pd-single-image">
-                    <img src="./uploads/products/images/67/Thor.jpg" alt="Nuk single bed">
+        <div class="sp-pd-heading-images hidden-sec">
+                                        <div class="sp-pd-single-image">
+                    <img src="./uploads/products/images/67/Thor.jpg" alt="Collezione Camerrette">
                 </div>
         </div>
 
@@ -1340,32 +1113,19 @@ window.dataLayer = [{
         }
 
         .row{
-          margin-bottom: 50px;
+          margin-bottom: 20px;
           margin-right: 20px;
-          margin-left: 20px;
 
         }
 
-      </style>
-
-
-
-
-
-<!-- end -->
+      </style><!-- end -->
 
 
 
 
 <!-- Content -->
-<div class="nd-actual-body"  id="page-catalog" >
-        <!--<header class="nd-heading-page nd-heading-category nd-section-sm-fullscreen" style="background-image: url(./uploads/products/images/44/frontpage.jpg);margin-top: -80px;">
-        <hgroup class="heading-content">
-    
-        </hgroup>
-        <div class="heading-image hidden-xs">
-        </div>
-    </header>-->
+<div class="sp-main-body"  id="page-catalog" >
+        
 
 
 
@@ -1384,7 +1144,7 @@ window.dataLayer = [{
         <div class="wrapperImg"><figure data-scroll data-scroll-speed="-.8">
                     <img src="./uploads/products/images/9/Boiserie arredo principale.jpg" srcset="./uploads/products/images/9/Boiserie arredo principale.jpg 2x">
                 </figure></div>
-    <div class="text_container">
+    <div class="text_box">
       
 
 
@@ -1393,13 +1153,7 @@ window.dataLayer = [{
     </div>-->
 
 
-   
-
-
-
-
-
-        
+           
         </div>
     </div>
     </div>              
@@ -1421,17 +1175,17 @@ window.dataLayer = [{
   <section style="font-size: 20px;" class="tools">
     <ul>
         <li class="stores">
-            <a href="#" target="_top">
+            <a href="rivenditory.html" target="_top">
                 <span>Dove acquistare</span>
             </a>
         </li>
         <li class="catalogue">
-            <a href="#" target="_top">
+            <a href="catalogh00.html" target="_top">
                 <span>Download catalogo</span>
             </a>
         </li>
                 <li class="contacts">
-            <a href="#" target="_top">
+            <a href="Contacts.html" target="_top">
                 <span>Contatti</span>
             </a>
         </li>
@@ -1512,7 +1266,7 @@ window.dataLayer = [{
     }
     .links{
         margin-top: 5px;
-        font-size: 12px ;
+      font-size:16px ;
     }
     #website{
         color: #fff;
@@ -1655,7 +1409,7 @@ window.dataLayer = [{
 <div class="r2 r2bis" uk-grid> 
    <div class="putInline">
        <div id="ciccio">    
-           <h6 id="quicklink">All rights reserved</h6>
+           <h6 style="font-size: 17px;" id="quicklink">All rights reserved</h6>
        </div>
        <div class="links">
        <!-- <a href="#" id="quicklink">Dati legali</a> -->
@@ -1677,12 +1431,6 @@ window.dataLayer = [{
 <script src="js/test.js"></script>
 
 
-
-
-
-
-<!-- JS Bottom -->
-
 <script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
 <script type="text/javascript" src="js/app/vendor/slicka4f0.js?v=0"></script>
 
@@ -1702,34 +1450,7 @@ window.dataLayer = [{
 
 
 
-<script type="text/javascript">
-    var Config = {
-        locale: "en",
-        urlBase: "https://www.spagnolmobili.it/en",
-        allCurrencies: {"USD":{"name":"USD - Dollaro Americano","symbol":"$","symbol_html":"$"},"GBP":{"name":"GBP - Sterlina Inglese","symbol":"\u00a3","symbol_html":"&pound;"},"EUR":{"name":"EUR - Euro","symbol":"\u20ac","symbol_html":"&euro;"},"AUD":{"name":"AUD - Dollaro Australiano","symbol":"$","symbol_html":"$"},"BRL":{"name":"BRL - Real Brasiliano","symbol":"R$","symbol_html":"R$"},"CAD":{"name":"CAD - Dollaro Canadese","symbol":"$","symbol_html":"$"},"CZK":{"name":"CZK - Corona Ceca","symbol":"K\u010d","symbol_html":""},"DKK":{"name":"DKK - Corona Danese","symbol":"kr","symbol_html":"kr"},"HKD":{"name":"HKD - Dollaro di Hong Kong","symbol":"$","symbol_html":"$"},"HUF":{"name":"HUF - Fiorino Ungherese","symbol":"Ft","symbol_html":"Ft"},"ILS":{"name":"ILS - Nuovo Sicli","symbol":"\u20aa","symbol_html":"&#8362;"},"JPY":{"name":"JPY - Yen Giapponese","symbol":"\u00a5","symbol_html":"&#165;"},"MYR":{"name":"MYR - Ringgit","symbol":"RM","symbol_html":"RM"},"MXN":{"name":"MXN - Peso Messicano","symbol":"$","symbol_html":"$"},"NZD":{"name":"NZD - Dollaro Neozelandese","symbol":"$","symbol_html":"$"},"NOK":{"name":"NOK - Corona Norvegese","symbol":"kr","symbol_html":"kr"},"PHP":{"name":"PHP - Peso Filippino","symbol":"Php","symbol_html":"Php"},"PLN":{"name":"PLN - Zloty Polacco","symbol":"z\u0142","symbol_html":""},"SGD":{"name":"SGD - Dollaro di Singapore","symbol":"$","symbol_html":"$"},"SEK":{"name":"SEK - Corona Svedese","symbol":"kr","symbol_html":"kr"},"CHF":{"name":"CHF - Franco Svizzero","symbol":"CHF","symbol_html":"CHF"},"TWD":{"name":"TWD - Dollaro Taiwanese","symbol":"$","symbol_html":"$"},"THB":{"name":"THB - Baht Tailandese","symbol":"\u0e3f","symbol_html":" &#3647;"},"TRY":{"name":"TRY - Nuova Lira Turca","symbol":"TL","symbol_html":" &#3647;"}},
-        allLocales: {"it":{"name":"Italiano","image":"images\/flags\/16\/Italy.png","admin_name":"Italiano","real_locale":"it_IT","fallback_languages":["it"],"adabe_locale":"ITA"},"en":{"name":"English","image":"images\/flags\/16\/United-Kingdom.png","admin_name":"Inglese","real_locale":"en_UK","fallback_languages":["it"],"adabe_locale":"ENG"},"fr":{"name":"Fran\u00e7ais","image":"images\/flags\/16\/France.png","admin_name":"Francese","real_locale":"fr_FR","fallback_languages":["it"],"adabe_locale":"FRA"},"de":{"name":"Deutsch","image":"images\/flags\/16\/Germany.png","admin_name":"Tedesco","real_locale":"de_DE","fallback_languages":["it"],"adabe_locale":"DEU"},"es":{"name":"Espa\u00f1ol","image":"images\/flags\/16\/Spain.png","admin_name":"Spagnolo","real_locale":"es_ES","fallback_languages":["it"],"adabe_locale":"SPA"}},
-        urlApp: "https://www.spagnolmobili.it",
-        token: "RBT42zAZH8xhqPnVxaE2Ckx6KcyWeKB7uGOCpsl4",
-    };
-    var Default = {
-        selectAllAlert: {
-            title: "",
-            text: 'Elementi selezionati: %d',
-            showConfirmButton: true,
-            showCancelButton: true,
-            confirmButtonColor: "#546E7A",
-            confirmButtonText: 'Si',
-            cancelButtonText: 'No',
-            closeOnConfirm: true,
-            closeOnCancel: true,
-            type: "warning"
-        }
-    };
-    var Translations = {
-        progress: 'app.shop.cart.progress',
-        cartUpdated: 'app.shop.cart.updated'
-    }
-</script><script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/js.cookiea4f0.js?v=0"></script>
 <script type="text/javascript" src="js/app/vendor/slicka4f0.js?v=0"></script>
 
 <script type="text/javascript" src="js/app/vendor/url.mina4f0.js?v=0"></script>
@@ -1742,19 +1463,7 @@ window.dataLayer = [{
 
 
 <script type="text/javascript" src="js/app/vendor/materialize.js"></script>
-<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script>
-
-
-
-
-
-<script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script>
-
-
-<script type="text/javascript" src="../player.vimeo.com/api/player.js"></script>
-
-
-<script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
+<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script><script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
 <script type="text/javascript">
     $(function () {
         if( $("iframe").length > 0 ){
@@ -1766,7 +1475,7 @@ window.dataLayer = [{
             newScript.src = "https://www.youtube.com/player_api";
             $('head').append(newScript);
         }
-//        $(documnt).ready( function(){
+
             App.init();
 
             
@@ -1774,477 +1483,13 @@ window.dataLayer = [{
         
     });
 
-    // Newsletter
-    // function onSubmitNewsletterForm(token) {
-    $('.form--newsletter').on('submit', function ($e) {
-        $e.preventDefault();
-
-        var recaptcha = $(this).find(".g-recaptcha-response").val();
-        if (recaptcha === "") {
-            $(this).find(".g-recaptcha-error").html('Check the box to continue.');
-            return;
-        } else {
-            $(this).find(".g-recaptcha-error").html('');
-        }
-
-        var qst = $('.form--newsletter');
-        var formData = qst.serializeArray();
-        var fields =[];
-        formData.map(function(item){
-            if (item.name == 'privacy_consenso_trattamento_dati_personali' && item.value=='on') {
-                item.value = 'true';
-            } else if (item.name == 'chi_sei_form_newsletter') {
-                item.value = chiSeiFormNewsletterValue(item.value);
-            } else if (item.name == 'country') {
-                item.value = countriesValue(item.value);
-            }
-
-            if(item.name != 'fromContact' && item.name != '_token' /*&& item.name != 'privacy'*/) {
-                fields.push(item);
-            }
-        })
-
-        var data = {
-            "submittedAt": Date.now(),
-            "fields": fields
-        }
-
-        console.log(JSON.stringify(data));
-        $.ajax({
-            url: 'https://api.hsforms.com/submissions/v3/integration/submit/9453654/006fa552-5b48-4188-9129-aa77a5935800',
-            type: "post",
-            data: JSON.stringify(data),
-            dataType: 'json',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            error: function (xhr, error, status) {
-                console.log('error', xhr);
-            },
-            beforeSend: function(){
-                // App.showHideLoader();
-                qst.find('.input-group').removeClass('error');
-                qst.find(".errorForm").slideUp();
-            },
-            success: function (data) {
-                console.log(data);
-
-                if( data.error == 1 ){
-                    $.each(data.errors, function (index, value) {
-                        qst.find("[name='"+index+"']").parents('.input-group').addClass('error');
-                        qst.find(".errorForm").html(value).slideDown();
-                        console.log(index + ' --- ' + value);
-                    });
-                }else{
-                    var type = qst.find('input[name="chi_sei_form_newsletter"]:checked').val();
-                    userType = '';
-                    if( type > 0 ){
-                        userType = 'input' + qst.find('input[name="chi_sei_form_newsletter"]:checked').val() + '_contact';
-                    }
-
-                    window.dataLayer.push({
-                        'event': 'iscrizione-newsletter',
-                        'userType': userType
-                    });
-
-                    qst.find('fieldset').slideUp();
-                    qst.find('.messageSuccess').slideDown();
-                    $('.newsletterSuccess').html(data.user_email);
-
-                    setTimeout( function (){
-                        $('.closeNewsletter').trigger('click');
-                    }, 3000);
-                }
-            },
-            complete: function(){
-                // App.showHideLoader();
-            }
-        });
-    });
-
-    $('.form--contacts').on('submit', function ($e) {
-        $e.preventDefault();
-
-
-        var recaptcha = $(this).find(".g-recaptcha-response").val();
-        if (recaptcha === "") {
-            $(this).find(".g-recaptcha-error").html('Check the box to continue.');
-            return;
-        } else {
-            $(this).find(".g-recaptcha-error").html('');
-        }
-
-
-        var qst = $('.form--contacts');
-        var formData = qst.serializeArray();
-
-
-        var fields =[];
-        formData.map(function(item){
-            if ((item.name == 'privacy_consenso_trattamento_dati_personali' || item.name == 'newsletter_consenso_invio_newsletter') && item.value=='on') {
-                item.value = 'true';
-            } else if (item.name == 'chi_sei_form_newsletter') {
-                item.value = chiSeiFormNewsletterValue(item.value);
-            } else if (item.name == 'country') {
-                item.value = countriesValue(item.value);
-            }
-
-            if(item.name != 'fromContact' && item.name != '_token' && item.name != 'privacy') {
-                fields.push(item);
-            }
-        })
-
-        var data = {
-            "submittedAt": Date.now(),
-            "fields": fields
-        }
-
-        var userType        = 'input' + qst.find('input[name="tipology"]:checked').val() + '_contact';
-        var checkNewsletter = qst.find('input[name="newsletter_consenso_invio_newsletter"]').prop('checked') ? 'yes' : 'no';
-        // console.log(userType);
-        console.log(data);
-
-
-        $.ajax({
-            //url: Helper.Router.route('contactSubmit'),
-            url: 'https://api.hsforms.com/submissions/v3/integration/submit/9453654/219a6d16-1e70-4f39-962f-ec3c74a6894b',
-            type: "post",
-            data: JSON.stringify(data),
-            dataType: 'json',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            error: function (xhr, error, status) {
-                console.log('error', xhr);
-                alert(error);
-            },
-            beforeSend: function(){
-                // // App.showHideLoader();
-                qst.find('.input-group').removeClass('error');
-            },
-            success: function (data) {
-                // console.log(data);
-
-                if( data.error == 1 ){
-                    $.each(data.errors, function (index, value) {
-                        qst.find("[name='"+index+"']").parents('.input-group').addClass('error');
-                        console.log(index + ' --- ' + value);
-                    });
-                }else{
-                    qst.find('fieldset').slideUp();
-                    qst.find('.messageSuccess').slideDown();
-
-                    if( $('.product_details').length > 0 ){
-                        window.dataLayer.push({
-                            'event': 'invio-form-prodotti',
-                            'userType': userType,
-                            'checkNewsletter': checkNewsletter
-                        });
-                    }else{
-                        window.dataLayer.push({
-                            'event': 'invio-form-contatti',
-                            'userType': userType,
-                            'checkNewsletter': checkNewsletter
-                        });
-                    }
-
-                    setTimeout( function (){
-                        $('.closeContacts').trigger('click');
-                    }, 3000);
-                }
-            },
-            complete: function(){
-                // App.showHideLoader();
-            }
-        });
-    });
-
-    function chiSeiFormNewsletterValue(value) {
-        switch (value) {
-            case '1': return 'Rivenditore';
-            case '2': return 'Progettista / Architetto';
-            case '3': return 'Privato';
-            default: return '';
-        }
-    }
-
-    function countriesValue(value) {
-        switch (value) {
-            case 'AF': return 'Afghanistan';
-            case 'AX': return 'Aland Islands';
-            case 'AL': return 'Albania';
-            case 'DZ': return 'Algeria';
-            case 'AS': return 'American Samoa';
-            case 'AD': return 'Andorra';
-            case 'AO': return 'Angola';
-            case 'AI': return 'Anguilla';
-            case 'AQ': return 'Antarctica';
-            case 'AG': return 'Antigua And Barbuda';
-            case 'AR': return 'Argentina';
-            case 'AM': return 'Armenia';
-            case 'AW': return 'Aruba';
-            case 'AU': return 'Australia';
-            case 'AT': return 'Austria';
-            case 'AZ': return 'Azerbaijan';
-            case 'BS': return 'Bahamas';
-            case 'BH': return 'Bahrain';
-            case 'BD': return 'Bangladesh';
-            case 'BB': return 'Barbados';
-            case 'BY': return 'Belarus';
-            case 'BE': return 'Belgium';
-            case 'BZ': return 'Belize';
-            case 'BJ': return 'Benin';
-            case 'BM': return 'Bermuda';
-            case 'BT': return 'Bhutan';
-            case 'BO': return 'Bolivia';
-            case 'BA': return 'Bosnia And Herzegovina';
-            case 'BW': return 'Botswana';
-            case 'BV': return 'Bouvet Island';
-            case 'BR': return 'Brazil';
-            case 'IO': return 'British Indian Ocean Territory';
-            case 'BN': return 'Brunei Darussalam';
-            case 'BG': return 'Bulgaria';
-            case 'BF': return 'Burkina Faso';
-            case 'BI': return 'Burundi';
-            case 'KH': return 'Cambodia';
-            case 'CM': return 'Cameroon';
-            case 'CA': return 'Canada';
-            case 'CV': return 'Cape Verde';
-            case 'KY': return 'Cayman Islands';
-            case 'CF': return 'Central African Republic';
-            case 'TD': return 'Chad';
-            case 'CL': return 'Chile';
-            case 'CN': return 'China';
-            case 'CX': return 'Christmas Island';
-            case 'CC': return 'Cocos (Keeling) Islands';
-            case 'CO': return 'Colombia';
-            case 'KM': return 'Comoros';
-            case 'CG': return 'Congo';
-            case 'CD': return 'Congo, Democratic Republic';
-            case 'CK': return 'Cook Islands';
-            case 'CR': return 'Costa Rica';
-            case 'CI': return 'Cote D\'Ivoire';
-            case 'HR': return 'Croatia';
-            case 'CU': return 'Cuba';
-            case 'CW': return 'Curaçao';
-            case 'CY': return 'Cyprus';
-            case 'CZ': return 'Czech Republic';
-            case 'DK': return 'Denmark';
-            case 'DJ': return 'Djibouti';
-            case 'DM': return 'Dominica';
-            case 'DO': return 'Dominican Republic';
-            case 'EC': return 'Ecuador';
-            case 'EG': return 'Egypt';
-            case 'SV': return 'El Salvador';
-            case 'GQ': return 'Equatorial Guinea';
-            case 'ER': return 'Eritrea';
-            case 'EE': return 'Estonia';
-            case 'ET': return 'Ethiopia';
-            case 'FK': return 'Falkland Islands (Malvinas)';
-            case 'FO': return 'Faroe Islands';
-            case 'FJ': return 'Fiji';
-            case 'FI': return 'Finland';
-            case 'FR': return 'France';
-            case 'GF': return 'French Guiana';
-            case 'PF': return 'French Polynesia';
-            case 'TF': return 'French Southern Territories';
-            case 'GA': return 'Gabon';
-            case 'GM': return 'Gambia';
-            case 'GE': return 'Georgia';
-            case 'DE': return 'Germany';
-            case 'GH': return 'Ghana';
-            case 'GI': return 'Gibraltar';
-            case 'GR': return 'Greece';
-            case 'GL': return 'Greenland';
-            case 'GD': return 'Grenada';
-            case 'GP': return 'Guadeloupe';
-            case 'GU': return 'Guam';
-            case 'GT': return 'Guatemala';
-            case 'GG': return 'Guernsey';
-            case 'GN': return 'Guinea';
-            case 'GW': return 'Guinea-Bissau';
-            case 'GY': return 'Guyana';
-            case 'HT': return 'Haiti';
-            case 'HM': return 'Heard Island & Mcdonald Islands';
-            case 'VA': return 'Holy See (Vatican City State)';
-            case 'HN': return 'Honduras';
-            case 'HK': return 'Hong Kong';
-            case 'HU': return 'Hungary';
-            case 'IS': return 'Iceland';
-            case 'IN': return 'India';
-            case 'ID': return 'Indonesia';
-            case 'IR': return 'Iran, Islamic Republic Of';
-            case 'IQ': return 'Iraq';
-            case 'IE': return 'Ireland';
-            case 'IM': return 'Isle Of Man';
-            case 'IL': return 'Israel';
-            case 'IT': return 'Italy';
-            case 'JM': return 'Jamaica';
-            case 'JP': return 'Japan';
-            case 'JE': return 'Jersey';
-            case 'JO': return 'Jordan';
-            case 'KZ': return 'Kazakhstan';
-            case 'KE': return 'Kenya';
-            case 'KI': return 'Kiribati';
-            case 'XK': return 'Kosovo';
-            case 'KW': return 'Kuwait';
-            case 'KG': return 'Kyrgyzstan';
-            case 'LA': return 'Lao People\'s Democratic Republic';
-            case 'LV': return 'Latvia';
-            case 'LB': return 'Lebanon';
-            case 'LS': return 'Lesotho';
-            case 'LR': return 'Liberia';
-            case 'LY': return 'Libyan Arab Jamahiriya';
-            case 'LI': return 'Liechtenstein';
-            case 'LT': return 'Lithuania';
-            case 'LU': return 'Luxembourg';
-            case 'MO': return 'Macao';
-            case 'MK': return 'Macedonia';
-            case 'MG': return 'Madagascar';
-            case 'MW': return 'Malawi';
-            case 'MY': return 'Malaysia';
-            case 'MV': return 'Maldives';
-            case 'ML': return 'Mali';
-            case 'MT': return 'Malta';
-            case 'MH': return 'Marshall Islands';
-            case 'MQ': return 'Martinique';
-            case 'MR': return 'Mauritania';
-            case 'MU': return 'Mauritius';
-            case 'YT': return 'Mayotte';
-            case 'MX': return 'Mexico';
-            case 'FM': return 'Micronesia, Federated States Of';
-            case 'MD': return 'Moldova';
-            case 'MC': return 'Monaco';
-            case 'MN': return 'Mongolia';
-            case 'ME': return 'Montenegro';
-            case 'MS': return 'Montserrat';
-            case 'MA': return 'Morocco';
-            case 'MZ': return 'Mozambique';
-            case 'MM': return 'Myanmar';
-            case 'NA': return 'Namibia';
-            case 'NR': return 'Nauru';
-            case 'NP': return 'Nepal';
-            case 'NL': return 'Netherlands';
-            case 'AN': return 'Netherlands Antilles';
-            case 'NC': return 'New Caledonia';
-            case 'NZ': return 'New Zealand';
-            case 'NI': return 'Nicaragua';
-            case 'NE': return 'Niger';
-            case 'NG': return 'Nigeria';
-            case 'NU': return 'Niue';
-            case 'NF': return 'Norfolk Island';
-            case 'KP': return 'North Korea';
-            case 'MP': return 'Northern Mariana Islands';
-            case 'NO': return 'Norway';
-            case 'OM': return 'Oman';
-            case 'PK': return 'Pakistan';
-            case 'PW': return 'Palau';
-            case 'PS': return 'Palestinian Territory, Occupied';
-            case 'PA': return 'Panama';
-            case 'PG': return 'Papua New Guinea';
-            case 'PY': return 'Paraguay';
-            case 'PE': return 'Peru';
-            case 'PH': return 'Philippines';
-            case 'PN': return 'Pitcairn';
-            case 'PL': return 'Poland';
-            case 'PT': return 'Portugal';
-            case 'PR': return 'Puerto Rico';
-            case 'QA': return 'Qatar';
-            case 'RE': return 'Reunion';
-            case 'RO': return 'Romania';
-            case 'RU': return 'Russian Federation';
-            case 'RW': return 'Rwanda';
-            case 'BL': return 'Saint Barthelemy';
-            case 'SH': return 'Saint Helena';
-            case 'KN': return 'Saint Kitts And Nevis';
-            case 'LC': return 'Saint Lucia';
-            case 'MF': return 'Saint Martin';
-            case 'PM': return 'Saint Pierre And Miquelon';
-            case 'VC': return 'Saint Vincent And Grenadines';
-            case 'WS': return 'Samoa';
-            case 'SM': return 'San Marino';
-            case 'ST': return 'Sao Tome And Principe';
-            case 'SA': return 'Saudi Arabia';
-            case 'SN': return 'Senegal';
-            case 'RS': return 'Serbia';
-            case 'SC': return 'Seychelles';
-            case 'SL': return 'Sierra Leone';
-            case 'SG': return 'Singapore';
-            case 'SX': return 'Sint Maarten';
-            case 'SK': return 'Slovakia';
-            case 'SI': return 'Slovenia';
-            case 'SB': return 'Solomon Islands';
-            case 'SO': return 'Somalia';
-            case 'ZA': return 'South Africa';
-            case 'GS': return 'South Georgia And Sandwich Isl.';
-            case 'KR': return 'South Korea';
-            case 'SS': return 'South Sudan';
-            case 'ES': return 'Spain';
-            case 'LK': return 'Sri Lanka';
-            case 'SD': return 'Sudan';
-            case 'SR': return 'Suriname';
-            case 'SJ': return 'Svalbard And Jan Mayen';
-            case 'SZ': return 'Swaziland';
-            case 'SE': return 'Sweden';
-            case 'CH': return 'Switzerland';
-            case 'SY': return 'Syrian Arab Republic';
-            case 'TW': return 'Taiwan';
-            case 'TJ': return 'Tajikistan';
-            case 'TZ': return 'Tanzania';
-            case 'TH': return 'Thailand';
-            case 'TL': return 'Timor-Leste';
-            case 'TG': return 'Togo';
-            case 'TK': return 'Tokelau';
-            case 'TO': return 'Tonga';
-            case 'TT': return 'Trinidad And Tobago';
-            case 'TN': return 'Tunisia';
-            case 'TR': return 'Turkey';
-            case 'TM': return 'Turkmenistan';
-            case 'TC': return 'Turks And Caicos Islands';
-            case 'TV': return 'Tuvalu';
-            case 'UG': return 'Uganda';
-            case 'UA': return 'Ukraine';
-            case 'AE': return 'United Arab Emirates';
-            case 'GB': return 'United Kingdom';
-            case 'US': return 'United States';
-            case 'UM': return 'United States Outlying Islands';
-            case 'UY': return 'Uruguay';
-            case 'UZ': return 'Uzbekistan';
-            case 'VU': return 'Vanuatu';
-            case 'VE': return 'Venezuela';
-            case 'VN': return 'Viet Nam';
-            case 'VG': return 'Virgin Islands, British';
-            case 'VI': return 'Virgin Islands, U.S.';
-            case 'WF': return 'Wallis And Futuna';
-            case 'EH': return 'Western Sahara';
-            case 'YE': return 'Yemen';
-            case 'ZM': return 'Zambia';
-            case 'ZW': return 'Zimbabwe';
-            default: return '';
-        }
-    }
-
-    // }
+    
 </script>
 
 <script type="text/javascript" src="js/app/vendor/materialize.js"></script>
-<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script>
+<script type="text/javascript" src="js/app/vendor/jquery.visible.min.js"></script><script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
 
 
-
-
-
-<script type="text/javascript" src="js/app/vendor/jquery.fancybox.min.js"></script>
-
-
-<script type="text/javascript" src="../player.vimeo.com/api/player.js"></script>
-
-
-<script type="text/javascript" src="js/app/appa4f0.js?v=0"></script>
-
-
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/19582231.js"></script>
-    <!-- End of HubSpot Embed Code -->
+    
 </body>
 </html>

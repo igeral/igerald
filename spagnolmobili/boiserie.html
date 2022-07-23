@@ -83,8 +83,9 @@
 
     <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon" />
     <link rel="stylesheet" href="cssSpa/build/main.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-    <title>Camerette bambini - Camerette ragazzi | Zalf</title>
+    <title>SpagnolMobili - Boserie</title>
 
     <link
       type="text/css"
@@ -110,7 +111,7 @@
     })(document,window,cpm);
 </script>-->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-4012939-6"
@@ -193,20 +194,18 @@
         top: 0;
         width: 100%;
       }
-      .header-items2 {
+      .header-language {
         position: fixed;
         top: 0.5rem;
       }
-      .edgtf-position-right-inner2 {
+      .header-socials {
         margin-top: -1rem;
       }
-      .header.col-12 {
+      .header.sec-12 {
         font-weight: bold;
       }
-      @media screen and (min-width: 1280px) and (max-width: 1400px) {
-        .header-items2 {
-          margin-top: 2rem !important;
-        }
+      /* @media screen and (min-width: 1280px) and (max-width: 1400px) {
+        } */
         .imageBox {
           margin-left: -1rem;
           margin-top: -33rem !important;
@@ -220,48 +219,47 @@
       }
       @media screen and (min-width: 2300px) {
         .imageBox {
-          margin-left: 12rem;
+          margin-left: 8rem;
         }
         .intro.maxWidth {
           margin-left: 10rem !important;
         }
-        .t-medium{
-          position: relative;
-          top: 2rem;
-        }
       }
       @media screen and (min-width: 1300px) and (max-width: 1400px) {
         #menu-div {
-          margin-left: 7rem !important;
+          margin-left: 3.5rem !important;
+        }
+        .intro.maxWidth{
+          left: -3rem !important;
         }
       }
       @media screen and (min-width: 1400px) and (max-width: 1800px) {
         #menu-div {
-          margin-left: 7.5rem !important;
+          margin-left: 3rem !important;
         }
       }
 
       @media screen and (min-width: 1900px) and (max-width: 2000px) {
         #menu-div {
-          margin-left: 10rem;
+          margin-left: 7.5rem;
         }
       }
-      .header-items2,
-      .edgtf-position-right-inner2 {
+      .header-language,
+      .header-socials {
         position: fixed;
         top: 0;
       }
-      .edgtf-position-right-inner2 {
+      .header-socials {
         top: 20px;
       }
-      .header.col-12 {
+      .header.sec-12 {
         position: fixed !important;
         top: 50px !important;
       }
       #page_content {
         margin-top: 3rem;
       }
-      .uk-scrollspy {
+      .main-box {
         margin-top: 0 !important;
       }
       .intro.maxWidth {
@@ -286,15 +284,17 @@
         margin-left: 2rem;
       }
       .t-medium {
+        position: relative;
+        top: 2rem;
         margin-top: 3rem !important;
         margin-left: 12rem !important;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       .t-medium2 {
         position: relative !important;
         top: 2.5rem !important;
         margin-left: 12rem !important;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
 
       .lista-composizioni.lista-scomposta.colore1 {
@@ -314,26 +314,31 @@
           top: 0 !important;
           z-index: 20 !important;
         }
-        .col-8.align-center {
-          position: relative;
-          left: -4rem;
-        }
-        .row--1.row--responsive {
+        .sec-8.align-center{
+    margin-left: 0rem;
+  }
+  .header-socials{
+    left: -3.8rem !important;
+  }
+  .sec-2.ham-div{
+    margin-left: 3.5rem;
+  }
+        .row--1.dynnamic--row {
           position: relative;
           top: 3rem;
         }
-        .edgtf-position-right-inner2 {
+        .header-socials {
           position: relative !important;
           /* left: 2rem; */
           text-align: center !important;
           width: 100%;
           /* top: -0.5rem !important;  */
         }
-        .col-md-2 > ul {
+        .sec-2-sm > ul {
           text-align: center !important;
           margin-left: -3rem !important;
         }
-        .col-md-2 > h6 {
+        .sec-2-sm > h6 {
           text-align: center;
           margin-left: -1rem !important;
         }
@@ -398,9 +403,15 @@
           > a
           > div
           > span {
-          top: -12rem !important;
+          top: -14rem !important;
           position: relative;
-          left: -3rem;
+          left: -5rem;
+        }
+        #page_content > section > div.imageBox > div:nth-child(1) > a > div{
+          margin-top: -8rem;
+        }
+        #page_content > section > div.imageBox > div:nth-child(2) > a > div{
+          margin-top: -12rem;
         }
         #page_content
           > section
@@ -418,9 +429,9 @@
           > a
           > div
           > span {
-          top: -7rem !important;
+          top: -10rem !important;
           position: relative;
-          left: -3rem;
+          left: -5rem;
         }
         footer {
           margin-top: -30rem !important;
@@ -431,8 +442,8 @@
         }
       }
       @media screen and (min-width: 768px) and (max-width: 830px) {
-        .header-items2 {
-          margin-top: 1.5rem !important;
+        .header-language {
+          margin-top: -0.1rem !important;
         }
         .header {
           position: fixed !important;
@@ -444,32 +455,40 @@
         footer {
           margin-top: 20rem;
         }
+        .sec-8.align-center{
+        left: -2rem;
+    }
         #page_content
           > section
-          > div.intro.maxWidth.uk-scrollspy-inview.uk-animation-slide-bottom-small {
+          > div.intro.maxWidth.main-box-inview.uk-animation-slide-bottom-small {
           margin-left: 9rem !important;
-          margin-top: 8rem;
+          margin-top: 9rem;
         }
         .imageBox {
           display: inline-grid;
           grid-template-columns: 1fr 1fr;
+          margin-left: -1rem;
+          position: relative;
+          top: -14rem;
+          height: 39rem;
         }
         .t-medium {
           position: absolute !important;
           left: -2rem;
-          top: 40rem;
+          top: 38rem;
         }
         .t-medium2 {
           position: absolute !important;
-          top: 45rem !important;
+          top: 41rem !important;
+          left: -2rem;
         }
       }
     </style>
   </head>
   <body class="young young-composizioni">
-    <div class="container-fluid container-fluid-main">
+    <div class="holder-dynamic holder-dynamic-main">
       <div class="header2">
-        <div class="header-items2">
+        <div class="header-language">
           <ul>
             <a href="#">IT</a
             >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
@@ -483,27 +502,27 @@
           </ul>
         </div>
 
-        <div class="edgtf-position-right-inner2" style="">
+        <div class="header-socials" >
           <a
-            class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"
+            class="header-social-icon-widget-holder header-icon-has-hover"
             style="color: #ffffff; font-size: 14px; margin: 0px 5px 0px 10px"
             href="https://it-it.facebook.com/spagnolmobili/"
             target="_blank"
           >
-            <span class="edgtf-social-icon-widget fa fa-facebook"> </span
+            <span class="header-social-icon-widget fa fa-facebook"> </span
           ></a>
 
           <a
-            class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"
+            class="header-social-icon-widget-holder header-icon-has-hover"
             style="color: #ffffff; font-size: 14px; margin: 0px 5px 0px 5px"
             href="https://www.instagram.com/spagnolgroup/"
             target="_blank"
           >
-            <span class="edgtf-social-icon-widget fa fa-instagram"></span>
+            <span class="header-social-icon-widget fa fa-instagram"></span>
           </a>
 
           <a
-            class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"
+            class="header-social-icon-widget-holder header-icon-has-hover"
             style="color: #ffffff; font-size: 14px; margin: 0px 5px 0px 5px"
             href="https://twitter.com/SpagnolGroup"
             target="_blank"
@@ -512,44 +531,40 @@
           </a>
 
           <a
-            class="edgtf-social-icon-widget-holder edgtf-icon-has-hover"
+            class="header-social-icon-widget-holder header-icon-has-hover"
             style="color: #ffffff; font-size: 14px; margin: 0px 10px 0px 5px"
             href="#"
             target="_blank"
           >
-            <span class="edgtf-social-icon-widget fa fa-youtube-play"></span>
+            <span class="header-social-icon-widget fa fa-youtube-play"></span>
           </a>
-          <!--<div class="widget edgtf-separator-widget">
-        <div class="edgtf-separator-holder clearfix  edgtf-separator-center edgtf-separator-normal">
-        <div class="edgtf-separator" style="border-color: #ffffff;border-style: solid;width: 1px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px"></div>
-      </div>
-    </div>-->
+         
 
           <a
-            class="edgtf-icon-widget-holder edgtf-icon-has-hover edgtf-text-left"
+            class="header-icon-widget-holder header-icon-has-hover edgtf-text-left"
             data-hover-color="#ffffff"
-            href="https://www.tomasella.it/area-riservata"
+            href="#"
             target="_self"
             style="color: #ffffff; font-size: 13px; margin: 0px 5px 0px 5px"
           >
-            <span class="edgtf-icon-text" style="font-size: 11px"
+            <span class="header-icon-text" style="font-size: 11px"
               >AREA RISERVATA</span
-            >&nbsp&nbsp <span class="edgtf-icon-widget fa fa-lock"></span>&nbsp
+            >&nbsp&nbsp <span class="header-icon-widget fa fa-lock"></span>&nbsp
           </a>
         </div>
       </div>
 
-      <header class="header col-12">
-        <div class="row isDesktop align-items-center">
-          <div style="position: absolute; left: 1%" class="col-2">
+      <header class="header sec-12">
+        <div class="row DesktopView centerAligned">
+          <div style="position: absolute; left: 1%" class="sec-2">
             <a href="index.html">
-              <!--<a href="">logo--black.svg logo--white.svg</a>-->
+              
               <img src="images/app/s-logo2.svg" height="300" class="isBlack1" />
-              <!--<img src="images/app/s-logo.svg" height="100" class="isWhite1" />-->
+              
             </a>
           </div>
 
-          <div id="menu-div" class="col-6 offset-1 align-center padding--lr-0">
+          <div id="menu-div" class="sec-6 offset-1 align-center padding--lr-0">
             <ul class="menu">
               <li class="menu-has-submenu menu-item">
                 <a
@@ -566,9 +581,7 @@
               <li class="menu-item">
                 <a href="rivenditory.html" class="menu-title">RIVENDITORI</a>
               </li>
-              <!--<li class="menu-item">
-                    <a href="#" class="menu-title">CHISIAMO</a>
-                </li>-->
+              
               <li class="menu-item">
                 <a href="Contacts.html" class="menu-title">CONTATTI</a>
               </li>
@@ -578,53 +591,37 @@
             </ul>
           </div>
 
-          <!--<div class="col-3 align-right colDX">
-            <ul class="row menu">
-                
-                
-                <li class="menu-item">
-                    <div class="header__hamburger openMenuFull">
-                        <span class="header__hamburger__1"></span>
-                        <span class="header__hamburger__2"></span>
-                        <span class="header__hamburger__3"></span>
-                    </div>
-                </li>
-            </ul>
-        </div>-->
         </div>
 
-        <div class="row isMobile align-items-center">
-          <div class="col-2 align-left"></div>
+        <div class="row mobileView centerAligned">
 
-          <div class="col-8 align-center">
+          <div class="sec-8 align-center">
             <a href="index.html">
               <img src="images/app/s-logo2.svg" height="22" class="" />
             </a>
           </div>
 
-          <div class="col-2 align-right">
-            <div class="header__hamburger openMenuMobile">
-              <span class="header__hamburger__1"></span>
-              <span class="header__hamburger__2"></span>
-              <span class="header__hamburger__3"></span>
-            </div>
+          <div class="sec-2 ham-div">
+            <div class="header__toggle">
+              <i class='bx bx-menu header__hamburger openSideMenu' style="font-size:35px;"id="header-toggle"></i>
+          </div>
           </div>
         </div>
       </header>
 
-      <div class="header isWhite isScrollUp">
+      <div class="header isWhite scrolledUp">
         <ul class="menu">
           <li class="menu-has-submenu menu-item">
             <ul style="height: 100%" class="menu-submenu menu-title-1">
               <li id="submenu-menu" class="menu-submenu-item row">
-                <ul id="menu-div1" class="col-20">
+                <ul id="menu-div1" class="sec-20">
                   <li
-                    class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre"
+                    class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect"
                     data-animation="slideLeftToRightSmall"
                     data-delay="120"
                   >
-                    <a id="menu-link" href="#">ZONA NOTTE</a>
-                    <ul class="menu-submenu-item-single-list">
+                    <a id="div-name" href="#">ZONA NOTTE</a>
+                    <ul class="single-submenu-item-menu-list">
                       <!--<a href="" style="margin-bottom: 300px;">
                               
                       </a>-->
@@ -643,7 +640,7 @@
                         </a>
                         <ul
                           id="submenu-1"
-                          class="menu-submenu-item-single-list"
+                          class="single-submenu-item-menu-list"
                         >
                           <a onclick="showSubMenu()" id="amadi-1" href="#"> </a>
                           <li>
@@ -690,7 +687,7 @@
                         </a>
                         <ul
                           id="submenu-300"
-                          class="menu-submenu-item-single-list"
+                          class="single-submenu-item-menu-list"
                         >
                           <a
                             onclick="showLettiZonnaSubMenu()"
@@ -765,21 +762,17 @@
                     </ul>
                   </li>
                 </ul>
-                <ul id="menu-div2" class="col-20">
+                <ul id="menu-div2" class="sec-20">
                   <!--offset-1 -->
 
                   <li
-                    class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre"
+                    class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect"
                     data-animation="slideLeftToRightSmall"
                     data-delay="270"
                   >
-                    <a id="menu-link" href="#">ZONA GIORNO</a>
-                    <ul class="menu-submenu-item-single-list">
-                      <!--<li>
-                                                  <a href="en/sofas.html">
-                                                      >>>>>>>
-                                                  </a>
-                                              </li>-->
+                    <a id="div-name" href="#">ZONA GIORNO</a>
+                    <ul class="single-submenu-item-menu-list">
+                      
 
                       <li>
                         <a id="submenu-main" href="Librerie.html"> Librerie </a>
@@ -790,11 +783,7 @@
                           Contenitori
                         </a>
                       </li>
-                      <!--<li>
-                                                  <a id="submenu-main" href="#">
-                                                      Pensili
-                                                  </a>
-                                              </li>-->
+                      
 
                       <li>
                         <a id="submenu-main" href="madiefront.html"> Madie </a>
@@ -802,16 +791,16 @@
                     </ul>
                   </li>
                 </ul>
-                <ul id="menu-div3" class="col-20">
+                <ul id="menu-div3" class="sec-20">
                   <!-- offset-1 border-right-grey -->
 
                   <li
-                    class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre"
+                    class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect"
                     data-animation="slideLeftToRightSmall"
                     data-delay="330"
                   >
-                    <a id="menu-link" href="#">KIDS</a>
-                    <ul class="menu-submenu-item-single-list">
+                    <a id="div-name" href="#">KIDS</a>
+                    <ul class="single-submenu-item-menu-list">
                       <!--<li>
                                                   <a href="en/sideboards.html">
                                                       >>>>>>>
@@ -834,7 +823,7 @@
                           </a>
                           <ul
                             id="submenu-200"
-                            class="menu-submenu-item-single-list"
+                            class="single-submenu-item-menu-list"
                           >
                             <a
                               onclick="showLettiKidsSubMenu()"
@@ -872,7 +861,7 @@
                           </a>
                           <ul
                             id="submenu-100"
-                            class="menu-submenu-item-single-list"
+                            class="single-submenu-item-menu-list"
                           >
                             <a
                               onclick="showLettiSubMenu()"
@@ -935,17 +924,17 @@
                   </li>
                 </ul>
 
-                <ul id="menu-div4" class="col-20">
+                <ul id="menu-div4" class="sec-20">
                   <!--
                                               offset-1 border-right-grey -->
 
                   <li
-                    class="animated2 menu-submenu-item-single animatedIsOpen slideLeftToRightSmallPre"
+                    class="hasEffect2 single-submenu-menu-item hasEffectInView slideLeftEffect"
                     data-animation="slideLeftToRightSmall"
                     data-delay="330"
                   >
-                    <a id="menu-link" href="#">COMPLEMENTI</a>
-                    <ul class="menu-submenu-item-single-list">
+                    <a id="div-name" href="#">COMPLEMENTI</a>
+                    <ul class="single-submenu-item-menu-list">
                       <!--<li>
                                                   <a href="en/sideboards.html">
                                                       >>>>>>>
@@ -967,18 +956,18 @@
                         </a>
                       </li>
                       <li>
-                        <a id="submenu-main" href="sediakids.html">
+                        <a id="submenu-main" href="sedia.html">
                           Sedie e poltroncine
                         </a>
                       </li>
                       <li>
-                        <a id="submenu-main" href="tavolikids.html">
+                        <a id="submenu-main" href="tavoli.html">
                           Tavoli e tavolini
                         </a>
                       </li>
                       <li>
                         <a href="elementagornol.html" id="submenu-main">
-                          pensili
+                          Pensili
                         </a>
                       </li>
                     </ul>
@@ -989,12 +978,12 @@
           </li>
         </ul>
       </div>
-      <div class="row isMobile menuMobile">
+      <div class="row mobileView menuMobile">
         <div class="mobilemenu">
           <div class="menue">
             <ul class="menus">
               <li class="space">
-                <a href="#" class="hasDropDown heading">PRODOTTI</a>
+                <a href="#" class="hasDropDown heading">PRODOTTI <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
               </li>
               <li class="space">
                 <a href="catalogh00.html" class="heading">CATALOGHI</a>
@@ -1020,7 +1009,7 @@
 
         <div class="items">
           <div class="columns">
-            <a href="#" class="backone heading">Back to menu</a><br />
+            <a href="#" class="backone heading"> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Back to menu</a><br><br>
             <a href="#" class="heading downone">ZONA NOTTE</a>
             <ul class="menu-items">
               <li>
@@ -1092,10 +1081,10 @@
             <ul class="menu-items">
               <li><a href="boiserie.html">Boiserie</a></li>
               <li><a href="elementimetallo.html">Elementi in metallo</a></li>
-              <li><a href="sediakids.html">Sedie e poltroncine</a></li>
-              <li><a href="tavolikids.html">Tavoli e tavolini</a></li>
+              <li><a href="sedia.html">Sedie e poltroncine</a></li>
+              <li><a href="tavoli.html">Tavoli e tavolini</a></li>
               <li>
-                <a href="elementagornol.html" id="submenu-main">pensili</a>
+                <a href="elementagornol.html" id="submenu-main">Pensili</a>
               </li>
             </ul>
           </div>
@@ -1130,7 +1119,7 @@
         /* display: none; */
         transform: translateX(100%);
         position: relative;
-        top: -70rem;
+        top: 4rem;
         margin-left: 2rem;
       }
       .items li {
@@ -1176,19 +1165,28 @@
       }
     </style>
     <script type="text/javascript">
-      document.querySelector(".hasDropDown").addEventListener("click", (e) => {
+      const showMenu = (headerToggle) =>{
+    const toggleBtn = document.getElementById(headerToggle);
+    // Validate that variables exist
+        toggleBtn.addEventListener('click', ()=>{
+            // change icon
+            toggleBtn.classList.toggle('bx-x');
+        })
+}
+showMenu('header-toggle');
+    document.querySelector(".hasDropDown").addEventListener("click", (e) => {
         e.preventDefault();
         document.querySelector(".menue").style.transform = "translateX(-100%)";
         document.querySelector(".menue").style.transitionDuration = "1s";
-        document.querySelector(".items").style.transform = "translateX(0%)";
-        document.querySelector(".items").style.transitionDuration = "1s";
+        document.querySelector(".items").style.transform = "translateX(-100%)";
+        document.querySelector(".items").style.transitionDuration = "0.5s";
       });
       document.querySelector(".backone").addEventListener("click", (e) => {
         e.preventDefault();
         document.querySelector(".menue").style.transform = "translateX(0%)";
         document.querySelector(".menue").style.transitionDuration = "1s";
         document.querySelector(".items").style.transform = "translateX(100%)";
-        document.querySelector(".items").style.transitionDuration = "1s";
+        document.querySelector(".items").style.transitionDuration = "0.5s";
       });
       document.querySelector(".subdropdown").addEventListener("click", (e) => {
         e.preventDefault();
@@ -1213,8 +1211,8 @@
     </script>
     <div
       style="margin-top: -100px"
-      class="uk-scrollspy"
-      uk-scrollspy="cls:uk-animation-slide-bottom-small; delay:500"
+      class="main-box"
+      main-box="cls:uk-animation-slide-bottom-small; delay:500"
       id="top"
     >
       <div id="page_content" data-scroll-container>
@@ -1223,15 +1221,13 @@
           data-scroll-section
         >
           <div
-            uk-scrollspy="cls:uk-animation-slide-bottom-small"
+            main-box="cls:uk-animation-slide-bottom-small"
             class="intro maxWidth"
           >
-            <h1 class="t-semibold">Boiserie</h1>
+            <h1 class="t-semibold"></h1>
             <h3 class="t-light t-xlarge">
               <p>
-                Una cameretta che cresce dove poter aggiungere in libert&agrave;
-                nuovi elementi che servono a sognare, studiare, giocare e
-                contenere libri, giochi, vestiti...
+                
               </p>
             </h3>
           </div>
@@ -1341,7 +1337,7 @@
           }
           .links {
             margin-top: 5px;
-            font-size: 12px;
+          font-size:16px;
           }
           #website {
             color: #fff;
@@ -1438,13 +1434,17 @@
           }
           @media screen and (min-width: 1500px) {
             footer {
-              height: 30rem;
+              height: 26rem;
             }
           }
           @media screen and (min-width: 2160px) {
             footer {
               margin-top: 30rem;
             }
+            .imageBox {
+          margin-left: 9rem;
+          margin-top: -25rem !important;
+          }
           }
         </style>
 
@@ -1521,7 +1521,7 @@
           <div class="r2 r2bis" uk-grid>
             <div class="putInline">
               <div id="ciccio">
-                <h6 id="quicklink">All rights reserved</h6>
+                <h6 style="font-size: 17px;" id="quicklink">All rights reserved</h6>
               </div>
               <div class="links">
                 <a href="#" id="quicklink">Privacy</a>
@@ -1769,7 +1769,7 @@
           newScript.src = "https://www.youtube.com/player_api";
           $("head").append(newScript);
         }
-        //        $(documnt).ready( function(){
+        
         App.init();
       });
 
@@ -2511,11 +2511,11 @@
       // }
     </script>
 
-    <!-- JS Bottom -->
+    
 
-    <!-- Analytics and other js -->
+    
 
-    <!-- Start of HubSpot Embed Code -->
+    
     <script
       type="text/javascript"
       id="hs-script-loader"
